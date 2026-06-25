@@ -2,26 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #EEF1F1;
+    --fg: #15191B;
+    --accent: #11605F;
+    --accent-light: #9FBEBC;
+    --accent-dark: #0B3D3C;
+    --border: rgba(21, 25, 27, 0.12);
+    --muted: #5C6669;
+  }
+
+  .dark {
+    --bg: #0E1214;
+    --fg: #E8EDEC;
+    --accent: #9FBEBC;
+    --accent-light: #11605F;
+    --accent-dark: #C8DEDD;
+    --border: rgba(238, 241, 241, 0.12);
+    --muted: #8A9295;
+  }
+
+  html {
+    background-color: var(--bg);
+    color: var(--fg);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-hanken), system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    border-color: var(--border);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-balance { text-wrap: balance; }
+
+  /* Reading progress bar */
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: var(--accent);
+    z-index: 100;
+    transition: width 0.1s linear;
+  }
+
+  /* PubMed citation block */
+  .citation-block {
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem;
+    background: rgba(17, 96, 95, 0.06);
+    font-family: var(--font-plex-mono);
+    font-size: 0.8rem;
+  }
+
+  .dark .citation-block {
+    background: rgba(159, 190, 188, 0.08);
+  }
+
+  /* Evidence badge */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-plex-mono);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid currentColor;
+  }
+
+  /* Fact box */
+  .fact-box {
+    border: 1px solid var(--border);
+    background: rgba(17, 96, 95, 0.04);
+    padding: 1.5rem;
+  }
+  .dark .fact-box {
+    background: rgba(159, 190, 188, 0.06);
   }
 }
