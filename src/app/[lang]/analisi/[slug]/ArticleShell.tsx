@@ -5,6 +5,9 @@ import type { Locale } from "@/locales/it";
 import type { Article } from "@/lib/articles";
 import EvidenceBadge from "@/components/EvidenceBadge";
 import NewsletterForm from "@/components/NewsletterForm";
+import AuthorByline from "@/components/AuthorByline";
+import AuthorCard from "@/components/AuthorCard";
+import { getAuthor } from "@/lib/authors";
 
 interface Props {
   lang: string;
@@ -33,6 +36,9 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
   }, []);
 
   const title = lang === "en" && f.title_en ? f.title_en : f.titolo;
+  const author = getAuthor(f.autore);
+  const reviewer = f.revisore ? getAuthor(f.revisore) : undefined;
+  const faq = lang === "en" && f.faq_en ? f.faq_en : f.faq;
 
   return (
     <>
@@ -48,9 +54,19 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
               {f.molecola} · {f.categoria}
             </span>
           </div>
-          <h1 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-6 leading-tight">
+          <h1 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-3 leading-tight">
             {title}
           </h1>
+          <div className="mb-6">
+            <AuthorByline
+              author={author}
+              reviewer={reviewer}
+              date={f.data}
+              readingTime={article.readingTime}
+              readingLabel={t.article.reading_time}
+              lang={lang}
+            />
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
             {[
               { label: lang === "it" ? "A cosa serve" : "Purpose", value: f.a_cosa_serve },
@@ -124,6 +140,28 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
             </p>
             <TocLinks content={article.content} />
           </aside>
+        </div>
+
+        {/* FAQ */}
+        {faq && faq.length > 0 && (
+          <div className="mt-16 border-t border-[var(--border)] pt-10 max-w-2xl">
+            <p className="font-mono text-xs uppercase tracking-widest text-[var(--muted)] mb-6">
+              {t.article.faq_title}
+            </p>
+            <div className="flex flex-col divide-y divide-[var(--border)]">
+              {faq.map((item) => (
+                <div key={item.q} className="py-5 first:pt-0">
+                  <h3 className="font-sans font-medium text-[var(--fg)] mb-1.5">{item.q}</h3>
+                  <p className="font-sans text-sm text-[var(--muted)] leading-relaxed">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Author */}
+        <div className="mt-16 max-w-2xl">
+          <AuthorCard author={author} lang={lang} />
         </div>
 
         {/* Related articles */}

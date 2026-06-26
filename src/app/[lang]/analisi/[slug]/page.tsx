@@ -5,6 +5,7 @@ import { getAllArticles, getArticleBySlug } from "@/lib/articles";
 import ArticleShell from "./ArticleShell";
 import MDXRenderer from "./MDXRenderer";
 import JsonLd from "@/components/JsonLd";
+import { getAuthor } from "@/lib/authors";
 
 const SITE = "https://www.nucleolongevity.com";
 
@@ -76,10 +77,17 @@ export default async function ArticlePage({
     inLanguage: lang,
     mainEntityOfPage: pageUrl,
     url: pageUrl,
-    author: {
-      "@type": f.autore ? "Person" : "Organization",
-      name: f.autore || "Redazione Nucleo",
-    },
+    author: (() => {
+      const a = getAuthor(f.autore);
+      return {
+        "@type": a.key === "redazione" ? "Organization" : "Person",
+        name: a.name,
+        ...(a.links && a.links.length ? { sameAs: a.links } : {}),
+      };
+    })(),
+    ...(f.revisore
+      ? { reviewedBy: { "@type": "Person", name: getAuthor(f.revisore).name }, lastReviewed: f.data }
+      : {}),
     publisher: {
       "@type": "Organization",
       name: "Nucleo Longevity",
@@ -103,10 +111,25 @@ export default async function ArticlePage({
     ],
   };
 
+  const faq = lang === "en" && f.faq_en ? f.faq_en : f.faq;
+  const faqJsonLd =
+    faq && faq.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faq.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }
+      : null;
+
   return (
     <>
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <ArticleShell lang={lang} t={t} article={article} related={related}>
         <MDXRenderer content={article.content} />
       </ArticleShell>
