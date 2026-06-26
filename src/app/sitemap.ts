@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, MOLECULES } from "@/lib/articles";
 import { langs } from "@/lib/i18n";
 
 const BASE_URL = "https://www.nucleolongevity.com";
@@ -13,9 +13,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/metodo",
     "/chi-siamo",
     "/contatti",
+    "/contribuisci",
     "/disclaimer",
     "/termini",
     "/privacy",
+    ...MOLECULES.map((m) => `/molecole/${m.id}`),
   ];
 
   const staticEntries = langs.flatMap((lang) =>

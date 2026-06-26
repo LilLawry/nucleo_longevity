@@ -25,6 +25,7 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
             { href: `/${lang}/analisi`, label: t.nav.analisi },
             { href: `/${lang}/metodo`, label: t.nav.metodo },
             { href: `/${lang}/chi-siamo`, label: t.footer.about },
+            { href: `/${lang}/contribuisci`, label: t.footer.contribute },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-fit">
               {l.label}

@@ -17,9 +17,12 @@ export interface ArticleFrontmatter {
   grado: "A" | "B" | "C" | "D" | "E" | "F";
   data: string;
   autore?: string;
+  revisore?: string;
   excerpt?: string;
   excerpt_en?: string;
   tags?: string[];
+  faq?: { q: string; a: string }[];
+  faq_en?: { q: string; a: string }[];
 }
 
 export interface Article {

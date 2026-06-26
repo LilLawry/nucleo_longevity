@@ -89,6 +89,7 @@ const en: Locale = {
     legal_label: "Resources",
     about: "About",
     contact: "Contact",
+    contribute: "Contribute",
     disclaimer: "Medical disclaimer",
     terms: "Terms of use",
   },

@@ -1,8 +1,10 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
+import FieldNote from "@/components/FieldNote";
 
 const components = {
+  FieldNote,
   div: (props: React.HTMLAttributes<HTMLDivElement>) => <div {...props} />,
   table: (props: React.HTMLAttributes<HTMLTableElement>) => (
     <div className="overflow-x-auto my-6">

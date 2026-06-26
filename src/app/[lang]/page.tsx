@@ -235,7 +235,7 @@ export default async function HomePage({
               {molecules.map((mol) => (
                 <Link
                   key={mol.id}
-                  href={`/${lang}/molecole`}
+                  href={`/${lang}/molecole/${mol.id}`}
                   className="group py-4 px-4 flex items-center justify-between gap-4 hover:bg-[var(--bg)] transition-colors first:rounded-t-lg last:rounded-b-lg"
                 >
                   <div>

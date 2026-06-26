@@ -87,6 +87,7 @@ const it = {
     legal_label: "Risorse",
     about: "Chi siamo",
     contact: "Contatti",
+    contribute: "Contribuisci",
     disclaimer: "Disclaimer medico",
     terms: "Termini d'uso",
   },

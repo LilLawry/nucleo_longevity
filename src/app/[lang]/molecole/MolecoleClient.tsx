@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import type { Locale } from "@/locales/it";
 import type { MOLECULES } from "@/lib/articles";
 import EvidenceBadge from "@/components/EvidenceBadge";
@@ -59,12 +60,13 @@ export default function MolecoleClient({ lang, t, molecules }: Props) {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((mol) => (
-            <div
+            <Link
               key={mol.id}
-              className="card-surface p-5 flex flex-col gap-3"
+              href={`/${lang}/molecole/${mol.id}`}
+              className="group card-surface p-5 flex flex-col gap-3"
             >
               <div className="flex items-start justify-between gap-3">
-                <h3 className="font-sans font-medium text-base text-[var(--fg)]">
+                <h3 className="font-sans font-medium text-base text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
                   {lang === "en" ? mol.nome_en : mol.nome}
                 </h3>
                 <EvidenceBadge grade={mol.grado} />
@@ -75,7 +77,7 @@ export default function MolecoleClient({ lang, t, molecules }: Props) {
               <p className="font-mono text-[0.65rem] text-[var(--accent)] uppercase tracking-wider">
                 {lang === "en" ? mol.categoria_en : mol.categoria}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       )}
