@@ -1,16 +1,24 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/locales/it";
 import type { Lang } from "@/lib/i18n";
+import Wordmark from "./Wordmark";
 
 export default function Header({ lang, t }: { lang: string; t: Locale }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => setMounted(true), []);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const otherLang: Lang = lang === "it" ? "en" : "it";
   const navLinks = [
@@ -20,20 +28,21 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--bg)] border-b border-[var(--border)]">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--border)] shadow-[0_4px_24px_-16px_var(--glow)]"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between gap-6">
         {/* Logo */}
-        <Link href={`/${lang}`} className="flex items-center gap-2.5 shrink-0" aria-label="Nucleo Longevity — home">
-          <span className="relative w-7 h-7">
-            {mounted && theme === "dark" ? (
-              <Image src="/logo-animated-white.svg" alt="" fill unoptimized />
-            ) : (
-              <Image src="/logo-animated.svg" alt="" fill unoptimized />
-            )}
-          </span>
-          <span className="font-sans font-medium text-sm tracking-[0.18em] uppercase text-[var(--fg)]">
-            Nucleo <span className="text-[var(--accent)]">·</span> Longevity
-          </span>
+        <Link
+          href={`/${lang}`}
+          className="group flex items-center shrink-0"
+          aria-label="Nucleo Longevity — home"
+        >
+          <Wordmark className="text-sm [&_svg]:transition-transform [&_svg]:duration-500 group-hover:[&_svg]:rotate-180" />
         </Link>
 
         {/* Desktop nav */}
@@ -42,7 +51,7 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-sm font-medium text-[var(--muted)] hover:text-[var(--fg)] transition-colors tracking-wide"
+              className="font-sans text-sm font-medium text-[var(--muted)] hover:text-[var(--fg)] transition-colors tracking-wide link-underline"
             >
               {link.label}
             </Link>
@@ -51,20 +60,18 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
 
         {/* Controls */}
         <div className="flex items-center gap-3">
-          {/* Lang switcher */}
           <Link
             href={`/${otherLang}`}
-            className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] hover:text-[var(--accent)] transition-colors border border-[var(--border)] px-2.5 py-1"
+            className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors border border-[var(--border)] rounded px-2.5 py-1"
           >
             {otherLang}
           </Link>
 
-          {/* Dark toggle */}
           {mounted && (
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               aria-label="Cambia tema"
-              className="w-8 h-8 flex items-center justify-center text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
+              className="w-8 h-8 flex items-center justify-center text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
             >
               {theme === "dark" ? (
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -81,7 +88,6 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
             </button>
           )}
 
-          {/* Mobile menu toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden w-8 h-8 flex items-center justify-center text-[var(--muted)]"

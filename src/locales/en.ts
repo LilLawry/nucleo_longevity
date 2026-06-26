@@ -25,6 +25,29 @@ const en: Locale = {
     latest_molecole: "Molecule updates",
     view_all: "View all →",
   },
+  home: {
+    trust_independent: "Editorially independent",
+    trust_pubmed: "Verified PubMed sources",
+    trust_nohype: "Zero hype, only data",
+    scroll: "Explore",
+    stats: [
+      { value: "200+", label: "Studies reviewed" },
+      { value: "A–F", label: "Evidence scale" },
+      { value: "100%", label: "Traceable sources" },
+      { value: "0", label: "Hidden sponsors" },
+    ],
+    legend_title: "How we read the evidence",
+    legend_subtitle:
+      "Every molecule gets a grade from A to F. No supplement is promoted: the letter only tells you how solid the scientific proof is.",
+    method_eyebrow: "The method",
+    method_title: "Rigor before hype",
+    method_subtitle:
+      "We start from the clinical question, search PubMed, and grade the evidence with an adapted GRADE schema. No hidden conflicts.",
+    method_cta: "See the full method →",
+    cta_title: "Longevity, one proof at a time.",
+    cta_subtitle:
+      "A new analysis every two weeks. No spam, no miracle promises. Only what the studies actually say.",
+  },
   metodo: {
     title: "The Method",
     subtitle: "How we select and grade the scientific literature.",
@@ -60,6 +83,12 @@ const en: Locale = {
     newsletter_placeholder: "email@domain.com",
     newsletter_button: "Subscribe",
     rights: "© 2026 Nucleo Longevity. All rights reserved.",
+    explore_label: "Explore",
+    legal_label: "Resources",
+    about: "About",
+    contact: "Contact",
+    disclaimer: "Medical disclaimer",
+    terms: "Terms of use",
   },
   privacy: {
     title: "Privacy & Cookie Policy",

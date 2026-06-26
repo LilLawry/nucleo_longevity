@@ -1,36 +1,60 @@
 import Link from "next/link";
 import type { Locale } from "@/locales/it";
 import NewsletterForm from "./NewsletterForm";
+import Wordmark from "./Wordmark";
 
 export default function Footer({ lang, t }: { lang: string; t: Locale }) {
   return (
-    <footer className="border-t border-[var(--border)] bg-[var(--bg)] mt-24">
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <footer className="border-t border-[var(--border)] bg-[var(--bg-elev)] mt-24">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8">
         {/* Brand */}
-        <div className="md:col-span-1">
-          <p className="font-sans font-medium text-sm tracking-[0.18em] uppercase text-[var(--fg)] mb-2">
-            Nucleo Longevity
-          </p>
-          <p className="text-sm text-[var(--muted)] leading-relaxed">{t.footer.tagline}</p>
+        <div className="col-span-2 md:col-span-4">
+          <Link href={`/${lang}`} className="inline-flex items-center mb-4 group">
+            <Wordmark className="text-sm [&_svg]:transition-transform [&_svg]:duration-500 group-hover:[&_svg]:rotate-180" />
+          </Link>
+          <p className="text-sm text-[var(--muted)] leading-relaxed max-w-xs">{t.footer.tagline}</p>
         </div>
 
+        {/* Explore */}
+        <nav className="md:col-span-2 flex flex-col gap-2.5" aria-label={t.footer.explore_label}>
+          <p className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] mb-1.5">
+            {t.footer.explore_label}
+          </p>
+          {[
+            { href: `/${lang}/molecole`, label: t.nav.molecole },
+            { href: `/${lang}/analisi`, label: t.nav.analisi },
+            { href: `/${lang}/metodo`, label: t.nav.metodo },
+            { href: `/${lang}/chi-siamo`, label: t.footer.about },
+          ].map((l) => (
+            <Link key={l.href} href={l.href} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-fit">
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Resources / legal */}
+        <nav className="md:col-span-2 flex flex-col gap-2.5" aria-label={t.footer.legal_label}>
+          <p className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] mb-1.5">
+            {t.footer.legal_label}
+          </p>
+          {[
+            { href: `/${lang}/contatti`, label: t.footer.contact },
+            { href: `/${lang}/disclaimer`, label: t.footer.disclaimer },
+            { href: `/${lang}/privacy`, label: t.footer.privacy },
+            { href: `/${lang}/termini`, label: t.footer.terms },
+          ].map((l) => (
+            <Link key={l.href} href={l.href} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-fit">
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+
         {/* Newsletter */}
-        <div className="md:col-span-1">
+        <div className="col-span-2 md:col-span-4">
           <p className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] mb-4">
             {t.footer.newsletter_label}
           </p>
           <NewsletterForm lang={lang} t={t} compact />
-        </div>
-
-        {/* Links */}
-        <div className="md:col-span-1 flex flex-col gap-2">
-          <p className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] mb-2">Link</p>
-          <Link href={`/${lang}/privacy`} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors">
-            {t.footer.privacy}
-          </Link>
-          <Link href={`/${lang}/metodo`} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors">
-            {t.nav.metodo}
-          </Link>
         </div>
       </div>
 

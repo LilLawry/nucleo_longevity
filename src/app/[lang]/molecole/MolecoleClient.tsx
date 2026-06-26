@@ -61,7 +61,7 @@ export default function MolecoleClient({ lang, t, molecules }: Props) {
           {filtered.map((mol) => (
             <div
               key={mol.id}
-              className="border border-[var(--border)] p-5 flex flex-col gap-3 hover:border-[var(--accent)] transition-colors"
+              className="card-surface p-5 flex flex-col gap-3"
             >
               <div className="flex items-start justify-between gap-3">
                 <h3 className="font-sans font-medium text-base text-[var(--fg)]">

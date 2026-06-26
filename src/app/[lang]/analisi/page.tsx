@@ -65,7 +65,7 @@ export default async function AnalisiPage({
             <Link
               key={article.slug}
               href={`/${lang}/analisi/${article.slug}`}
-              className="group py-6 flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8"
+              className="group py-6 flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-8 px-4 -mx-4 rounded-lg hover:bg-[var(--bg-elev)] transition-colors"
             >
               <div className="shrink-0 sm:w-32">
                 <EvidenceBadge grade={article.frontmatter.grado} />

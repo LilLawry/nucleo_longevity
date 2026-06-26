@@ -23,6 +23,29 @@ const it = {
     latest_molecole: "Aggiornamenti molecole",
     view_all: "Vedi tutto →",
   },
+  home: {
+    trust_independent: "Editorialmente indipendente",
+    trust_pubmed: "Fonti PubMed verificate",
+    trust_nohype: "Zero hype, solo dati",
+    scroll: "Esplora",
+    stats: [
+      { value: "200+", label: "Studi esaminati" },
+      { value: "A–F", label: "Scala di evidenza" },
+      { value: "100%", label: "Fonti tracciabili" },
+      { value: "0", label: "Sponsor occulti" },
+    ],
+    legend_title: "Come leggiamo l'evidenza",
+    legend_subtitle:
+      "Ogni molecola riceve un grado da A a F. Nessun integratore è promosso: la lettera dice solo quanto è solida la prova scientifica.",
+    method_eyebrow: "Il metodo",
+    method_title: "Rigore prima del clamore",
+    method_subtitle:
+      "Partiamo dalla domanda clinica, cerchiamo su PubMed e gradiamo l'evidenza secondo uno schema GRADE adattato. Nessun conflitto nascosto.",
+    method_cta: "Scopri il metodo completo →",
+    cta_title: "La longevità, una prova alla volta.",
+    cta_subtitle:
+      "Una nuova analisi ogni due settimane. Niente spam, niente promesse miracolose. Solo ciò che gli studi dicono davvero.",
+  },
   metodo: {
     title: "Il Metodo",
     subtitle: "Come selezioniamo e gradiamo la letteratura scientifica.",
@@ -58,6 +81,12 @@ const it = {
     newsletter_placeholder: "email@dominio.it",
     newsletter_button: "Iscriviti",
     rights: "© 2026 Nucleo Longevity. Tutti i diritti riservati.",
+    explore_label: "Esplora",
+    legal_label: "Risorse",
+    about: "Chi siamo",
+    contact: "Contatti",
+    disclaimer: "Disclaimer medico",
+    terms: "Termini d'uso",
   },
   privacy: {
     title: "Privacy & Cookie Policy",
