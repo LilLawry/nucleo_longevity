@@ -9,8 +9,8 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
       <div className="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-8">
         {/* Brand */}
         <div className="col-span-2 md:col-span-4">
-          <Link href={`/${lang}`} className="inline-flex items-center mb-4 group">
-            <Wordmark className="text-sm [&_svg]:transition-transform [&_svg]:duration-500 group-hover:[&_svg]:rotate-180" />
+          <Link href={`/${lang}`} className="inline-flex items-center mb-4 hover:opacity-80 transition-opacity">
+            <Wordmark className="h-10 w-auto" />
           </Link>
           <p className="text-sm text-[var(--muted)] leading-relaxed max-w-xs">{t.footer.tagline}</p>
         </div>

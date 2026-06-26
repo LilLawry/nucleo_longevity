@@ -77,11 +77,11 @@ export default async function HomePage({
               </ul>
             </div>
 
-            {/* Animated nucleus */}
+            {/* Brand nucleus with radiating aura */}
             <div className="hidden lg:flex items-center justify-center">
-              <div className="relative">
+              <div className="relative nucleus-aura">
                 <div className="glow-orb inset-0 w-full h-full" aria-hidden />
-                <NucleusMark size={360} orbits animated glow className="text-[var(--accent)] relative" />
+                <NucleusMark size={300} animated glow className="text-[var(--accent)] relative" />
               </div>
             </div>
           </div>
@@ -232,7 +232,9 @@ export default async function HomePage({
             </Link>
           </Reveal>
           <Reveal delay={120} className="flex justify-center lg:justify-end">
-            <NucleusMark size={210} orbits animated className="text-[var(--accent)]" />
+            <span className="nucleus-aura">
+              <NucleusMark size={180} animated glow className="text-[var(--accent)]" />
+            </span>
           </Reveal>
         </div>
       </section>
@@ -242,7 +244,7 @@ export default async function HomePage({
         <Reveal className="relative card-surface overflow-hidden px-6 sm:px-12 py-14 text-center">
           <div className="glow-orb -top-24 left-1/2 -translate-x-1/2 w-[26rem] h-[26rem]" aria-hidden />
           <div className="relative max-w-xl mx-auto">
-            <NucleusMark size={64} orbits animated className="text-[var(--accent)] mx-auto mb-6" />
+            <NucleusMark size={56} animated className="text-[var(--accent)] mx-auto mb-6" />
             <h2 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-3 text-balance">
               {t.home.cta_title}
             </h2>
