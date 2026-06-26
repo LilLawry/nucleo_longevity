@@ -1,6 +1,28 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, IBM_Plex_Mono } from "next/font/google";
+import JsonLd from "@/components/JsonLd";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
+
+const SITE = "https://www.nucleolongevity.com";
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Nucleo Longevity",
+  url: SITE,
+  logo: `${SITE}/apple-touch-icon.png`,
+  description:
+    "Analisi indipendente di studi su molecole e integratori per la longevità. Evidenza graduata A–F, fonti PubMed.",
+  slogan: "Dati clinici. Zero filtri di marketing.",
+};
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Nucleo Longevity",
+  url: SITE,
+  inLanguage: ["it", "en"],
+};
 
 const hanken = Hanken_Grotesk({
   subsets: ["latin"],
@@ -49,7 +71,11 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning>
       <body className={`${hanken.variable} ${plexMono.variable}`}>
+        <JsonLd data={orgJsonLd} />
+        <JsonLd data={siteJsonLd} />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

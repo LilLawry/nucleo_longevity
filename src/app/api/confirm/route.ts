@@ -43,6 +43,18 @@ export async function GET(req: Request) {
       verified.lang === "en" ? "Your Nucleo longevity guide" : "La tua guida longevity Nucleo",
       welcomeHtml(guideUrl, verified.lang)
     );
+    // Notify the site owner that a new lead came in (optional).
+    if (process.env.NEWSLETTER_NOTIFY) {
+      await sendEmail(
+        process.env.NEWSLETTER_NOTIFY,
+        `🟢 Nuovo lead Nucleo: ${verified.email}`,
+        `<p style="font-family:Helvetica,Arial,sans-serif">Nuovo iscritto confermato.</p>
+         <p style="font-family:Helvetica,Arial,sans-serif"><b>Email:</b> ${verified.email}<br/>
+         <b>Lingua:</b> ${verified.lang}<br/>
+         <b>Quando:</b> ${new Date().toISOString()}</p>
+         <p style="font-family:Helvetica,Arial,sans-serif;color:#5C6669">È già in audience su Resend.</p>`
+      ).catch((e) => console.error("[newsletter] notify failed", e));
+    }
   } catch (err) {
     console.error("[newsletter] confirm failed", err);
     return NextResponse.redirect(new URL(`/${verified.lang}/grazie?status=error`, url.origin));

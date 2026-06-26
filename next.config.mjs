@@ -15,11 +15,11 @@ const withMDX = createMDX({
 // mixed-content warnings that trip Google Safe Browsing / "Not secure" flags.
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com",
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
-  "connect-src 'self'",
+  "connect-src 'self' https://vitals.vercel-insights.com",
   "frame-ancestors 'self'",
   "base-uri 'self'",
   "form-action 'self'",
