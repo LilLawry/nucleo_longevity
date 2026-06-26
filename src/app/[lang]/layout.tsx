@@ -23,6 +23,7 @@ export async function generateMetadata({
       languages: {
         it: "/it",
         en: "/en",
+        "x-default": "/it",
       },
     },
     openGraph: {
