@@ -19,7 +19,10 @@ export async function generateMetadata({
     // The root template appends " · Nucleo Longevity", so don't repeat the brand.
     title: { absolute: `Nucleo Longevity — ${t.hero.headline.replace("\n", " ")}` },
     description: t.hero.subline,
-    alternates: { canonical: `/${lang}` },
+    alternates: {
+      canonical: `/${lang}`,
+      languages: { it: "/it", en: "/en", "x-default": "/it" },
+    },
   };
 }
 
