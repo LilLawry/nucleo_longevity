@@ -13,7 +13,9 @@ const config: Config = {
     extend: {
       colors: {
         ink: "#15191B",
-        base: "#EEF1F1",
+        // NB: do not add a color literally named "base" — it collides with
+        // Tailwind's built-in `text-base` font-size utility and overrides color.
+        surface: "#EEF1F1",
         teal: {
           DEFAULT: "#11605F",
           300: "#9FBEBC",
@@ -45,7 +47,7 @@ const config: Config = {
             "--tw-prose-quote-borders": theme("colors.teal.DEFAULT"),
             "--tw-prose-captions": "#5C6669",
             "--tw-prose-code": theme("colors.ink"),
-            "--tw-prose-pre-code": theme("colors.base"),
+            "--tw-prose-pre-code": theme("colors.surface"),
             "--tw-prose-pre-bg": theme("colors.ink"),
             fontFamily: theme("fontFamily.sans"),
             maxWidth: "none",

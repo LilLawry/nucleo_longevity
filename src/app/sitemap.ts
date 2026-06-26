@@ -6,7 +6,17 @@ const BASE_URL = "https://nucleolongevity.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
-  const staticPages = ["", "/molecole", "/analisi", "/metodo", "/privacy"];
+  const staticPages = [
+    "",
+    "/molecole",
+    "/analisi",
+    "/metodo",
+    "/chi-siamo",
+    "/contatti",
+    "/disclaimer",
+    "/termini",
+    "/privacy",
+  ];
 
   const staticEntries = langs.flatMap((lang) =>
     staticPages.map((page) => ({

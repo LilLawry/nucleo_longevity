@@ -28,7 +28,7 @@ export default function EvidenceBadge({ grade, label, onClick, active }: Props) 
     <Tag
       onClick={onClick}
       style={{ ...style, ...(active ? { color: "#fff" } : {}) }}
-      className="badge cursor-pointer hover:opacity-80 transition-opacity"
+      className={`badge transition-opacity ${onClick ? "cursor-pointer hover:opacity-80" : ""}`}
     >
       {grade}{label ? ` — ${label}` : ""}
     </Tag>

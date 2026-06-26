@@ -5,22 +5,28 @@
 @layer base {
   :root {
     --bg: #EEF1F1;
+    --bg-elev: #F7F9F9;
     --fg: #15191B;
     --accent: #11605F;
     --accent-light: #9FBEBC;
     --accent-dark: #0B3D3C;
     --border: rgba(21, 25, 27, 0.12);
     --muted: #5C6669;
+    --glow: rgba(17, 96, 95, 0.18);
+    --grid: rgba(21, 25, 27, 0.04);
   }
 
   .dark {
     --bg: #0E1214;
+    --bg-elev: #141A1C;
     --fg: #E8EDEC;
     --accent: #9FBEBC;
     --accent-light: #11605F;
     --accent-dark: #C8DEDD;
     --border: rgba(238, 241, 241, 0.12);
     --muted: #8A9295;
+    --glow: rgba(159, 190, 188, 0.16);
+    --grid: rgba(238, 241, 241, 0.035);
   }
 
   html {
@@ -40,23 +46,40 @@
   * {
     border-color: var(--border);
   }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  /* Slim, on-brand scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-light);
+    border-radius: 99px;
+    border: 3px solid var(--bg);
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 }
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
 
-  /* Reading progress bar */
+  /* ---------- Reading progress ---------- */
   .progress-bar {
     position: fixed;
     top: 0;
     left: 0;
     height: 2px;
-    background: var(--accent);
+    background: linear-gradient(90deg, var(--accent), var(--accent-light));
     z-index: 100;
     transition: width 0.1s linear;
+    box-shadow: 0 0 8px var(--glow);
   }
 
-  /* PubMed citation block */
+  /* ---------- Citations / fact boxes ---------- */
   .citation-block {
     border-left: 3px solid var(--accent);
     padding: 1rem 1.25rem;
@@ -64,12 +87,8 @@
     font-family: var(--font-plex-mono);
     font-size: 0.8rem;
   }
+  .dark .citation-block { background: rgba(159, 190, 188, 0.08); }
 
-  .dark .citation-block {
-    background: rgba(159, 190, 188, 0.08);
-  }
-
-  /* Evidence badge */
   .badge {
     display: inline-flex;
     align-items: center;
@@ -80,15 +99,117 @@
     text-transform: uppercase;
     padding: 0.2rem 0.5rem;
     border: 1px solid currentColor;
+    border-radius: 2px;
   }
 
-  /* Fact box */
   .fact-box {
     border: 1px solid var(--border);
-    background: rgba(17, 96, 95, 0.04);
+    background: var(--bg-elev);
     padding: 1.5rem;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
   }
-  .dark .fact-box {
-    background: rgba(159, 190, 188, 0.06);
+  .fact-box::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    background: linear-gradient(var(--accent), var(--accent-light));
   }
+
+  /* ---------- Brand surfaces ---------- */
+  .grid-surface {
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 44px 44px;
+    background-position: center;
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000 40%, transparent 100%);
+  }
+
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
+    filter: blur(8px);
+    pointer-events: none;
+  }
+
+  .card-surface {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .card-surface:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px -12px var(--glow);
+  }
+
+  .btn-accent {
+    background: var(--accent);
+    color: #fff;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  .btn-accent:hover {
+    background: var(--accent-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px -8px var(--glow);
+  }
+  .dark .btn-accent { color: #0E1214; }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover { background-size: 100% 1px; }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Nucleus logo animation ---------- */
+.nucleus-electron {
+  offset-distance: 0%;
+  animation: nucleus-travel 8.1s linear infinite;
+}
+.nucleus-core {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: nucleus-pulse 3s ease-in-out infinite;
+}
+
+@keyframes nucleus-travel {
+  to { offset-distance: 100%; }
+}
+@keyframes nucleus-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.28); opacity: 0.78; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nucleus-electron, .nucleus-core { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Never hide content when JS can't run the IntersectionObserver. */
+@media (scripting: none) {
+  .reveal { opacity: 1 !important; transform: none !important; }
 }

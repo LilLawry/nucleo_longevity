@@ -22,9 +22,14 @@ export default function NewsletterForm({ t, compact, showRole }: Props) {
 
   if (submitted) {
     return (
-      <p className="font-mono text-xs text-[var(--accent)] tracking-wide">
-        ✓ Iscrizione confermata
-      </p>
+      <div className="flex items-center gap-2.5 border border-[var(--accent)] rounded bg-[rgba(17,96,95,0.06)] px-4 py-3">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+        <p className="font-mono text-xs text-[var(--accent)] tracking-wide">
+          {t.capture.button === "Subscribe" ? "Subscription confirmed" : "Iscrizione confermata"}
+        </p>
+      </div>
     );
   }
 
@@ -38,7 +43,7 @@ export default function NewsletterForm({ t, compact, showRole }: Props) {
           <select
             value={role}
             onChange={(e) => setRole(e.target.value)}
-            className="bg-transparent border border-[var(--border)] text-[var(--fg)] text-sm px-3 py-2 font-sans focus:outline-none focus:border-[var(--accent)] transition-colors"
+            className="bg-[var(--bg)] border border-[var(--border)] rounded text-[var(--fg)] text-sm px-3 py-2 font-sans focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--glow)] transition-all"
           >
             <option value="">—</option>
             <option value="medico">{t.capture.role_medico}</option>
@@ -46,19 +51,18 @@ export default function NewsletterForm({ t, compact, showRole }: Props) {
           </select>
         </div>
       )}
-      <div className={`flex ${compact ? "flex-col gap-2" : "flex-row gap-0"}`}>
+      <div className={`flex ${compact ? "flex-col gap-2" : "flex-row gap-2"}`}>
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={compact ? t.footer.newsletter_placeholder : t.capture.placeholder}
-          className="flex-1 bg-transparent border border-[var(--border)] text-[var(--fg)] text-sm px-3 py-2.5 font-sans placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] transition-colors"
+          className="flex-1 bg-[var(--bg)] border border-[var(--border)] rounded text-[var(--fg)] text-sm px-3.5 py-2.5 font-sans placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--glow)] transition-all"
         />
         <button
           type="submit"
-          className="bg-[var(--accent)] text-white font-sans font-medium text-sm px-5 py-2.5 hover:bg-[var(--accent-dark)] transition-colors whitespace-nowrap"
-          style={{ color: "#fff" }}
+          className="btn-accent font-sans font-medium text-sm px-5 py-2.5 whitespace-nowrap"
         >
           {compact ? t.footer.newsletter_button : t.capture.button}
         </button>

@@ -5,6 +5,8 @@ import { getAllArticles, MOLECULES } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import NewsletterForm from "@/components/NewsletterForm";
 import EvidenceBadge from "@/components/EvidenceBadge";
+import NucleusMark from "@/components/NucleusMark";
+import Reveal from "@/components/Reveal";
 
 export async function generateMetadata({
   params,
@@ -19,6 +21,8 @@ export async function generateMetadata({
   };
 }
 
+const GRADES = ["A", "B", "C", "D", "E", "F"] as const;
+
 export default async function HomePage({
   params,
 }: {
@@ -32,50 +36,115 @@ export default async function HomePage({
 
   return (
     <>
-      {/* Hero */}
-      <section className="max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-16 md:pt-28 md:pb-24">
-        <div className="max-w-2xl">
-          <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-6">
-            Nucleo · Longevity
-          </p>
-          <h1 className="font-sans font-medium text-4xl sm:text-5xl md:text-6xl leading-[1.08] tracking-[-0.03em] text-[var(--fg)] mb-6 whitespace-pre-line">
-            {t.hero.headline}
-          </h1>
-          <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-lg mb-10">
-            {t.hero.subline}
-          </p>
+      {/* ============ HERO ============ */}
+      <section className="relative overflow-hidden border-b border-[var(--border)]">
+        <div className="absolute inset-0 grid-surface" aria-hidden />
+        <div className="glow-orb -top-32 -left-24 w-[34rem] h-[34rem]" aria-hidden />
+        <div className="glow-orb top-10 -right-32 w-[28rem] h-[28rem]" aria-hidden />
 
-          {/* Email capture */}
-          <div className="max-w-md">
-            <NewsletterForm lang={lang} t={t} showRole />
+        <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-20 md:pt-28 md:pb-28">
+          <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
+            {/* Copy */}
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2.5 mb-7 border border-[var(--border)] rounded-full pl-2 pr-3.5 py-1 bg-[var(--bg-elev)]">
+                <NucleusMark size={18} className="text-[var(--accent)]" />
+                <span className="font-mono text-[0.65rem] tracking-widest uppercase text-[var(--muted)]">
+                  Nucleo · Longevity
+                </span>
+              </div>
+
+              <h1 className="font-sans font-medium text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-[-0.035em] text-[var(--fg)] mb-6 whitespace-pre-line text-balance">
+                {t.hero.headline}
+              </h1>
+              <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-lg mb-9 text-pretty">
+                {t.hero.subline}
+              </p>
+
+              <div className="max-w-md">
+                <NewsletterForm lang={lang} t={t} showRole />
+              </div>
+
+              {/* Trust chips */}
+              <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-2">
+                {[t.home.trust_independent, t.home.trust_pubmed, t.home.trust_nohype].map((item) => (
+                  <li key={item} className="flex items-center gap-2 font-mono text-[0.68rem] text-[var(--muted)]">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Animated nucleus */}
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="relative">
+                <div className="glow-orb inset-0 w-full h-full" aria-hidden />
+                <NucleusMark size={360} orbits animated glow className="text-[var(--accent)] relative" />
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Decorative rule */}
-        <div className="mt-16 flex items-center gap-4">
-          <div className="h-px flex-1 bg-[var(--border)]" />
-          <div className="w-2 h-2 rounded-full border border-[var(--accent)] bg-transparent" style={{ boxShadow: "0 0 0 1.5px var(--accent)" }} />
-          <div className="h-px flex-1 bg-[var(--border)]" />
         </div>
       </section>
 
-      {/* Two-column preview */}
+      {/* ============ STATS BAR ============ */}
+      <section className="border-b border-[var(--border)] bg-[var(--bg-elev)]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 grid grid-cols-2 md:grid-cols-4 divide-x divide-[var(--border)]">
+          {t.home.stats.map((s, i) => (
+            <Reveal key={s.label} delay={i * 80} className="py-8 px-5 text-center md:text-left">
+              <p className="font-sans font-medium text-3xl sm:text-4xl tracking-tight text-[var(--accent)]">
+                {s.value}
+              </p>
+              <p className="font-mono text-[0.65rem] uppercase tracking-widest text-[var(--muted)] mt-1.5">
+                {s.label}
+              </p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* ============ EVIDENCE LEGEND ============ */}
+      <section className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
+        <Reveal className="max-w-2xl mb-10">
+          <h2 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-3">
+            {t.home.legend_title}
+          </h2>
+          <p className="font-sans text-base text-[var(--muted)] leading-relaxed text-pretty">
+            {t.home.legend_subtitle}
+          </p>
+        </Reveal>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          {GRADES.map((g, i) => (
+            <Reveal key={g} delay={i * 60}>
+              <div className="card-surface p-5 h-full flex flex-col gap-3">
+                <EvidenceBadge grade={g} />
+                <span className="font-sans text-sm font-medium text-[var(--fg)]">
+                  {t.grades[g]}
+                </span>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* ============ LATEST ANALYSIS + MOLECULES ============ */}
       <section className="max-w-6xl mx-auto px-5 sm:px-8 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Latest analisi */}
-          <div>
+          <Reveal>
             <div className="flex items-baseline justify-between mb-6">
               <h2 className="font-sans font-medium text-xs tracking-widest uppercase text-[var(--muted)]">
                 {t.sections.latest_analisi}
               </h2>
               <Link
                 href={`/${lang}/analisi`}
-                className="font-mono text-xs text-[var(--accent)] hover:opacity-70 transition-opacity"
+                className="font-mono text-xs text-[var(--accent)] link-underline"
               >
                 {t.sections.view_all}
               </Link>
             </div>
-            <div className="flex flex-col divide-y divide-[var(--border)]">
+            <div className="flex flex-col gap-3">
               {articles.length === 0 ? (
                 <p className="text-sm text-[var(--muted)] py-4">—</p>
               ) : (
@@ -83,9 +152,9 @@ export default async function HomePage({
                   <Link
                     key={article.slug}
                     href={`/${lang}/analisi/${article.slug}`}
-                    className="group py-4 flex flex-col gap-1"
+                    className="group card-surface p-4 flex flex-col gap-2"
                   >
-                    <div className="flex items-center gap-3 mb-1">
+                    <div className="flex items-center gap-3">
                       <EvidenceBadge grade={article.frontmatter.grado} />
                       <span className="font-mono text-[0.65rem] text-[var(--muted)] uppercase tracking-wider">
                         {article.frontmatter.molecola}
@@ -103,26 +172,30 @@ export default async function HomePage({
                 ))
               )}
             </div>
-          </div>
+          </Reveal>
 
           {/* Molecules */}
-          <div>
+          <Reveal delay={120}>
             <div className="flex items-baseline justify-between mb-6">
               <h2 className="font-sans font-medium text-xs tracking-widest uppercase text-[var(--muted)]">
                 {t.sections.latest_molecole}
               </h2>
               <Link
                 href={`/${lang}/molecole`}
-                className="font-mono text-xs text-[var(--accent)] hover:opacity-70 transition-opacity"
+                className="font-mono text-xs text-[var(--accent)] link-underline"
               >
                 {t.sections.view_all}
               </Link>
             </div>
-            <div className="flex flex-col divide-y divide-[var(--border)]">
+            <div className="card-surface divide-y divide-[var(--border)]">
               {molecules.map((mol) => (
-                <div key={mol.id} className="py-4 flex items-center justify-between gap-4">
+                <Link
+                  key={mol.id}
+                  href={`/${lang}/molecole`}
+                  className="group py-4 px-4 flex items-center justify-between gap-4 hover:bg-[var(--bg)] transition-colors first:rounded-t-lg last:rounded-b-lg"
+                >
                   <div>
-                    <p className="font-sans font-medium text-sm text-[var(--fg)]">
+                    <p className="font-sans font-medium text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
                       {lang === "en" ? mol.nome_en : mol.nome}
                     </p>
                     <p className="font-mono text-[0.65rem] text-[var(--muted)] mt-0.5">
@@ -130,11 +203,57 @@ export default async function HomePage({
                     </p>
                   </div>
                   <EvidenceBadge grade={mol.grado} />
-                </div>
+                </Link>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
+      </section>
+
+      {/* ============ METHOD PREVIEW ============ */}
+      <section className="border-y border-[var(--border)] bg-[var(--bg-elev)] relative overflow-hidden">
+        <div className="glow-orb -bottom-40 -left-20 w-[30rem] h-[30rem]" aria-hidden />
+        <div className="relative max-w-6xl mx-auto px-5 sm:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+          <Reveal>
+            <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-4">
+              {t.home.method_eyebrow}
+            </p>
+            <h2 className="font-sans font-medium text-2xl sm:text-3xl md:text-4xl tracking-[-0.02em] text-[var(--fg)] mb-4 text-balance">
+              {t.home.method_title}
+            </h2>
+            <p className="font-sans text-base text-[var(--muted)] leading-relaxed mb-7 max-w-lg text-pretty">
+              {t.home.method_subtitle}
+            </p>
+            <Link
+              href={`/${lang}/metodo`}
+              className="inline-flex items-center font-mono text-sm text-[var(--accent)] link-underline"
+            >
+              {t.home.method_cta}
+            </Link>
+          </Reveal>
+          <Reveal delay={120} className="flex justify-center lg:justify-end">
+            <NucleusMark size={210} orbits animated className="text-[var(--accent)]" />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ============ FINAL CTA ============ */}
+      <section className="max-w-6xl mx-auto px-5 sm:px-8 py-24">
+        <Reveal className="relative card-surface overflow-hidden px-6 sm:px-12 py-14 text-center">
+          <div className="glow-orb -top-24 left-1/2 -translate-x-1/2 w-[26rem] h-[26rem]" aria-hidden />
+          <div className="relative max-w-xl mx-auto">
+            <NucleusMark size={64} orbits animated className="text-[var(--accent)] mx-auto mb-6" />
+            <h2 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-3 text-balance">
+              {t.home.cta_title}
+            </h2>
+            <p className="font-sans text-base text-[var(--muted)] leading-relaxed mb-8 text-pretty">
+              {t.home.cta_subtitle}
+            </p>
+            <div className="max-w-md mx-auto">
+              <NewsletterForm lang={lang} t={t} />
+            </div>
+          </div>
+        </Reveal>
       </section>
     </>
   );
