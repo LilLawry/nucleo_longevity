@@ -208,3 +208,8 @@
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }
+
+/* Never hide content when JS can't run the IntersectionObserver. */
+@media (scripting: none) {
+  .reveal { opacity: 1 !important; transform: none !important; }
+}

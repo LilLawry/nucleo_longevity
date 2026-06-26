@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getLocale, isValidLang } from "@/lib/i18n";
 import { notFound } from "next/navigation";
+import PageHeader from "@/components/PageHeader";
 
 export async function generateMetadata({
   params,
@@ -22,9 +23,15 @@ export default async function PrivacyPage({
 
   return (
     <div className="max-w-3xl mx-auto px-5 sm:px-8 py-16 md:py-24">
-      <h1 className="font-sans font-medium text-4xl tracking-[-0.03em] text-[var(--fg)] mb-10">
-        {lang === "it" ? "Privacy & Cookie Policy" : "Privacy & Cookie Policy"}
-      </h1>
+      <PageHeader
+        eyebrow={lang === "it" ? "Legale" : "Legal"}
+        title="Privacy & Cookie Policy"
+        subtitle={
+          lang === "it"
+            ? "Come trattiamo i tuoi dati e quali cookie utilizziamo."
+            : "How we handle your data and which cookies we use."
+        }
+      />
       <div className="prose prose-sm max-w-none dark:prose-invert font-sans">
         {lang === "it" ? (
           <>

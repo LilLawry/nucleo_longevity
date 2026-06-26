@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getLocale, isValidLang } from "@/lib/i18n";
 import { notFound } from "next/navigation";
+import PageHeader from "@/components/PageHeader";
+import Reveal from "@/components/Reveal";
+import NucleusMark from "@/components/NucleusMark";
 
 export async function generateMetadata({
   params,
@@ -90,49 +94,58 @@ export default async function MetodoPage({
 
   return (
     <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 md:py-24">
-      <div className="max-w-2xl mb-16">
-        <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-4">
-          {t.nav.metodo}
-        </p>
-        <h1 className="font-sans font-medium text-4xl sm:text-5xl tracking-[-0.03em] text-[var(--fg)] mb-4">
-          {t.metodo.title}
-        </h1>
-        <p className="font-sans text-lg text-[var(--muted)] leading-relaxed">
-          {t.metodo.subtitle}
-        </p>
-      </div>
+      <PageHeader eyebrow={t.nav.metodo} title={t.metodo.title} subtitle={t.metodo.subtitle} />
 
-      <div className="flex flex-col gap-12 max-w-2xl">
-        {steps.map((step) => (
-          <div key={step.n} className="flex gap-8">
-            <div className="shrink-0 pt-0.5">
-              <span className="font-mono text-xs tracking-widest text-[var(--accent)]">
-                {step.n}
-              </span>
-            </div>
-            <div>
-              <h2 className="font-sans font-medium text-lg text-[var(--fg)] mb-2">
-                {step.titolo}
-              </h2>
-              <p className="font-sans text-sm text-[var(--muted)] leading-relaxed whitespace-pre-line">
-                {step.testo}
-              </p>
-            </div>
-          </div>
-        ))}
+      {/* Timeline */}
+      <div className="relative max-w-2xl">
+        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-[var(--border)]" aria-hidden />
+        <div className="flex flex-col gap-10">
+          {steps.map((step, i) => (
+            <Reveal key={step.n} delay={i * 70}>
+              <div className="relative flex gap-7 pl-8">
+                <span
+                  className="absolute left-0 top-1.5 w-3.5 h-3.5 rounded-full border-2 border-[var(--accent)] bg-[var(--bg)]"
+                  aria-hidden
+                />
+                <div>
+                  <span className="font-mono text-xs tracking-widest text-[var(--accent)] block mb-1">
+                    {step.n}
+                  </span>
+                  <h2 className="font-sans font-medium text-lg text-[var(--fg)] mb-2">
+                    {step.titolo}
+                  </h2>
+                  <p className="font-sans text-sm text-[var(--muted)] leading-relaxed whitespace-pre-line">
+                    {step.testo}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
 
       {/* Author bio */}
-      <div className="mt-20 max-w-2xl border-t border-[var(--border)] pt-10">
-        <p className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] mb-3">
-          {lang === "it" ? "Chi siamo" : "About"}
-        </p>
-        <p className="font-sans text-sm text-[var(--muted)] leading-relaxed">
-          {lang === "it"
-            ? "Redazione Nucleo è un team editoriale con formazione in biochimica, medicina e comunicazione scientifica. Per preservare l'indipendenza editoriale, manteniamo l'anonimato degli autori individuali. Ogni analisi è revisionata da almeno due membri del team prima della pubblicazione."
-            : "Nucleo editorial team has backgrounds in biochemistry, medicine and science communication. To preserve editorial independence, we maintain author anonymity. Each analysis is reviewed by at least two team members before publication."}
-        </p>
-      </div>
+      <Reveal className="mt-20 max-w-2xl">
+        <div className="card-surface p-7 flex flex-col sm:flex-row gap-6 items-start">
+          <NucleusMark size={40} className="text-[var(--accent)] shrink-0" />
+          <div>
+            <p className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] mb-2">
+              {lang === "it" ? "Chi siamo" : "About"}
+            </p>
+            <p className="font-sans text-sm text-[var(--muted)] leading-relaxed">
+              {lang === "it"
+                ? "Redazione Nucleo è un team editoriale con formazione in biochimica, medicina e comunicazione scientifica. Per preservare l'indipendenza editoriale, manteniamo l'anonimato degli autori individuali. Ogni analisi è revisionata da almeno due membri del team prima della pubblicazione."
+                : "Nucleo editorial team has backgrounds in biochemistry, medicine and science communication. To preserve editorial independence, we maintain author anonymity. Each analysis is reviewed by at least two team members before publication."}
+            </p>
+            <Link
+              href={`/${lang}/chi-siamo`}
+              className="inline-flex items-center mt-4 font-mono text-xs text-[var(--accent)] link-underline"
+            >
+              {lang === "it" ? "Scopri di più →" : "Learn more →"}
+            </Link>
+          </div>
+        </div>
+      </Reveal>
     </div>
   );
 }
