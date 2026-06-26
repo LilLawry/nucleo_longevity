@@ -39,7 +39,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nucleolongevity.com"),
+  metadataBase: new URL("https://www.nucleolongevity.com"),
   title: {
     default: "Nucleo Longevity — Dati clinici. Zero filtri di marketing.",
     template: "%s · Nucleo Longevity",

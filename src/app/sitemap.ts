@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/articles";
 import { langs } from "@/lib/i18n";
 
-const BASE_URL = "https://nucleolongevity.com";
+const BASE_URL = "https://www.nucleolongevity.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();

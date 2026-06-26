@@ -16,8 +16,10 @@ export async function generateMetadata({
   const { lang } = await params;
   const t = getLocale(lang as "it" | "en");
   return {
-    title: `Nucleo Longevity — ${t.hero.headline.replace("\n", " ")}`,
+    // The root template appends " · Nucleo Longevity", so don't repeat the brand.
+    title: { absolute: `Nucleo Longevity — ${t.hero.headline.replace("\n", " ")}` },
     description: t.hero.subline,
+    alternates: { canonical: `/${lang}` },
   };
 }
 
