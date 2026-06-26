@@ -1,19 +1,33 @@
-import NucleusMark from "./NucleusMark";
+import Image from "next/image";
 
 /**
- * Wordmark — the Nucleo lockup with the brand symbol forming the "O" of NUCLEO.
- * "NUCLE◉ · LONGEVITY". Uses currentColor for the text; the symbol picks up the
- * accent. Sizes scale from the surrounding font-size.
+ * Wordmark — the official Nucleo Longevity lockup (NUCLEO with the nucleus as
+ * the "O", LONGEVITY tracked beneath). Uses the brand PNG assets verbatim and
+ * swaps ink/white by theme via CSS so there is no hydration flash.
+ *
+ * Control the rendered size with a height utility in `className`
+ * (e.g. "h-9 w-auto"); the assets keep their 1884×1005 aspect ratio.
  */
-export default function Wordmark({ className = "" }: { className?: string }) {
+export default function Wordmark({ className = "h-9 w-auto", priority = false }: { className?: string; priority?: boolean }) {
   return (
-    <span
-      className={`inline-flex items-center font-sans font-medium uppercase tracking-[0.18em] leading-none text-[var(--fg)] ${className}`}
-    >
-      <span>NUCLE</span>
-      <NucleusMark size="1em" className="mx-[0.04em] -translate-y-[0.01em] text-[var(--accent)]" />
-      <span className="text-[var(--accent)] mx-[0.35em]">·</span>
-      <span>LONGEVITY</span>
-    </span>
+    <>
+      <Image
+        src="/wordmark-ink.png"
+        alt="Nucleo Longevity"
+        width={1884}
+        height={1005}
+        priority={priority}
+        className={`${className} block dark:hidden`}
+      />
+      <Image
+        src="/wordmark-white.png"
+        alt="Nucleo Longevity"
+        width={1884}
+        height={1005}
+        priority={priority}
+        aria-hidden
+        className={`${className} hidden dark:block`}
+      />
+    </>
   );
 }

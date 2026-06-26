@@ -184,27 +184,43 @@
   }
 }
 
-/* ---------- Nucleus logo animation ---------- */
-.nucleus-electron {
-  offset-distance: 0%;
-  animation: nucleus-travel 8.1s linear infinite;
-}
+/* ---------- Nucleus core pulse ---------- */
 .nucleus-core {
   transform-box: fill-box;
   transform-origin: center;
   animation: nucleus-pulse 3s ease-in-out infinite;
 }
-
-@keyframes nucleus-travel {
-  to { offset-distance: 100%; }
-}
 @keyframes nucleus-pulse {
   0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.28); opacity: 0.78; }
+  50% { transform: scale(1.22); opacity: 0.8; }
+}
+
+/* ---------- Brand aura: concentric rings radiating from the nucleus ---------- */
+.nucleus-aura { position: relative; display: inline-flex; }
+.nucleus-aura::before,
+.nucleus-aura::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 62%;
+  height: 62%;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+  animation: nucleus-sonar 4.5s ease-out infinite;
+  pointer-events: none;
+}
+.nucleus-aura::after { animation-delay: 2.25s; }
+@keyframes nucleus-sonar {
+  0%   { transform: scale(0.55); opacity: 0.5; }
+  70%  { opacity: 0.08; }
+  100% { transform: scale(1.7); opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .nucleus-electron, .nucleus-core { animation: none; }
+  .nucleus-core { animation: none; }
+  .nucleus-aura::before, .nucleus-aura::after { animation: none; opacity: 0; }
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }

@@ -39,10 +39,10 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
         {/* Logo */}
         <Link
           href={`/${lang}`}
-          className="group flex items-center shrink-0"
+          className="flex items-center shrink-0 hover:opacity-80 transition-opacity"
           aria-label="Nucleo Longevity — home"
         >
-          <Wordmark className="text-sm [&_svg]:transition-transform [&_svg]:duration-500 group-hover:[&_svg]:rotate-180" />
+          <Wordmark className="h-9 w-auto" priority />
         </Link>
 
         {/* Desktop nav */}
