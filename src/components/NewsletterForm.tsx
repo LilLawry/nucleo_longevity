@@ -9,26 +9,48 @@ interface Props {
   showRole?: boolean;
 }
 
-export default function NewsletterForm({ t, compact, showRole }: Props) {
+type Status = "idle" | "loading" | "pending" | "error";
+
+export default function NewsletterForm({ lang, t, compact, showRole }: Props) {
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const it = lang !== "en";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Integration point for email service
-    setSubmitted(true);
+    if (status === "loading") return;
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, lang, role }),
+      });
+      if (res.ok) setStatus("pending");
+      else setStatus("error");
+    } catch {
+      setStatus("error");
+    }
   };
 
-  if (submitted) {
+  if (status === "pending") {
     return (
-      <div className="flex items-center gap-2.5 border border-[var(--accent)] rounded bg-[rgba(17,96,95,0.06)] px-4 py-3">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="20 6 9 17 4 12" />
+      <div className="flex items-start gap-2.5 border border-[var(--accent)] rounded bg-[rgba(17,96,95,0.06)] px-4 py-3">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0">
+          <path d="M4 4h16v16H4z" /><polyline points="4 6 12 13 20 6" />
         </svg>
-        <p className="font-mono text-xs text-[var(--accent)] tracking-wide">
-          {t.capture.button === "Subscribe" ? "Subscription confirmed" : "Iscrizione confermata"}
-        </p>
+        <div>
+          <p className="font-sans text-sm font-medium text-[var(--fg)]">
+            {it ? "Controlla la tua email" : "Check your inbox"}
+          </p>
+          <p className="font-mono text-[0.65rem] text-[var(--muted)] mt-0.5">
+            {it
+              ? "Ti abbiamo inviato un link di conferma."
+              : "We sent you a confirmation link."}
+          </p>
+        </div>
       </div>
     );
   }
@@ -62,12 +84,22 @@ export default function NewsletterForm({ t, compact, showRole }: Props) {
         />
         <button
           type="submit"
-          className="btn-accent font-sans font-medium text-sm px-5 py-2.5 whitespace-nowrap"
+          disabled={status === "loading"}
+          className="btn-accent font-sans font-medium text-sm px-5 py-2.5 whitespace-nowrap disabled:opacity-60 disabled:cursor-wait"
         >
-          {compact ? t.footer.newsletter_button : t.capture.button}
+          {status === "loading"
+            ? it ? "Invio…" : "Sending…"
+            : compact ? t.footer.newsletter_button : t.capture.button}
         </button>
       </div>
-      {!compact && (
+      {status === "error" && (
+        <p className="font-mono text-[0.65rem] text-[#C45C5C]">
+          {it
+            ? "Qualcosa è andato storto. Riprova tra poco."
+            : "Something went wrong. Please try again shortly."}
+        </p>
+      )}
+      {!compact && status !== "error" && (
         <p className="font-mono text-[0.65rem] text-[var(--muted)]">{t.capture.disclaimer}</p>
       )}
     </form>
