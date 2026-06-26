@@ -26,6 +26,8 @@ const en: Locale = {
     view_all: "View all →",
   },
   home: {
+    masthead: ["Independent evidence", "Founded 2026", "IT / EN"],
+    guide_hook: "Subscribe and get the longevity molecules guide — A–F grades and PubMed sources.",
     trust_independent: "Editorially independent",
     trust_pubmed: "Verified PubMed sources",
     trust_nohype: "Zero hype, only data",

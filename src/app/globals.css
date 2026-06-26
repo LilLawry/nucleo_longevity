@@ -195,6 +195,19 @@
   50% { transform: scale(1.22); opacity: 0.8; }
 }
 
+/* ---------- Marquee ticker ---------- */
+.marquee { overflow: hidden; }
+.marquee__track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 38s linear infinite;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 /* ---------- Brand aura: concentric rings radiating from the nucleus ---------- */
 .nucleus-aura { position: relative; display: inline-flex; }
 .nucleus-aura::before,

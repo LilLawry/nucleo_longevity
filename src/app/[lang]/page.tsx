@@ -42,7 +42,23 @@ export default async function HomePage({
         <div className="glow-orb -top-32 -left-24 w-[34rem] h-[34rem]" aria-hidden />
         <div className="glow-orb top-10 -right-32 w-[28rem] h-[28rem]" aria-hidden />
 
-        <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-20 pb-20 md:pt-28 md:pb-28">
+        {/* Editorial masthead */}
+        <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
+          <div className="flex items-center gap-3 sm:gap-4 py-3 border-b border-[var(--border)] font-mono text-[0.6rem] sm:text-[0.65rem] tracking-widest uppercase text-[var(--muted)]">
+            {t.home.masthead.map((m, i) => (
+              <span key={m} className="flex items-center gap-3 sm:gap-4">
+                {i > 0 && <span className="text-[var(--accent)]">/</span>}
+                {m}
+              </span>
+            ))}
+            <span className="ml-auto flex items-center gap-2 text-[var(--accent)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
+              <span className="hidden sm:inline">PubMed</span>
+            </span>
+          </div>
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-14 pb-20 md:pt-20 md:pb-28">
           <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
             {/* Copy */}
             <div className="max-w-2xl">
@@ -62,6 +78,12 @@ export default async function HomePage({
 
               <div className="max-w-md">
                 <NewsletterForm lang={lang} t={t} showRole />
+                <p className="mt-3 flex items-start gap-2 font-mono text-[0.65rem] text-[var(--muted)] leading-relaxed">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" />
+                  </svg>
+                  {t.home.guide_hook}
+                </p>
               </div>
 
               {/* Trust chips */}
@@ -103,6 +125,23 @@ export default async function HomePage({
           ))}
         </div>
       </section>
+
+      {/* ============ MOLECULE TICKER ============ */}
+      <div className="marquee border-b border-[var(--border)] py-3" aria-hidden>
+        <div className="marquee__track">
+          {[0, 1].map((dup) => (
+            <div key={dup} className="flex items-center">
+              {MOLECULES.map((m) => (
+                <span key={dup + m.id} className="flex items-center gap-3 px-6 font-mono text-[0.7rem] uppercase tracking-widest text-[var(--muted)]">
+                  <span className="text-[var(--fg)]">{lang === "en" ? m.nome_en : m.nome}</span>
+                  <span className="text-[var(--accent)]">{m.grado}</span>
+                  <span className="text-[var(--border)]">·</span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* ============ EVIDENCE LEGEND ============ */}
       <section className="max-w-6xl mx-auto px-5 sm:px-8 py-20">

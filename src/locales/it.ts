@@ -24,6 +24,8 @@ const it = {
     view_all: "Vedi tutto →",
   },
   home: {
+    masthead: ["Evidenza indipendente", "Fondato nel 2026", "IT / EN"],
+    guide_hook: "Iscriviti e ricevi la guida alle molecole longevity — gradi A–F e fonti PubMed.",
     trust_independent: "Editorialmente indipendente",
     trust_pubmed: "Fonti PubMed verificate",
     trust_nohype: "Zero hype, solo dati",
