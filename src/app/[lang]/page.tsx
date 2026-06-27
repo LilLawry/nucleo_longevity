@@ -44,8 +44,6 @@ export default async function HomePage({
       {/* ============ HERO ============ */}
       <section className="relative overflow-hidden border-b border-[var(--border)]">
         <div className="absolute inset-0 grid-surface" aria-hidden />
-        <div className="glow-orb -top-32 -left-24 w-[34rem] h-[34rem]" aria-hidden />
-        <div className="glow-orb top-10 -right-32 w-[28rem] h-[28rem]" aria-hidden />
 
         {/* Editorial masthead */}
         <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
@@ -106,9 +104,8 @@ export default async function HomePage({
 
             {/* Brand nucleus with radiating aura */}
             <div className="hidden lg:flex items-center justify-center">
-              <div className="relative nucleus-aura">
-                <div className="glow-orb inset-0 w-full h-full" aria-hidden />
-                <NucleusMark size={300} animated glow className="text-[var(--accent)] relative" />
+              <div className="relative">
+                <NucleusMark size={300} animated className="text-[var(--accent)]" />
               </div>
             </div>
           </div>
@@ -235,7 +232,7 @@ export default async function HomePage({
               {molecules.map((mol) => (
                 <Link
                   key={mol.id}
-                  href={`/${lang}/molecole/${mol.id}`}
+                  href={`/${lang}/molecola/${mol.id}`}
                   className="group py-4 px-4 flex items-center justify-between gap-4 hover:bg-[var(--bg)] transition-colors first:rounded-t-lg last:rounded-b-lg"
                 >
                   <div>
@@ -256,7 +253,6 @@ export default async function HomePage({
 
       {/* ============ METHOD PREVIEW ============ */}
       <section className="border-y border-[var(--border)] bg-[var(--bg-elev)] relative overflow-hidden">
-        <div className="glow-orb -bottom-40 -left-20 w-[30rem] h-[30rem]" aria-hidden />
         <div className="relative max-w-6xl mx-auto px-5 sm:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
           <Reveal>
             <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-4">
@@ -276,9 +272,7 @@ export default async function HomePage({
             </Link>
           </Reveal>
           <Reveal delay={120} className="flex justify-center lg:justify-end">
-            <span className="nucleus-aura">
-              <NucleusMark size={180} animated glow className="text-[var(--accent)]" />
-            </span>
+            <NucleusMark size={170} animated className="text-[var(--accent)]" />
           </Reveal>
         </div>
       </section>
@@ -286,7 +280,6 @@ export default async function HomePage({
       {/* ============ FINAL CTA ============ */}
       <section className="max-w-6xl mx-auto px-5 sm:px-8 py-24">
         <Reveal className="relative card-surface overflow-hidden px-6 sm:px-12 py-14 text-center">
-          <div className="glow-orb -top-24 left-1/2 -translate-x-1/2 w-[26rem] h-[26rem]" aria-hidden />
           <div className="relative max-w-xl mx-auto">
             <NucleusMark size={56} animated className="text-[var(--accent)] mx-auto mb-6" />
             <h2 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-3 text-balance">

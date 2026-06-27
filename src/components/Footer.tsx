@@ -21,6 +21,7 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
             {t.footer.explore_label}
           </p>
           {[
+            { href: `/${lang}/database`, label: t.nav.database },
             { href: `/${lang}/molecole`, label: t.nav.molecole },
             { href: `/${lang}/analisi`, label: t.nav.analisi },
             { href: `/${lang}/metodo`, label: t.nav.metodo },

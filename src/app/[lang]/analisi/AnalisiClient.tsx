@@ -50,7 +50,7 @@ export default function AnalisiClient({ lang, t, items, categories }: Props) {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder={lang === "it" ? "Cerca analisi, molecola…" : "Search analysis, molecule…"}
-        className="w-full sm:max-w-sm bg-[var(--bg)] border border-[var(--border)] rounded text-[var(--fg)] text-sm px-4 py-2.5 font-sans placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--glow)] transition-all mb-6"
+        className="w-full sm:max-w-sm bg-[var(--bg)] border border-[var(--border)] rounded text-[var(--fg)] text-sm px-4 py-2.5 font-sans placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] transition-all mb-6"
       />
 
       {/* Category chips */}

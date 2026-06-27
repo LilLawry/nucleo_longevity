@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import {
+  CONSENT_TEXT,
   isConfigured,
   isValidEmail,
   makeToken,
@@ -31,10 +32,12 @@ function confirmEmailHtml(confirmUrl: string, lang: string) {
 export async function POST(req: Request) {
   let email = "";
   let lang = "it";
+  let consent = false;
   try {
     const data = await req.json();
     email = String(data.email || "").trim().toLowerCase();
     lang = data.lang === "en" ? "en" : "it";
+    consent = data.consent === true;
   } catch {
     return NextResponse.json({ error: "bad_request" }, { status: 400 });
   }
@@ -42,6 +45,22 @@ export async function POST(req: Request) {
   if (!isValidEmail(email)) {
     return NextResponse.json({ error: "invalid_email" }, { status: 422 });
   }
+  // GDPR: explicit consent is mandatory.
+  if (!consent) {
+    return NextResponse.json({ error: "consent_required" }, { status: 422 });
+  }
+  // Consent log (timestamp + accepted text). Server log = auditable record;
+  // the signed token also carries the request timestamp through to confirm.
+  console.info(
+    "[consent]",
+    JSON.stringify({
+      email,
+      lang,
+      consentText: CONSENT_TEXT[lang as "it" | "en"],
+      at: new Date().toISOString(),
+      ip: req.headers.get("x-forwarded-for") || "n/a",
+    })
+  );
 
   if (!isConfigured()) {
     // Fail loudly in logs so the operator knows to set env vars, but don't

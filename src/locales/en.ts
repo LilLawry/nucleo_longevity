@@ -2,6 +2,7 @@ import type { Locale } from "./it";
 
 const en: Locale = {
   nav: {
+    database: "Database",
     molecole: "Molecules",
     analisi: "Analysis",
     metodo: "Method",

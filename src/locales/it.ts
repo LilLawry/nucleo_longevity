@@ -1,5 +1,6 @@
 const it = {
   nav: {
+    database: "Database",
     molecole: "Molecole",
     analisi: "Analisi",
     metodo: "Metodo",

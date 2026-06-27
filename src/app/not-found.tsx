@@ -5,9 +5,8 @@ export default function NotFound() {
   return (
     <main className="min-h-screen flex items-center justify-center px-5 relative overflow-hidden">
       <div className="absolute inset-0 grid-surface" aria-hidden />
-      <div className="glow-orb top-1/4 left-1/2 -translate-x-1/2 w-[28rem] h-[28rem]" aria-hidden />
       <div className="relative text-center max-w-md">
-        <NucleusMark size={88} animated glow className="text-[var(--accent)] mx-auto mb-8" />
+        <NucleusMark size={80} animated className="text-[var(--accent)] mx-auto mb-8" />
         <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-3">
           Error 404
         </p>
