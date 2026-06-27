@@ -114,7 +114,7 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
         <div className="flex gap-12 lg:gap-16 items-start" ref={contentRef}>
           <div className="flex-1 min-w-0">
             {/* Article body */}
-            <div className="prose prose-sm sm:prose max-w-none dark:prose-invert">
+            <div className="prose prose-sm sm:prose max-w-[68ch] dark:prose-invert">
               {children}
             </div>
 

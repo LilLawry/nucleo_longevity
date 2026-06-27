@@ -185,3 +185,80 @@
 @media (scripting: none) {
   .reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* ─────────────────────────────────────────────────────────────
+   Bespoke editorial craft — analog/print signals, not a template
+   ───────────────────────────────────────────────────────────── */
+
+/* Fine print grain over the whole page (very subtle) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.dark body::before { mix-blend-mode: screen; opacity: 0.05; }
+@media (prefers-reduced-motion: reduce) { body::before { display: none; } }
+
+/* Hanging punctuation where supported (Safari) */
+html { hanging-punctuation: first allow-end last; }
+
+/* Editorial body typesetting for long-form prose */
+.prose {
+  text-rendering: optimizeLegibility;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+.prose :where(table, code, .tabular) { font-variant-numeric: tabular-nums lining-nums; }
+
+/* Drop cap on the opening paragraph */
+.prose > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-weight: 500;
+  font-size: 3.35em;
+  line-height: 0.74;
+  margin: 0.04em 0.09em 0 0;
+  color: var(--accent);
+}
+
+/* Registration / crop marks (print reference motif) */
+.cropmarks { position: relative; }
+.cropmarks::before,
+.cropmarks::after {
+  content: "";
+  position: absolute;
+  width: 9px; height: 9px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.cropmarks::before {
+  top: 0; left: 0;
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+}
+.cropmarks::after {
+  bottom: 0; right: 0;
+  border-bottom: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+}
+
+/* Labelled hairline rule */
+.rule-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-plex-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.rule-label::before,
+.rule-label::after { content: ""; height: 1px; background: var(--border); flex: 1; }

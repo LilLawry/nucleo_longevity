@@ -67,6 +67,11 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
             {t.footer.affiliate}
           </p>
           <p className="font-mono text-[0.65rem] text-[var(--muted)] mt-3">{t.footer.rights}</p>
+          <p className="font-mono text-[0.6rem] text-[var(--muted)] mt-4 opacity-70">
+            {lang === "it"
+              ? "Composto in Hanken Grotesk, Newsreader e IBM Plex Mono. Evidenza da PubMed. Fatto a mano in Italia."
+              : "Set in Hanken Grotesk, Newsreader and IBM Plex Mono. Evidence from PubMed. Handmade in Italy."}
+          </p>
         </div>
       </div>
     </footer>
