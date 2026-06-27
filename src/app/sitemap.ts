@@ -17,7 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const molecules = getAllMolecules();
   const staticPages = [
-    "", "/database", "/molecole", "/analisi", "/metodo", "/chi-siamo",
+    "", "/database", "/molecole", "/analisi", "/method", "/chi-siamo",
+    "/connect", "/connect/brands", "/connect/reps",
     "/contatti", "/contribuisci", "/disclaimer", "/termini", "/privacy",
   ];
 
@@ -32,9 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Molecule pages: freshness = molecule lastReviewed, else baseline.
   const moleculeEntries = langs.flatMap((lang) =>
     molecules.map((m) => ({
-      url: `${BASE_URL}/${lang}/molecola/${m.slug}`,
+      url: `${BASE_URL}/${lang}/molecule/${m.slug}`,
       lastModified: m.lastReviewed ? new Date(m.lastReviewed) : siteUpdated,
-      alternates: langAlternates(`/molecola/${m.slug}`),
+      alternates: langAlternates(`/molecule/${m.slug}`),
     }))
   );
 

@@ -14,8 +14,8 @@ const orgJsonLd = {
   url: SITE,
   logo: `${SITE}/apple-touch-icon.png`,
   description:
-    "Analisi indipendente di studi su molecole e integratori per la longevità. Evidenza graduata A–F, fonti PubMed.",
-  slogan: "Dati clinici. Zero filtri di marketing.",
+    "Independent analysis of studies on longevity molecules and supplements. A–F graded evidence, PubMed sources.",
+  slogan: "Clinical data. Zero marketing filters.",
 };
 const siteJsonLd = {
   "@context": "https://schema.org",
@@ -50,15 +50,15 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nucleolongevity.com"),
   title: {
-    default: "Nucleo Longevity — Dati clinici. Zero filtri di marketing.",
+    default: "Nucleo Longevity — Clinical data. Zero marketing filters.",
     template: "%s · Nucleo Longevity",
   },
   description:
-    "Analisi indipendente di studi su molecole e integratori per la longevità. Evidenza graduata, niente hype.",
+    "Independent analysis of studies on longevity molecules and supplements. Graded evidence, no hype.",
   openGraph: {
     type: "website",
-    locale: "it_IT",
-    alternateLocale: "en_US",
+    locale: "en_US",
+    alternateLocale: "it_IT",
     siteName: "Nucleo Longevity",
   },
   twitter: {
@@ -89,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={`${hanken.variable} ${plexMono.variable} ${newsreader.variable}`}>
         <JsonLd data={orgJsonLd} />
         <JsonLd data={siteJsonLd} />

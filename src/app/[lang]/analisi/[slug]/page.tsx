@@ -37,7 +37,7 @@ export async function generateMetadata({
       languages: {
         it: `/it/analisi/${slug}`,
         en: `/en/analisi/${slug}`,
-        "x-default": `/it/analisi/${slug}`,
+        "x-default": `/en/analisi/${slug}`,
       },
     },
     openGraph: {

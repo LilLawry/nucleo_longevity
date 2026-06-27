@@ -24,7 +24,7 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
   const navLinks = [
     { href: `/${lang}/database`, label: t.nav.database },
     { href: `/${lang}/analisi`, label: t.nav.analisi },
-    { href: `/${lang}/metodo`, label: t.nav.metodo },
+    { href: `/${lang}/method`, label: t.nav.metodo },
   ];
 
   return (
@@ -56,6 +56,13 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
               {link.label}
             </Link>
           ))}
+          <span className="w-px h-4 bg-[var(--border)]" aria-hidden />
+          <Link
+            href={`/${lang}/connect`}
+            className="font-sans text-sm font-medium text-[var(--accent)] hover:text-[var(--accent-dark)] transition-colors tracking-wide link-underline"
+          >
+            {t.nav.connect}
+          </Link>
         </nav>
 
         {/* Controls */}
@@ -119,6 +126,13 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
               {link.label}
             </Link>
           ))}
+          <Link
+            href={`/${lang}/connect`}
+            onClick={() => setMenuOpen(false)}
+            className="font-sans text-sm font-medium text-[var(--accent)] py-1 tracking-wide border-t border-[var(--border)] pt-3 mt-1"
+          >
+            {t.nav.connect}
+          </Link>
         </nav>
       )}
     </header>

@@ -98,7 +98,7 @@ export default async function ChiSiamoPage({
       </div>
 
       <Link
-        href={`/${lang}/metodo`}
+        href={`/${lang}/method`}
         className="inline-flex items-center mt-10 font-mono text-sm text-[var(--accent)] link-underline"
       >
         {c.cta}

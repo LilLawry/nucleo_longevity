@@ -21,7 +21,7 @@ export async function generateMetadata({
     description: t.hero.subline,
     alternates: {
       canonical: `/${lang}`,
-      languages: { it: "/it", en: "/en", "x-default": "/it" },
+      languages: { it: "/it", en: "/en", "x-default": "/en" },
     },
   };
 }
@@ -232,7 +232,7 @@ export default async function HomePage({
               {molecules.map((mol) => (
                 <Link
                   key={mol.id}
-                  href={`/${lang}/molecola/${mol.id}`}
+                  href={`/${lang}/molecule/${mol.id}`}
                   className="group py-4 px-4 flex items-center justify-between gap-4 hover:bg-[var(--bg)] transition-colors first:rounded-t-lg last:rounded-b-lg"
                 >
                   <div>
@@ -265,7 +265,7 @@ export default async function HomePage({
               {t.home.method_subtitle}
             </p>
             <Link
-              href={`/${lang}/metodo`}
+              href={`/${lang}/method`}
               className="inline-flex items-center font-mono text-sm text-[var(--accent)] link-underline"
             >
               {t.home.method_cta}
