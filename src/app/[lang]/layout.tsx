@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import ThemeProvider from "@/components/ThemeProvider";
 import BackToTop from "@/components/BackToTop";
+import HtmlLang from "@/components/HtmlLang";
 
 export async function generateStaticParams() {
   return [{ lang: "it" }, { lang: "en" }];
@@ -46,6 +47,7 @@ export default async function LangLayout({
 
   return (
     <ThemeProvider>
+      <HtmlLang lang={lang} />
       <Header lang={lang} t={t} />
       <main className="min-h-screen">{children}</main>
       <Footer lang={lang} t={t} />

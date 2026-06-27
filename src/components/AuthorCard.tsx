@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Author } from "@/lib/authors";
 import NucleusMark from "./NucleusMark";
 
@@ -33,21 +34,22 @@ export default function AuthorCard({ author, lang }: { author: Author; lang: str
         <p className="font-sans text-sm text-[var(--muted)] leading-relaxed">
           {it ? author.bio.it : author.bio.en}
         </p>
-        {author.links && author.links.length > 0 && (
-          <div className="flex flex-wrap gap-3 mt-3">
-            {author.links.map((href) => (
-              <a
-                key={href}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer me"
-                className="font-mono text-[0.65rem] text-[var(--accent)] link-underline"
-              >
-                {new URL(href).hostname.replace("www.", "")} ↗
-              </a>
-            ))}
-          </div>
-        )}
+        <div className="flex flex-wrap gap-4 mt-3">
+          <Link href={`/${lang}/chi-siamo`} className="font-mono text-[0.65rem] text-[var(--accent)] link-underline">
+            {it ? "Il team e il metodo →" : "The team & method →"}
+          </Link>
+          {author.links?.map((href) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer me"
+              className="font-mono text-[0.65rem] text-[var(--accent)] link-underline"
+            >
+              {new URL(href).hostname.replace("www.", "")} ↗
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
