@@ -61,7 +61,7 @@ export default async function HomePage({
           </div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-5 sm:px-8 pt-14 pb-20 md:pt-20 md:pb-28">
+        <div className="cropmarks relative max-w-6xl mx-auto px-5 sm:px-8 pt-14 pb-20 md:pt-20 md:pb-28">
           <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
             {/* Copy */}
             <div className="max-w-2xl">
