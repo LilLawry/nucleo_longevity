@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { isValidLang, getLocale, langs } from "@/lib/i18n";
 import { getAllMolecules, getMoleculeBySlug } from "@/lib/molecole";
@@ -80,7 +81,12 @@ export default async function MoleculePage({
     url: `${SITE}/${lang}/molecule/${slug}`,
     lastReviewed: m.lastReviewed || undefined,
     audience: { "@type": "MedicalAudience", audienceType: "Patient" },
-    about: { "@type": "Substance", name: m.name, alternateName: m.aliases },
+    about: {
+      "@type": "Substance",
+      name: m.name,
+      alternateName: m.aliases,
+      ...(m.structure ? { image: `${SITE}/molecules/${m.slug}.png` } : {}),
+    },
     author: { "@type": "Organization", name: "Redazione Nucleo", url: `${SITE}/${lang}/chi-siamo` },
     publisher: { "@type": "Organization", name: "Nucleo Longevity", logo: { "@type": "ImageObject", url: `${SITE}/apple-touch-icon.png` } },
     citation: m.keyStudies.filter((s) => s.pmid).map((s) => ({ "@type": "CreativeWork", "@id": PUBMED(s.pmid as string), url: PUBMED(s.pmid as string), name: s.title })),
@@ -126,15 +132,31 @@ export default async function MoleculePage({
           )}
           <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-xl">{m.claim}</p>
         </div>
-        {/* Grade block */}
-        <div className="shrink-0 border border-[var(--border)] p-5 min-w-[150px]">
-          <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--muted)] mb-2">{L.grade}</p>
-          {m.grade ? (
-            <div className="font-sans font-medium text-5xl text-[var(--accent)] tabular leading-none mb-1">{m.grade}</div>
-          ) : (
-            <div className="font-mono text-xs text-[var(--muted)] mb-2">{L.underReview}</div>
+        {/* Structure + grade */}
+        <div className="flex flex-row md:flex-col gap-4 shrink-0">
+          {m.structure && (
+            <figure className="border border-[var(--border)] bg-white p-2 w-[150px] shrink-0">
+              <Image
+                src={`/molecules/${m.slug}.png`}
+                alt={`${m.name} — 2D chemical structure`}
+                width={500}
+                height={500}
+                className="w-full h-auto"
+              />
+              <figcaption className="font-mono text-[0.5rem] uppercase tracking-widest text-[#5C6669] text-center mt-1 pb-0.5">
+                {it ? "Struttura · PubChem" : "Structure · PubChem"}
+              </figcaption>
+            </figure>
           )}
-          {m.grade && <p className="font-mono text-[0.6rem] uppercase tracking-wide text-[var(--muted)]">{t.grades[m.grade as keyof typeof t.grades]}</p>}
+          <div className="border border-[var(--border)] p-5 min-w-[120px] self-start">
+            <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--muted)] mb-2">{L.grade}</p>
+            {m.grade ? (
+              <div className="font-sans font-medium text-5xl text-[var(--accent)] tabular leading-none mb-1">{m.grade}</div>
+            ) : (
+              <div className="font-mono text-xs text-[var(--muted)] mb-2">{L.underReview}</div>
+            )}
+            {m.grade && <p className="font-mono text-[0.6rem] uppercase tracking-wide text-[var(--muted)]">{t.grades[m.grade as keyof typeof t.grades]}</p>}
+          </div>
         </div>
       </header>
 

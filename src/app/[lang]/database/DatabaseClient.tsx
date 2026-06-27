@@ -1,6 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import EvidenceBadge from "@/components/EvidenceBadge";
 
 export interface Row {
@@ -12,6 +13,7 @@ export interface Row {
   evidenceStrength: string;
   lastReviewed: string;
   status: string;
+  structure?: boolean;
 }
 
 const GRADE_RANK: Record<string, number> = { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5, "": 9 };
@@ -102,8 +104,17 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
             {filtered.map((r) => (
               <tr key={r.slug} className="border-b border-[var(--border)] hover:bg-[var(--bg-elev)] transition-colors">
                 <td className="py-3 pr-4">
-                  <Link href={`/${lang}/molecule/${r.slug}`} className="font-sans font-medium text-[var(--fg)] hover:text-[var(--accent)] transition-colors">
-                    {r.name}
+                  <Link href={`/${lang}/molecule/${r.slug}`} className="group/r flex items-center gap-3">
+                    {r.structure ? (
+                      <span className="shrink-0 w-8 h-8 border border-[var(--border)] bg-white flex items-center justify-center">
+                        <Image src={`/molecules/${r.slug}.png`} alt="" width={32} height={32} className="w-7 h-7 object-contain" />
+                      </span>
+                    ) : (
+                      <span className="shrink-0 w-8 h-8 border border-[var(--border)]" aria-hidden />
+                    )}
+                    <span className="font-sans font-medium text-[var(--fg)] group-hover/r:text-[var(--accent)] transition-colors">
+                      {r.name}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 pr-4 font-mono text-[0.7rem] uppercase tracking-wide text-[var(--muted)]">{r.class}</td>

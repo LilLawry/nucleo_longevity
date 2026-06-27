@@ -31,6 +31,8 @@ export interface Molecule {
   relatedMolecules: string[];
   lastReviewed: string;
   status: "published" | "draft";
+  /** has a real 2D structure image at /public/molecules/<slug>.png */
+  structure: boolean;
   body: string;
 }
 
@@ -58,6 +60,7 @@ function parse(file: string): Molecule {
     relatedMolecules: data.relatedMolecules || [],
     lastReviewed: data.lastReviewed || "",
     status: data.status === "draft" ? "draft" : "published",
+    structure: data.structure !== false,
     body: content.trim(),
   };
 }
