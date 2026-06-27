@@ -44,6 +44,13 @@ const nextConfig = {
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },
+  async redirects() {
+    return [
+      // Old Italian route names → English (301)
+      { source: '/:lang/metodo', destination: '/:lang/method', permanent: true },
+      { source: '/:lang/molecola/:slug', destination: '/:lang/molecule/:slug', permanent: true },
+    ]
+  },
 }
 
 export default withMDX(nextConfig)

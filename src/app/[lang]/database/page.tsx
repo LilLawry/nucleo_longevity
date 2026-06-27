@@ -48,6 +48,7 @@ export default async function DatabasePage({
     evidenceStrength: m.evidenceStrength,
     lastReviewed: m.lastReviewed,
     status: m.status,
+    structure: m.structure,
   }));
 
   return (
