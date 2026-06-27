@@ -42,7 +42,7 @@ export default function ContributeForm({ lang }: { lang: string }) {
     );
   }
 
-  const field = "w-full bg-[var(--bg)] border border-[var(--border)] rounded text-[var(--fg)] text-sm px-3.5 py-2.5 font-sans placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--glow)] transition-all";
+  const field = "w-full bg-[var(--bg)] border border-[var(--border)] rounded text-[var(--fg)] text-sm px-3.5 py-2.5 font-sans placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] transition-all";
   const label = "font-mono text-[0.62rem] uppercase tracking-widest text-[var(--muted)] mb-1.5 block";
 
   return (

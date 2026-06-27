@@ -124,8 +124,40 @@ export default async function MetodoPage({
         </div>
       </div>
 
-      {/* Author bio */}
+      {/* Independence & conflict of interest */}
       <Reveal className="mt-20 max-w-2xl">
+        <div className="border border-[var(--border)] p-7">
+          <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-4">
+            {lang === "it" ? "Dichiarazione d'indipendenza" : "Independence declaration"}
+          </p>
+          <ul className="flex flex-col gap-3">
+            {(lang === "it"
+              ? [
+                  "Nessun legame con l'industria di integratori, farmaci o dispositivi.",
+                  "Nessuna sponsorizzazione: i gradi A–F non sono in vendita e non sono negoziabili.",
+                  "Non vendiamo prodotti propri (eventuali link di affiliazione sono segnalati e non influenzano le valutazioni).",
+                  "Le fonti sono pubbliche e tracciabili: ogni affermazione rilevante cita il PMID su PubMed.",
+                  "Conflitti d'interesse, se presenti, sono dichiarati esplicitamente nella singola analisi.",
+                ]
+              : [
+                  "No ties to the supplement, drug or device industry.",
+                  "No sponsorships: A–F grades are not for sale and are non-negotiable.",
+                  "We do not sell our own products (any affiliate links are disclosed and never influence ratings).",
+                  "Sources are public and traceable: every material claim cites a PubMed PMID.",
+                  "Conflicts of interest, if any, are disclosed explicitly within each analysis.",
+                ]
+            ).map((line) => (
+              <li key={line} className="flex gap-3 font-sans text-sm text-[var(--muted)] leading-relaxed">
+                <span className="text-[var(--accent)] shrink-0 mt-0.5">—</span>
+                {line}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Reveal>
+
+      {/* Author bio */}
+      <Reveal className="mt-8 max-w-2xl">
         <div className="card-surface p-7 flex flex-col sm:flex-row gap-6 items-start">
           <NucleusMark size={40} className="text-[var(--accent)] shrink-0" />
           <div>

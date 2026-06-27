@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { getAllArticles, MOLECULES } from "@/lib/articles";
+import { getAllArticles } from "@/lib/articles";
+import { getAllMolecules } from "@/lib/molecole";
 import { langs } from "@/lib/i18n";
 
 const BASE_URL = "https://www.nucleolongevity.com";
@@ -14,8 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // pages don't report a new lastmod on every deploy.
   const siteUpdated = new Date(articles[0]?.frontmatter.data ?? "2026-01-01");
 
+  const molecules = getAllMolecules();
   const staticPages = [
-    "", "/molecole", "/analisi", "/metodo", "/chi-siamo",
+    "", "/database", "/molecole", "/analisi", "/metodo", "/chi-siamo",
     "/contatti", "/contribuisci", "/disclaimer", "/termini", "/privacy",
   ];
 
@@ -27,19 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // Molecule pages: freshness = most recent related analysis, else baseline.
+  // Molecule pages: freshness = molecule lastReviewed, else baseline.
   const moleculeEntries = langs.flatMap((lang) =>
-    MOLECULES.map((m) => {
-      const related = articles.filter(
-        (a) => a.frontmatter.molecola.toLowerCase() === m.nome.toLowerCase()
-      );
-      const last = related[0]?.frontmatter.data;
-      return {
-        url: `${BASE_URL}/${lang}/molecole/${m.id}`,
-        lastModified: last ? new Date(last) : siteUpdated,
-        alternates: langAlternates(`/molecole/${m.id}`),
-      };
-    })
+    molecules.map((m) => ({
+      url: `${BASE_URL}/${lang}/molecola/${m.slug}`,
+      lastModified: m.lastReviewed ? new Date(m.lastReviewed) : siteUpdated,
+      alternates: langAlternates(`/molecola/${m.slug}`),
+    }))
   );
 
   const articleEntries = langs.flatMap((lang) =>

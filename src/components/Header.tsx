@@ -22,7 +22,7 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
 
   const otherLang: Lang = lang === "it" ? "en" : "it";
   const navLinks = [
-    { href: `/${lang}/molecole`, label: t.nav.molecole },
+    { href: `/${lang}/database`, label: t.nav.database },
     { href: `/${lang}/analisi`, label: t.nav.analisi },
     { href: `/${lang}/metodo`, label: t.nav.metodo },
   ];
@@ -31,8 +31,8 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[var(--bg)]/80 backdrop-blur-md border-b border-[var(--border)] shadow-[0_4px_24px_-16px_var(--glow)]"
-          : "bg-transparent border-b border-transparent"
+          ? "bg-[var(--bg)] border-b border-[var(--border)]"
+          : "bg-[var(--bg)] border-b border-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between gap-6">

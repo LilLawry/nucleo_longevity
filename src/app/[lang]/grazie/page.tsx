@@ -48,9 +48,8 @@ export default async function GraziePage({
   return (
     <section className="relative overflow-hidden min-h-[70vh] flex items-center">
       <div className="absolute inset-0 grid-surface" aria-hidden />
-      <div className="glow-orb top-0 left-1/2 -translate-x-1/2 w-[28rem] h-[28rem]" aria-hidden />
       <div className="relative max-w-xl mx-auto px-5 sm:px-8 py-20 text-center">
-        <NucleusMark size={64} animated glow className="text-[var(--accent)] mx-auto mb-7" />
+        <NucleusMark size={56} animated className="text-[var(--accent)] mx-auto mb-7" />
         <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-3">{c.eyebrow}</p>
         <h1 className="font-sans font-medium text-3xl sm:text-4xl tracking-[-0.02em] text-[var(--fg)] mb-4 text-balance">
           {c.title}

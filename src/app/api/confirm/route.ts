@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { addContact, isConfigured, sendEmail, verifyToken } from "@/lib/newsletter";
+import { CONSENT_TEXT, addContact, isConfigured, sendEmail, verifyToken } from "@/lib/newsletter";
 
 export const runtime = "nodejs";
 
@@ -47,11 +47,13 @@ export async function GET(req: Request) {
     if (process.env.NEWSLETTER_NOTIFY) {
       await sendEmail(
         process.env.NEWSLETTER_NOTIFY,
-        `🟢 Nuovo lead Nucleo: ${verified.email}`,
-        `<p style="font-family:Helvetica,Arial,sans-serif">Nuovo iscritto confermato.</p>
+        `Nuovo lead Nucleo: ${verified.email}`,
+        `<p style="font-family:Helvetica,Arial,sans-serif">Nuovo iscritto confermato (double opt-in).</p>
          <p style="font-family:Helvetica,Arial,sans-serif"><b>Email:</b> ${verified.email}<br/>
          <b>Lingua:</b> ${verified.lang}<br/>
-         <b>Quando:</b> ${new Date().toISOString()}</p>
+         <b>Richiesta (consenso):</b> ${new Date(verified.ts).toISOString()}<br/>
+         <b>Conferma:</b> ${new Date().toISOString()}</p>
+         <p style="font-family:Helvetica,Arial,sans-serif;color:#5C6669"><b>Testo consenso accettato:</b><br/>${CONSENT_TEXT[verified.lang as "it" | "en"]}</p>
          <p style="font-family:Helvetica,Arial,sans-serif;color:#5C6669">È già in audience su Resend.</p>`
       ).catch((e) => console.error("[newsletter] notify failed", e));
     }

@@ -12,6 +12,11 @@ import crypto from "crypto";
  *   NEWSLETTER_FROM     – e.g. "Nucleo Longevity <ciao@nucleolongevity.com>"
  */
 
+export const CONSENT_TEXT = {
+  it: "Acconsento a ricevere la newsletter di Nucleo Longevity e ho letto la Privacy Policy. Posso disiscrivermi in qualsiasi momento.",
+  en: "I agree to receive the Nucleo Longevity newsletter and have read the Privacy Policy. I can unsubscribe at any time.",
+};
+
 export function isConfigured() {
   return Boolean(
     process.env.RESEND_API_KEY &&
@@ -54,7 +59,7 @@ export function verifyToken(token: string, maxAgeMs = 1000 * 60 * 60 * 48) {
   const [email, lang, ts] = unb64url(body).split(":");
   if (!email || !ts) return null;
   if (Date.now() - Number(ts) > maxAgeMs) return null;
-  return { email, lang: lang === "en" ? "en" : "it" };
+  return { email, lang: lang === "en" ? "en" : "it", ts: Number(ts) };
 }
 
 async function resend(path: string, body: unknown) {

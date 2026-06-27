@@ -24,10 +24,23 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-hanken)", "system-ui", "sans-serif"],
+        serif: ["var(--font-newsreader)", "Georgia", "serif"],
         mono: ["var(--font-plex-mono)", "monospace"],
       },
       fontSize: {
         "2xs": ["0.625rem", { lineHeight: "1rem" }],
+      },
+      // Clinical: neutralise soft radii everywhere; keep pills/circles only.
+      borderRadius: {
+        none: "0",
+        sm: "2px",
+        DEFAULT: "2px",
+        md: "2px",
+        lg: "2px",
+        xl: "2px",
+        "2xl": "2px",
+        "3xl": "2px",
+        full: "9999px",
       },
       letterSpacing: {
         widest2: "0.2em",
@@ -49,10 +62,12 @@ const config: Config = {
             "--tw-prose-code": theme("colors.ink"),
             "--tw-prose-pre-code": theme("colors.surface"),
             "--tw-prose-pre-bg": theme("colors.ink"),
-            fontFamily: theme("fontFamily.sans"),
+            fontFamily: theme("fontFamily.serif"),
+            fontSize: "1.0625rem",
+            lineHeight: "1.75",
             maxWidth: "none",
             a: { textDecoration: "none", fontWeight: "500", "&:hover": { color: theme("colors.teal.900") } },
-            "h1,h2,h3,h4": { fontWeight: "500", letterSpacing: "-0.02em" },
+            "h1,h2,h3,h4": { fontFamily: theme("fontFamily.sans"), fontWeight: "500", letterSpacing: "-0.02em" },
             code: { fontFamily: theme("fontFamily.mono"), fontSize: "0.875em", fontWeight: "400" },
             "code::before": { content: '""' },
             "code::after": { content: '""' },

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk, IBM_Plex_Mono } from "next/font/google";
+import { Hanken_Grotesk, IBM_Plex_Mono, Newsreader } from "next/font/google";
 import JsonLd from "@/components/JsonLd";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import "./globals.css";
+
+const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 const SITE = "https://www.nucleolongevity.com";
 const orgJsonLd = {
@@ -35,6 +36,14 @@ const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   variable: "--font-plex-mono",
   weight: ["400", "500"],
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -81,12 +90,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it" suppressHydrationWarning>
-      <body className={`${hanken.variable} ${plexMono.variable}`}>
+      <body className={`${hanken.variable} ${plexMono.variable} ${newsreader.variable}`}>
         <JsonLd data={orgJsonLd} />
         <JsonLd data={siteJsonLd} />
         {children}
-        <Analytics />
-        <SpeedInsights />
+        {PLAUSIBLE_DOMAIN && (
+          <Script
+            defer
+            data-domain={PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.js"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

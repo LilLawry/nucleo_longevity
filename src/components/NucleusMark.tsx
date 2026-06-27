@@ -10,11 +10,11 @@ export default function NucleusMark({
   size = 40,
   animated = false,
   className = "",
-  glow = false,
 }: {
   size?: number | string;
   animated?: boolean;
   className?: string;
+  /** deprecated — kept for call-site compatibility; no glow in the clinical theme */
   glow?: boolean;
 }) {
   return (
@@ -24,7 +24,6 @@ export default function NucleusMark({
       viewBox="0 0 100 100"
       fill="none"
       className={className}
-      style={glow ? { filter: "drop-shadow(0 0 12px rgba(17,96,95,0.35))" } : undefined}
       aria-hidden="true"
     >
       <circle cx="50" cy="50" r="43" stroke="currentColor" strokeWidth="14" />
