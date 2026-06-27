@@ -32,11 +32,21 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `/${lang}/analisi/${slug}`,
+      languages: {
+        it: `/it/analisi/${slug}`,
+        en: `/en/analisi/${slug}`,
+        "x-default": `/it/analisi/${slug}`,
+      },
+    },
     openGraph: {
       title,
       description,
       type: "article",
       publishedTime: f.data,
+      modifiedTime: f.data,
+      authors: ["Redazione Nucleo"],
     },
   };
 }
@@ -77,17 +87,18 @@ export default async function ArticlePage({
     inLanguage: lang,
     mainEntityOfPage: pageUrl,
     url: pageUrl,
+    isAccessibleForFree: true,
     author: (() => {
       const a = getAuthor(f.autore);
       return {
         "@type": a.key === "redazione" ? "Organization" : "Person",
         name: a.name,
+        url: `${SITE}/${lang}/chi-siamo`,
         ...(a.links && a.links.length ? { sameAs: a.links } : {}),
       };
     })(),
-    ...(f.revisore
-      ? { reviewedBy: { "@type": "Person", name: getAuthor(f.revisore).name }, lastReviewed: f.data }
-      : {}),
+    reviewedBy: { "@type": "Organization", name: "Redazione Nucleo", url: `${SITE}/${lang}/chi-siamo` },
+    lastReviewed: f.data,
     publisher: {
       "@type": "Organization",
       name: "Nucleo Longevity",
