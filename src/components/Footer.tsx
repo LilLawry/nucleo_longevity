@@ -24,9 +24,10 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
             { href: `/${lang}/database`, label: t.nav.database },
             { href: `/${lang}/molecole`, label: t.nav.molecole },
             { href: `/${lang}/analisi`, label: t.nav.analisi },
-            { href: `/${lang}/metodo`, label: t.nav.metodo },
+            { href: `/${lang}/method`, label: t.nav.metodo },
             { href: `/${lang}/chi-siamo`, label: t.footer.about },
             { href: `/${lang}/contribuisci`, label: t.footer.contribute },
+            { href: `/${lang}/connect`, label: t.nav.connect },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-fit">
               {l.label}

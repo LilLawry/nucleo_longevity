@@ -4,6 +4,7 @@ const it = {
     molecole: "Molecole",
     analisi: "Analisi",
     metodo: "Metodo",
+    connect: "Connect",
   },
   hero: {
     headline: "Dati clinici.\nZero filtri di marketing.",

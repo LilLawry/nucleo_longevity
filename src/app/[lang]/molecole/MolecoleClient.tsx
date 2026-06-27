@@ -62,7 +62,7 @@ export default function MolecoleClient({ lang, t, molecules }: Props) {
           {filtered.map((mol) => (
             <Link
               key={mol.id}
-              href={`/${lang}/molecola/${mol.id}`}
+              href={`/${lang}/molecule/${mol.id}`}
               className="group card-surface p-5 flex flex-col gap-3"
             >
               <div className="flex items-start justify-between gap-3">

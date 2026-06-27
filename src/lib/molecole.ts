@@ -27,14 +27,14 @@ export interface Molecule {
   safety: string;
   dosageContext: string;
   keyStudies: KeyStudy[];
-  notaDalCampo: string;
+  fieldNote: string;
   relatedMolecules: string[];
   lastReviewed: string;
   status: "published" | "draft";
   body: string;
 }
 
-const DIR = path.join(process.cwd(), "content/molecole");
+const DIR = path.join(process.cwd(), "content/molecules");
 
 function parse(file: string): Molecule {
   const slug = file.replace(/\.mdx?$/, "");
@@ -54,7 +54,7 @@ function parse(file: string): Molecule {
     safety: data.safety || "",
     dosageContext: data.dosageContext || "",
     keyStudies: data.keyStudies || [],
-    notaDalCampo: data.notaDalCampo || "",
+    fieldNote: data.fieldNote || data.notaDalCampo || "",
     relatedMolecules: data.relatedMolecules || [],
     lastReviewed: data.lastReviewed || "",
     status: data.status === "draft" ? "draft" : "published",

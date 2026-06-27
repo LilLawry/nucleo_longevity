@@ -102,7 +102,7 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
             {filtered.map((r) => (
               <tr key={r.slug} className="border-b border-[var(--border)] hover:bg-[var(--bg-elev)] transition-colors">
                 <td className="py-3 pr-4">
-                  <Link href={`/${lang}/molecola/${r.slug}`} className="font-sans font-medium text-[var(--fg)] hover:text-[var(--accent)] transition-colors">
+                  <Link href={`/${lang}/molecule/${r.slug}`} className="font-sans font-medium text-[var(--fg)] hover:text-[var(--accent)] transition-colors">
                     {r.name}
                   </Link>
                 </td>

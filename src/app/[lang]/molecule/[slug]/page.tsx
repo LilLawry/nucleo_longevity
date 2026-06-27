@@ -25,8 +25,8 @@ export async function generateMetadata({
     title,
     description: m.claim || m.evidenceSummary,
     alternates: {
-      canonical: `/${lang}/molecola/${slug}`,
-      languages: { it: `/it/molecola/${slug}`, en: `/en/molecola/${slug}`, "x-default": `/it/molecola/${slug}` },
+      canonical: `/${lang}/molecule/${slug}`,
+      languages: { it: `/it/molecule/${slug}`, en: `/en/molecule/${slug}`, "x-default": `/it/molecule/${slug}` },
     },
     openGraph: { title, description: m.claim || m.evidenceSummary, type: "article" },
   };
@@ -77,7 +77,7 @@ export default async function MoleculePage({
     name: `${m.name} — ${L.evidenceT}`,
     description: m.claim || m.evidenceSummary,
     inLanguage: lang,
-    url: `${SITE}/${lang}/molecola/${slug}`,
+    url: `${SITE}/${lang}/molecule/${slug}`,
     lastReviewed: m.lastReviewed || undefined,
     audience: { "@type": "MedicalAudience", audienceType: "Patient" },
     about: { "@type": "Substance", name: m.name, alternateName: m.aliases },
@@ -91,7 +91,7 @@ export default async function MoleculePage({
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: L.db, item: `${SITE}/${lang}/database` },
-      { "@type": "ListItem", position: 2, name: m.name, item: `${SITE}/${lang}/molecola/${slug}` },
+      { "@type": "ListItem", position: 2, name: m.name, item: `${SITE}/${lang}/molecule/${slug}` },
     ],
   };
 
@@ -195,11 +195,11 @@ export default async function MoleculePage({
       <Section title={L.safetyT}>{m.safety}</Section>
       <Section title={L.dosageT}>{m.dosageContext}</Section>
 
-      {m.notaDalCampo && (
+      {m.fieldNote && (
         <section className="py-8 border-t border-[var(--border)]">
           <h2 className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-3">{L.fieldT}</h2>
           <blockquote className="border-l-2 border-[var(--accent)] pl-5 font-serif text-lg text-[var(--fg)] leading-relaxed max-w-2xl">
-            {m.notaDalCampo}
+            {m.fieldNote}
           </blockquote>
         </section>
       )}
@@ -210,7 +210,7 @@ export default async function MoleculePage({
           <h2 className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-4">{L.relatedT}</h2>
           <div className="flex flex-wrap gap-3">
             {related.map((r) => (
-              <Link key={r.slug} href={`/${lang}/molecola/${r.slug}`} className="border border-[var(--border)] px-4 py-2 hover:border-[var(--accent)] transition-colors flex items-center gap-3">
+              <Link key={r.slug} href={`/${lang}/molecule/${r.slug}`} className="border border-[var(--border)] px-4 py-2 hover:border-[var(--accent)] transition-colors flex items-center gap-3">
                 <span className="font-sans text-sm text-[var(--fg)]">{r.name}</span>
                 {r.grade && <EvidenceBadge grade={r.grade} />}
               </Link>
@@ -221,7 +221,7 @@ export default async function MoleculePage({
 
       {/* Method link */}
       <div className="mt-10 pt-6 border-t border-[var(--border)]">
-        <Link href={`/${lang}/metodo`} className="font-mono text-[0.7rem] uppercase tracking-widest text-[var(--accent)] link-underline">
+        <Link href={`/${lang}/method`} className="font-mono text-[0.7rem] uppercase tracking-widest text-[var(--accent)] link-underline">
           {it ? "Come assegniamo i gradi → Metodo" : "How we assign grades → Method"}
         </Link>
       </div>

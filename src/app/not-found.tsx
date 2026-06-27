@@ -11,22 +11,20 @@ export default function NotFound() {
           Error 404
         </p>
         <h1 className="font-sans font-medium text-3xl sm:text-4xl tracking-[-0.02em] text-[var(--fg)] mb-3 text-balance">
-          Orbita non trovata
+          Orbit not found
         </h1>
         <p className="font-sans text-base text-[var(--muted)] leading-relaxed mb-8">
-          La pagina che cerchi non esiste o è stata spostata.
-          <br />
-          <span className="text-[var(--muted)]">The page you’re looking for doesn’t exist.</span>
+          The page you’re looking for doesn’t exist or has moved.
         </p>
         <div className="flex items-center justify-center gap-3">
-          <Link href="/it" className="btn-accent font-sans font-medium text-sm px-5 py-2.5">
+          <Link href="/en" className="btn-accent font-sans font-medium text-sm px-5 py-2.5">
             Home
           </Link>
           <Link
-            href="/it/analisi"
-            className="font-sans font-medium text-sm px-5 py-2.5 border border-[var(--border)] rounded text-[var(--fg)] hover:border-[var(--accent)] transition-colors"
+            href="/en/database"
+            className="font-sans font-medium text-sm px-5 py-2.5 border border-[var(--border)] text-[var(--fg)] hover:border-[var(--accent)] transition-colors"
           >
-            Analisi
+            Database
           </Link>
         </div>
       </div>

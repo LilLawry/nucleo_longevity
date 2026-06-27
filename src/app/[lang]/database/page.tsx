@@ -25,7 +25,7 @@ export async function generateMetadata({
     description,
     alternates: {
       canonical: `/${lang}/database`,
-      languages: { it: "/it/database", en: "/en/database", "x-default": "/it/database" },
+      languages: { it: "/it/database", en: "/en/database", "x-default": "/en/database" },
     },
   };
 }

@@ -6,6 +6,7 @@ const en: Locale = {
     molecole: "Molecules",
     analisi: "Analysis",
     metodo: "Method",
+    connect: "Connect",
   },
   hero: {
     headline: "Clinical data.\nZero marketing filters.",
