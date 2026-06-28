@@ -18,10 +18,12 @@ const GRADE_COLOR: Record<string, string> = { A: "#9FBEBC", B: "#9FBEBC", C: "#9
 export default async function Image({ params }: { params: { lang: string; slug: string } }) {
   const { lang, slug } = params;
   const m = getMoleculeBySlug(slug);
-  const name = m?.name ?? "Nucleo Longevity";
+  // Normalise glyphs the OG font can't fetch (e.g. superscript ⁺).
+  const norm = (s: string) => (s || "").replace(/⁺/g, "+").replace(/⁻/g, "-");
+  const name = norm(m?.name ?? "Nucleo Longevity");
   const grade = m?.grade ?? "";
-  const klass = m?.class ?? "";
-  const use = m?.primaryUse ?? "";
+  const klass = norm(m?.class ?? "");
+  const use = norm(m?.primaryUse ?? "");
 
   return new ImageResponse(
     (

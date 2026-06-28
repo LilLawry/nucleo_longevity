@@ -33,6 +33,8 @@ export interface Molecule {
   status: "published" | "draft";
   /** has a real 2D structure image at /public/molecules/<slug>.png */
   structure: boolean;
+  /** optional caption override (e.g. "Representative monomer") */
+  structureNote: string;
   body: string;
 }
 
@@ -61,6 +63,7 @@ function parse(file: string): Molecule {
     lastReviewed: data.lastReviewed || "",
     status: data.status === "draft" ? "draft" : "published",
     structure: data.structure !== false,
+    structureNote: data.structureNote || "",
     body: content.trim(),
   };
 }
