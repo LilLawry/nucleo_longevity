@@ -33,10 +33,10 @@ const it = {
     trust_nohype: "Zero hype, solo dati",
     scroll: "Esplora",
     stats: [
-      { value: "200+", label: "Studi esaminati" },
       { value: "A–F", label: "Scala di evidenza" },
-      { value: "100%", label: "Fonti tracciabili" },
+      { value: "100%", label: "Fonti su PubMed" },
       { value: "0", label: "Sponsor occulti" },
+      { value: "0€", label: "Voti in vendita" },
     ],
     legend_title: "Come leggiamo l'evidenza",
     legend_subtitle:

@@ -35,6 +35,8 @@ export interface Molecule {
   structure: boolean;
   /** optional caption override (e.g. "Representative monomer") */
   structureNote: string;
+  /** allow search indexing — only once the page meets the NMN quality bar */
+  indexable: boolean;
   body: string;
 }
 
@@ -64,6 +66,7 @@ function parse(file: string): Molecule {
     status: data.status === "draft" ? "draft" : "published",
     structure: data.structure !== false,
     structureNote: data.structureNote || "",
+    indexable: data.index === true,
     body: content.trim(),
   };
 }

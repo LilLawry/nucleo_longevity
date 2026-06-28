@@ -25,9 +25,13 @@ export async function generateMetadata({
   return {
     title,
     description: m.claim || m.evidenceSummary,
+    // Noindex until the page meets the NMN quality bar (real PMIDs, localized,
+    // depth). Keep follow so link equity reaches the database. Flip via
+    // `index: true` in the molecule's frontmatter once enriched.
+    robots: { index: m.indexable, follow: true },
     alternates: {
       canonical: `/${lang}/molecule/${slug}`,
-      languages: { it: `/it/molecule/${slug}`, en: `/en/molecule/${slug}`, "x-default": `/it/molecule/${slug}` },
+      languages: { it: `/it/molecule/${slug}`, en: `/en/molecule/${slug}`, "x-default": `/en/molecule/${slug}` },
     },
     openGraph: { title, description: m.claim || m.evidenceSummary, type: "article" },
   };
