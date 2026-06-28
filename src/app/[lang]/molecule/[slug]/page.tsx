@@ -144,7 +144,7 @@ export default async function MoleculePage({
                 className="w-full h-auto"
               />
               <figcaption className="font-mono text-[0.5rem] uppercase tracking-widest text-[#5C6669] text-center mt-1 pb-0.5">
-                {it ? "Struttura · PubChem" : "Structure · PubChem"}
+                {m.structureNote || (it ? "Struttura · PubChem" : "Structure · PubChem")}
               </figcaption>
             </figure>
           )}
