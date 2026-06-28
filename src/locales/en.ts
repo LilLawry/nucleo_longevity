@@ -35,10 +35,10 @@ const en: Locale = {
     trust_nohype: "Zero hype, only data",
     scroll: "Explore",
     stats: [
-      { value: "200+", label: "Studies reviewed" },
       { value: "A–F", label: "Evidence scale" },
-      { value: "100%", label: "Traceable sources" },
+      { value: "100%", label: "PubMed-sourced" },
       { value: "0", label: "Hidden sponsors" },
+      { value: "0", label: "Grades for sale" },
     ],
     legend_title: "How we read the evidence",
     legend_subtitle:

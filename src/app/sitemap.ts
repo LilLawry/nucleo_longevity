@@ -30,9 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // Molecule pages: freshness = molecule lastReviewed, else baseline.
+  // Only list molecule pages that are indexable (meet the quality bar).
   const moleculeEntries = langs.flatMap((lang) =>
-    molecules.map((m) => ({
+    molecules.filter((m) => m.indexable).map((m) => ({
       url: `${BASE_URL}/${lang}/molecule/${m.slug}`,
       lastModified: m.lastReviewed ? new Date(m.lastReviewed) : siteUpdated,
       alternates: langAlternates(`/molecule/${m.slug}`),
