@@ -7,6 +7,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 import EvidenceBadge from "@/components/EvidenceBadge";
 import NucleusMark from "@/components/NucleusMark";
 import Reveal from "@/components/Reveal";
+import Hero from "./Hero";
 
 export async function generateMetadata({
   params,
@@ -41,98 +42,8 @@ export default async function HomePage({
 
   return (
     <>
-      {/* ============ HERO (cinematic) ============ */}
-      <section className="relative overflow-hidden border-b border-[var(--border)] min-h-[94vh] flex flex-col">
-        <div className="absolute inset-0 grid-surface" aria-hidden />
-        <div className="hero-depth" aria-hidden />
-
-        {/* Editorial masthead */}
-        <div className="relative max-w-6xl mx-auto w-full px-5 sm:px-8">
-          <div className="flex items-center gap-3 sm:gap-4 py-3 border-b border-[var(--border)] font-mono text-[0.6rem] sm:text-[0.65rem] tracking-widest uppercase text-[var(--muted)]">
-            {t.home.masthead.map((m, i) => (
-              <span key={m} className="flex items-center gap-3 sm:gap-4">
-                {i > 0 && <span className="text-[var(--accent)]">/</span>}
-                {m}
-              </span>
-            ))}
-            <span className="ml-auto flex items-center gap-2 text-[var(--accent)]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse" />
-              <span className="hidden sm:inline">PubMed</span>
-            </span>
-          </div>
-        </div>
-
-        {/* Centered content */}
-        <div className="relative flex-1 flex items-center">
-          <div className="cropmarks max-w-6xl mx-auto w-full px-5 sm:px-8 py-14 grid lg:grid-cols-[1.25fr_0.75fr] gap-10 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2.5 mb-8 border border-[var(--border)] rounded-full pl-2 pr-3.5 py-1 bg-[var(--bg-elev)]">
-                <NucleusMark size={16} className="text-[var(--accent)]" />
-                <span className="font-mono text-[0.62rem] tracking-widest uppercase text-[var(--muted)]">
-                  Nucleo · Longevity
-                </span>
-              </div>
-
-              <h1 className="font-display font-medium text-[clamp(3.5rem,12.5vw,10.5rem)] leading-[0.9] tracking-[-0.035em] text-[var(--fg)] mb-6">
-                {t.home.big_line}
-                <br />
-                <span className="text-[var(--accent)]">{t.home.big_accent}</span>
-              </h1>
-
-              <p className="font-sans text-lg sm:text-xl text-[var(--muted)] leading-relaxed max-w-md mb-9 text-pretty">
-                {t.home.big_sub}
-              </p>
-
-              <div className="flex flex-wrap items-center gap-3">
-                <Link href={`/${lang}/database`} className="btn-accent font-sans font-medium text-sm px-6 py-3">
-                  {t.home.cta_database} →
-                </Link>
-                <a
-                  href="#subscribe"
-                  className="font-sans font-medium text-sm px-6 py-3 border border-[var(--border)] text-[var(--fg)] hover:border-[var(--accent)] transition-colors"
-                >
-                  {t.hero.cta}
-                </a>
-              </div>
-            </div>
-
-            <div className="hidden lg:flex items-center justify-center">
-              <NucleusMark size={340} animated className="text-[var(--accent)]" />
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom marquee — real graded molecules */}
-        <div className="relative max-w-6xl mx-auto w-full px-5 sm:px-8 pb-8">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-5 border-t border-[var(--border)] pt-5">
-            <p className="font-mono text-[0.65rem] uppercase tracking-widest text-[var(--muted)] leading-relaxed shrink-0">
-              {t.home.marquee_label[0]}
-              <br />
-              {t.home.marquee_label[1]}
-            </p>
-            <div className="marquee flex-1 min-w-0" aria-hidden>
-              <div className="marquee__track">
-                {[0, 1].map((dup) => (
-                  <div key={dup} className="flex items-center">
-                    {MOLECULES.map((m) => {
-                      const nm = lang === "en" ? m.nome_en : m.nome;
-                      return (
-                        <span key={dup + m.id} className="flex items-center gap-2.5 pr-8">
-                          <span className="liquid-glass w-7 h-7 rounded-lg flex items-center justify-center font-display font-semibold text-[0.78rem] text-[var(--fg)] shrink-0">
-                            {nm[0]}
-                          </span>
-                          <span className="font-sans text-sm font-semibold text-[var(--fg)] whitespace-nowrap">{nm}</span>
-                          <span className="font-mono text-[0.7rem] text-[var(--accent)]">{m.grado}</span>
-                        </span>
-                      );
-                    })}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ============ HERO ============ */}
+      <Hero lang={lang} t={t} molecules={MOLECULES} />
 
       {/* ============ STATS BAR ============ */}
       <section className="border-b border-[var(--border)] bg-[var(--bg-elev)]">

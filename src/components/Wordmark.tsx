@@ -12,18 +12,18 @@ export default function Wordmark({ className = "h-9 w-auto", priority = false }:
   return (
     <>
       <Image
-        src="/wordmark-ink.png"
+        src="/wordmark-ink-trim.png"
         alt="Nucleo Longevity"
-        width={1884}
-        height={1005}
+        width={1398}
+        height={412}
         priority={priority}
         className={`${className} block dark:hidden`}
       />
       <Image
-        src="/wordmark-white.png"
+        src="/wordmark-white-trim.png"
         alt="Nucleo Longevity"
-        width={1884}
-        height={1005}
+        width={1398}
+        height={412}
         priority={priority}
         aria-hidden
         className={`${className} hidden dark:block`}
