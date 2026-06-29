@@ -42,8 +42,9 @@ export default async function HomePage({
   return (
     <>
       {/* ============ HERO (cinematic) ============ */}
-      <section className="relative overflow-hidden border-b border-[var(--border)] min-h-[92vh] flex flex-col">
+      <section className="relative overflow-hidden border-b border-[var(--border)] min-h-[94vh] flex flex-col">
         <div className="absolute inset-0 grid-surface" aria-hidden />
+        <div className="hero-depth" aria-hidden />
 
         {/* Editorial masthead */}
         <div className="relative max-w-6xl mx-auto w-full px-5 sm:px-8">
@@ -72,7 +73,7 @@ export default async function HomePage({
                 </span>
               </div>
 
-              <h1 className="font-display font-medium text-[clamp(3.25rem,11vw,8.5rem)] leading-[0.92] tracking-[-0.03em] text-[var(--fg)] mb-6">
+              <h1 className="font-display font-medium text-[clamp(3.5rem,12.5vw,10.5rem)] leading-[0.9] tracking-[-0.035em] text-[var(--fg)] mb-6">
                 {t.home.big_line}
                 <br />
                 <span className="text-[var(--accent)]">{t.home.big_accent}</span>
@@ -113,13 +114,18 @@ export default async function HomePage({
               <div className="marquee__track">
                 {[0, 1].map((dup) => (
                   <div key={dup} className="flex items-center">
-                    {MOLECULES.map((m) => (
-                      <span key={dup + m.id} className="flex items-center gap-2.5 px-5 font-mono text-[0.72rem] uppercase tracking-widest text-[var(--muted)]">
-                        <span className="text-[var(--fg)]">{lang === "en" ? m.nome_en : m.nome}</span>
-                        <span className="text-[var(--accent)]">{m.grado}</span>
-                        <span className="text-[var(--border)]">·</span>
-                      </span>
-                    ))}
+                    {MOLECULES.map((m) => {
+                      const nm = lang === "en" ? m.nome_en : m.nome;
+                      return (
+                        <span key={dup + m.id} className="flex items-center gap-2.5 pr-8">
+                          <span className="liquid-glass w-7 h-7 rounded-lg flex items-center justify-center font-display font-semibold text-[0.78rem] text-[var(--fg)] shrink-0">
+                            {nm[0]}
+                          </span>
+                          <span className="font-sans text-sm font-semibold text-[var(--fg)] whitespace-nowrap">{nm}</span>
+                          <span className="font-mono text-[0.7rem] text-[var(--accent)]">{m.grado}</span>
+                        </span>
+                      );
+                    })}
                   </div>
                 ))}
               </div>
