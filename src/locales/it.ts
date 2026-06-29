@@ -27,6 +27,11 @@ const it = {
   },
   home: {
     masthead: ["Evidenza indipendente", "Fondato nel 2026", "IT / EN"],
+    big_line: "Longevità,",
+    big_accent: "graduata.",
+    big_sub: "Leggiamo gli studi clinici così che un'etichetta non legga te. Ogni molecola: un grado da A a F e le sue fonti su PubMed.",
+    cta_database: "Esplora il database",
+    marquee_label: ["Graduate sull'evidenza —", "non sull'hype."],
     guide_hook: "Iscriviti e ricevi la guida alle molecole longevity — gradi A–F e fonti PubMed.",
     trust_independent: "Editorialmente indipendente",
     trust_pubmed: "Fonti PubMed verificate",
