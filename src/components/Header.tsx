@@ -35,14 +35,14 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
           : "bg-[var(--bg)] border-b border-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between gap-6">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between gap-6">
         {/* Logo */}
         <Link
           href={`/${lang}`}
           className="flex items-center shrink-0 hover:opacity-80 transition-opacity"
           aria-label="Nucleo Longevity — home"
         >
-          <Wordmark className="h-9 w-auto" priority />
+          <Wordmark className="h-12 w-auto" priority />
         </Link>
 
         {/* Desktop nav */}
