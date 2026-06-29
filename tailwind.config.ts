@@ -26,6 +26,7 @@ const config: Config = {
         sans: ["var(--font-hanken)", "system-ui", "sans-serif"],
         serif: ["var(--font-newsreader)", "Georgia", "serif"],
         mono: ["var(--font-plex-mono)", "monospace"],
+        display: ['"General Sans"', "var(--font-hanken)", "system-ui", "sans-serif"],
       },
       fontSize: {
         "2xs": ["0.625rem", { lineHeight: "1rem" }],

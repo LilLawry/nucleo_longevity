@@ -41,12 +41,12 @@ export default async function HomePage({
 
   return (
     <>
-      {/* ============ HERO ============ */}
-      <section className="relative overflow-hidden border-b border-[var(--border)]">
+      {/* ============ HERO (cinematic) ============ */}
+      <section className="relative overflow-hidden border-b border-[var(--border)] min-h-[92vh] flex flex-col">
         <div className="absolute inset-0 grid-surface" aria-hidden />
 
         {/* Editorial masthead */}
-        <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
+        <div className="relative max-w-6xl mx-auto w-full px-5 sm:px-8">
           <div className="flex items-center gap-3 sm:gap-4 py-3 border-b border-[var(--border)] font-mono text-[0.6rem] sm:text-[0.65rem] tracking-widest uppercase text-[var(--muted)]">
             {t.home.masthead.map((m, i) => (
               <span key={m} className="flex items-center gap-3 sm:gap-4">
@@ -61,51 +61,67 @@ export default async function HomePage({
           </div>
         </div>
 
-        <div className="cropmarks relative max-w-6xl mx-auto px-5 sm:px-8 pt-14 pb-20 md:pt-20 md:pb-28">
-          <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
-            {/* Copy */}
-            <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-2.5 mb-7 border border-[var(--border)] rounded-full pl-2 pr-3.5 py-1 bg-[var(--bg-elev)]">
-                <NucleusMark size={18} className="text-[var(--accent)]" />
-                <span className="font-mono text-[0.65rem] tracking-widest uppercase text-[var(--muted)]">
+        {/* Centered content */}
+        <div className="relative flex-1 flex items-center">
+          <div className="cropmarks max-w-6xl mx-auto w-full px-5 sm:px-8 py-14 grid lg:grid-cols-[1.25fr_0.75fr] gap-10 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2.5 mb-8 border border-[var(--border)] rounded-full pl-2 pr-3.5 py-1 bg-[var(--bg-elev)]">
+                <NucleusMark size={16} className="text-[var(--accent)]" />
+                <span className="font-mono text-[0.62rem] tracking-widest uppercase text-[var(--muted)]">
                   Nucleo · Longevity
                 </span>
               </div>
 
-              <h1 className="font-sans font-medium text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-[-0.035em] text-[var(--fg)] mb-6 whitespace-pre-line text-balance">
-                {t.hero.headline}
+              <h1 className="font-display font-medium text-[clamp(3.25rem,11vw,8.5rem)] leading-[0.92] tracking-[-0.03em] text-[var(--fg)] mb-6">
+                {t.home.big_line}
+                <br />
+                <span className="text-[var(--accent)]">{t.home.big_accent}</span>
               </h1>
-              <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-lg mb-9 text-pretty">
-                {t.hero.subline}
+
+              <p className="font-sans text-lg sm:text-xl text-[var(--muted)] leading-relaxed max-w-md mb-9 text-pretty">
+                {t.home.big_sub}
               </p>
 
-              <div className="max-w-md">
-                <NewsletterForm lang={lang} t={t} showRole />
-                <p className="mt-3 flex items-start gap-2 font-mono text-[0.65rem] text-[var(--muted)] leading-relaxed">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" />
-                  </svg>
-                  {t.home.guide_hook}
-                </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <Link href={`/${lang}/database`} className="btn-accent font-sans font-medium text-sm px-6 py-3">
+                  {t.home.cta_database} →
+                </Link>
+                <a
+                  href="#subscribe"
+                  className="font-sans font-medium text-sm px-6 py-3 border border-[var(--border)] text-[var(--fg)] hover:border-[var(--accent)] transition-colors"
+                >
+                  {t.hero.cta}
+                </a>
               </div>
-
-              {/* Trust chips */}
-              <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-2">
-                {[t.home.trust_independent, t.home.trust_pubmed, t.home.trust_nohype].map((item) => (
-                  <li key={item} className="flex items-center gap-2 font-mono text-[0.68rem] text-[var(--muted)]">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
             </div>
 
-            {/* Brand nucleus with radiating aura */}
             <div className="hidden lg:flex items-center justify-center">
-              <div className="relative">
-                <NucleusMark size={300} animated className="text-[var(--accent)]" />
+              <NucleusMark size={340} animated className="text-[var(--accent)]" />
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom marquee — real graded molecules */}
+        <div className="relative max-w-6xl mx-auto w-full px-5 sm:px-8 pb-8">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-5 border-t border-[var(--border)] pt-5">
+            <p className="font-mono text-[0.65rem] uppercase tracking-widest text-[var(--muted)] leading-relaxed shrink-0">
+              {t.home.marquee_label[0]}
+              <br />
+              {t.home.marquee_label[1]}
+            </p>
+            <div className="marquee flex-1 min-w-0" aria-hidden>
+              <div className="marquee__track">
+                {[0, 1].map((dup) => (
+                  <div key={dup} className="flex items-center">
+                    {MOLECULES.map((m) => (
+                      <span key={dup + m.id} className="flex items-center gap-2.5 px-5 font-mono text-[0.72rem] uppercase tracking-widest text-[var(--muted)]">
+                        <span className="text-[var(--fg)]">{lang === "en" ? m.nome_en : m.nome}</span>
+                        <span className="text-[var(--accent)]">{m.grado}</span>
+                        <span className="text-[var(--border)]">·</span>
+                      </span>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -128,22 +144,6 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ============ MOLECULE TICKER ============ */}
-      <div className="marquee border-b border-[var(--border)] py-3" aria-hidden>
-        <div className="marquee__track">
-          {[0, 1].map((dup) => (
-            <div key={dup} className="flex items-center">
-              {MOLECULES.map((m) => (
-                <span key={dup + m.id} className="flex items-center gap-3 px-6 font-mono text-[0.7rem] uppercase tracking-widest text-[var(--muted)]">
-                  <span className="text-[var(--fg)]">{lang === "en" ? m.nome_en : m.nome}</span>
-                  <span className="text-[var(--accent)]">{m.grado}</span>
-                  <span className="text-[var(--border)]">·</span>
-                </span>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* ============ EVIDENCE LEGEND ============ */}
       <section className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
@@ -278,7 +278,7 @@ export default async function HomePage({
       </section>
 
       {/* ============ FINAL CTA ============ */}
-      <section className="max-w-6xl mx-auto px-5 sm:px-8 py-24">
+      <section id="subscribe" className="max-w-6xl mx-auto px-5 sm:px-8 py-24 scroll-mt-20">
         <Reveal className="relative card-surface overflow-hidden px-6 sm:px-12 py-14 text-center">
           <div className="relative max-w-xl mx-auto">
             <NucleusMark size={56} animated className="text-[var(--accent)] mx-auto mb-6" />
