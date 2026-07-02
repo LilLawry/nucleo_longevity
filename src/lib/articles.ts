@@ -8,12 +8,18 @@ export interface ArticleFrontmatter {
   title_en?: string;
   molecola: string;
   categoria: string;
+  categoria_en?: string;
   a_cosa_serve: string;
+  a_cosa_serve_en?: string;
   quanto_e_provato: string;
+  quanto_e_provato_en?: string;
   campione_studi: string;
+  campione_studi_en?: string;
   effetto_misurato: string;
+  effetto_misurato_en?: string;
   fonte_PMID: string[];
   verdetto: string;
+  verdetto_en?: string;
   grado: "A" | "B" | "C" | "D" | "E" | "F";
   data: string;
   autore?: string;
@@ -36,7 +42,11 @@ const CONTENT_DIR = path.join(process.cwd(), "content/analisi");
 
 export function getAllArticles(): Article[] {
   if (!fs.existsSync(CONTENT_DIR)) return [];
-  const files = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".mdx"));
+  // `.en.mdx` files are English body variants of an existing article, not
+  // separate articles — exclude them from the index.
+  const files = fs
+    .readdirSync(CONTENT_DIR)
+    .filter((f) => f.endsWith(".mdx") && !f.endsWith(".en.mdx"));
 
   return files
     .map((file) => {
@@ -58,17 +68,28 @@ export function getAllArticles(): Article[] {
     );
 }
 
-export function getArticleBySlug(slug: string): Article | null {
+export function getArticleBySlug(slug: string, lang?: string): Article | null {
   const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(raw);
-  const rt = readingTime(content);
+
+  // Prefer a language-specific body when one exists (e.g. `slug.en.mdx`).
+  // Frontmatter stays in the base file; the variant file holds only the body.
+  let body = content;
+  if (lang && lang !== "it") {
+    const localizedPath = path.join(CONTENT_DIR, `${slug}.${lang}.mdx`);
+    if (fs.existsSync(localizedPath)) {
+      body = matter(fs.readFileSync(localizedPath, "utf8")).content;
+    }
+  }
+
+  const rt = readingTime(body);
   return {
     slug,
     frontmatter: data as ArticleFrontmatter,
     readingTime: Math.ceil(rt.minutes).toString(),
-    content,
+    content: body,
   };
 }
 

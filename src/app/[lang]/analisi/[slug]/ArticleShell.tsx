@@ -35,10 +35,12 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const title = lang === "en" && f.title_en ? f.title_en : f.titolo;
+  const en = lang === "en";
+  const title = en && f.title_en ? f.title_en : f.titolo;
   const author = getAuthor(f.autore);
   const reviewer = f.revisore ? getAuthor(f.revisore) : undefined;
-  const faq = lang === "en" && f.faq_en ? f.faq_en : f.faq;
+  const faq = en && f.faq_en ? f.faq_en : f.faq;
+  const verdict = en && f.verdetto_en ? f.verdetto_en : f.verdetto;
 
   return (
     <>
@@ -51,7 +53,7 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
           <div className="flex items-center gap-3 mb-4">
             <EvidenceBadge grade={f.grado} label={t.grades[f.grado]} />
             <span className="font-mono text-[0.65rem] text-[var(--muted)] uppercase tracking-wider">
-              {f.molecola} · {f.categoria}
+              {f.molecola} · {en && f.categoria_en ? f.categoria_en : f.categoria}
             </span>
           </div>
           <h1 className="font-sans font-medium text-2xl sm:text-3xl tracking-[-0.02em] text-[var(--fg)] mb-3 leading-tight">
@@ -69,10 +71,10 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
             {[
-              { label: lang === "it" ? "A cosa serve" : "Purpose", value: f.a_cosa_serve },
-              { label: lang === "it" ? "Quanto è provato" : "Evidence level", value: f.quanto_e_provato },
-              { label: lang === "it" ? "Campione studi" : "Study sample", value: f.campione_studi },
-              { label: lang === "it" ? "Effetto misurato" : "Measured effect", value: f.effetto_misurato },
+              { label: en ? "Purpose" : "A cosa serve", value: en && f.a_cosa_serve_en ? f.a_cosa_serve_en : f.a_cosa_serve },
+              { label: en ? "Evidence level" : "Quanto è provato", value: en && f.quanto_e_provato_en ? f.quanto_e_provato_en : f.quanto_e_provato },
+              { label: en ? "Study sample" : "Campione studi", value: en && f.campione_studi_en ? f.campione_studi_en : f.campione_studi },
+              { label: en ? "Measured effect" : "Effetto misurato", value: en && f.effetto_misurato_en ? f.effetto_misurato_en : f.effetto_misurato },
             ].map(({ label, value }) => (
               <div key={label}>
                 <p className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-0.5">
@@ -104,9 +106,9 @@ export default function ArticleShell({ lang, t, article, related, children }: Pr
           )}
           <div className="mt-4 pt-4 border-t border-[var(--border)]">
             <p className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-1">
-              {lang === "it" ? "Verdetto" : "Verdict"}
+              {en ? "Verdict" : "Verdetto"}
             </p>
-            <p className="font-sans text-sm font-medium text-[var(--fg)] leading-snug">{f.verdetto}</p>
+            <p className="font-sans text-sm font-medium text-[var(--fg)] leading-snug">{verdict}</p>
           </div>
         </div>
 

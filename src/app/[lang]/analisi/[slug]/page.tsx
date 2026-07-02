@@ -59,7 +59,7 @@ export default async function ArticlePage({
   const { lang, slug } = await params;
   if (!isValidLang(lang)) notFound();
   const t = getLocale(lang);
-  const article = getArticleBySlug(slug);
+  const article = getArticleBySlug(slug, lang);
   if (!article) notFound();
 
   const allArticles = getAllArticles();
