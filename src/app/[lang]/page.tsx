@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getLocale, isValidLang } from "@/lib/i18n";
 import { getAllArticles, MOLECULES } from "@/lib/articles";
 import { notFound } from "next/navigation";
@@ -152,13 +153,24 @@ export default async function HomePage({
                   href={`/${lang}/molecule/${mol.id}`}
                   className="group py-4 px-4 flex items-center justify-between gap-4 hover:bg-[var(--bg)] transition-colors first:rounded-t-lg last:rounded-b-lg"
                 >
-                  <div>
-                    <p className="font-sans font-medium text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">
-                      {lang === "en" ? mol.nome_en : mol.nome}
-                    </p>
-                    <p className="font-mono text-[0.65rem] text-[var(--muted)] mt-0.5">
-                      {lang === "en" ? mol.categoria_en : mol.categoria}
-                    </p>
+                  <div className="flex items-center gap-3.5 min-w-0">
+                    <span className="shrink-0 w-10 h-10 border border-[var(--border)] bg-white flex items-center justify-center">
+                      <Image
+                        src={`/molecules/${mol.id}.png`}
+                        alt=""
+                        width={40}
+                        height={40}
+                        className="w-8 h-8 object-contain"
+                      />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="font-sans font-medium text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors truncate">
+                        {lang === "en" ? mol.nome_en : mol.nome}
+                      </p>
+                      <p className="font-mono text-[0.65rem] text-[var(--muted)] mt-0.5 truncate">
+                        {lang === "en" ? mol.categoria_en : mol.categoria}
+                      </p>
+                    </div>
                   </div>
                   <EvidenceBadge grade={mol.grado} />
                 </Link>

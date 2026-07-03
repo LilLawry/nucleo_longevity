@@ -67,6 +67,8 @@ export default async function MoleculePage({
     strength: it ? "Forza evidenza" : "Evidence strength",
     classL: it ? "Classe" : "Class",
     useL: it ? "Uso principale" : "Primary use",
+    bottomLineT: it ? "In sintesi" : "Bottom line",
+    typeL: it ? "Tipo" : "Type",
     draftNote: it
       ? "Revisione in corso: il grado verrà assegnato a chiusura dell'analisi delle fonti."
       : "Review in progress: the grade will be assigned once the source analysis is complete.",
@@ -75,6 +77,13 @@ export default async function MoleculePage({
   const related = m.relatedMolecules
     .map((s) => getMoleculeBySlug(s))
     .filter(Boolean) as NonNullable<ReturnType<typeof getMoleculeBySlug>>[];
+
+  // Visual evidence-strength meter: map the qualitative strength to filled cells.
+  const STRENGTH_FILL: Record<string, number> = {
+    high: 4, alta: 4, medium: 3, media: 3, low: 2, bassa: 2,
+  };
+  const meterFill = STRENGTH_FILL[m.evidenceStrength] ?? 0;
+  const isDrug = /drug|prescription|farmaco/i.test(m.regulatory);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -104,6 +113,17 @@ export default async function MoleculePage({
       { "@type": "ListItem", position: 2, name: m.name, item: `${SITE}/${lang}/molecule/${slug}` },
     ],
   };
+
+  const Meter = ({ fill }: { fill: number }) => (
+    <span className="inline-flex gap-[3px] align-middle" aria-hidden>
+      {[0, 1, 2, 3, 4].map((i) => (
+        <span
+          key={i}
+          className={`w-2.5 h-2.5 ${i < fill ? "bg-[var(--accent)] border border-[var(--accent)]" : "border border-[var(--border)]"}`}
+        />
+      ))}
+    </span>
+  );
 
   const Section = ({ title, children }: { title: string; children: React.ReactNode }) =>
     children ? (
@@ -135,6 +155,22 @@ export default async function MoleculePage({
             <p className="font-mono text-[0.7rem] text-[var(--muted)] mb-4">{m.aliases.join(" · ")}</p>
           )}
           <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-xl">{m.claim}</p>
+          {m.regulatory && (
+            <div
+              className={`mt-5 inline-flex items-center gap-2 border px-3 py-1.5 ${
+                isDrug ? "border-[var(--accent)]" : "border-[var(--border)]"
+              }`}
+            >
+              <span className="font-mono text-[0.52rem] uppercase tracking-widest text-[var(--muted)]">{L.typeL}</span>
+              <span
+                className={`font-mono text-[0.66rem] uppercase tracking-wide ${
+                  isDrug ? "text-[var(--accent)]" : "text-[var(--fg)]"
+                }`}
+              >
+                {m.regulatory}
+              </span>
+            </div>
+          )}
         </div>
         {/* Structure + grade */}
         <div className="flex flex-row md:flex-col gap-4 shrink-0">
@@ -169,15 +205,32 @@ export default async function MoleculePage({
         {[
           [L.classL, m.class],
           [L.useL, m.primaryUse],
-          [L.strength, m.evidenceStrength || "—"],
+          [
+            L.strength,
+            m.evidenceStrength ? (
+              <span className="inline-flex items-center gap-2">
+                <Meter fill={meterFill} />
+                <span className="uppercase text-[0.8rem]">{m.evidenceStrength}</span>
+              </span>
+            ) : (
+              "—"
+            ),
+          ],
           [L.reviewed, m.lastReviewed || "—"],
         ].map(([k, v]) => (
-          <div key={k} className="py-4 px-4 first:pl-0">
+          <div key={k as string} className="py-4 px-4 first:pl-0">
             <dt className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{k}</dt>
             <dd className="font-sans text-sm text-[var(--fg)] tabular">{v}</dd>
           </div>
         ))}
       </dl>
+
+      {m.bottomLine && (
+        <div className="mt-8 border border-[var(--border)] border-l-2 border-l-[var(--accent)] bg-[var(--bg-elev)] p-5 sm:p-6 max-w-3xl">
+          <p className="font-mono text-[0.58rem] uppercase tracking-widest text-[var(--accent)] mb-2">{L.bottomLineT}</p>
+          <p className="font-serif text-lg sm:text-xl text-[var(--fg)] leading-relaxed text-pretty">{m.bottomLine}</p>
+        </div>
+      )}
 
       {m.status === "draft" && (
         <p className="mt-6 border-l-2 border-[var(--accent)] pl-4 font-mono text-[0.72rem] text-[var(--muted)] leading-relaxed">
@@ -185,7 +238,6 @@ export default async function MoleculePage({
         </p>
       )}
 
-      <Section title={L.claimT}>{m.claim}</Section>
       <Section title={L.evidenceT}>{m.evidenceSummary}</Section>
 
       {/* Key studies — footnote style */}

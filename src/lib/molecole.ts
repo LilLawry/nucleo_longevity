@@ -22,6 +22,10 @@ export interface Molecule {
   grade: Grade | "";
   evidenceStrength: EvidenceStrength | "";
   claim: string;
+  /** one-line bottom line shown prominently near the top */
+  bottomLine: string;
+  /** "Prescription drug" | "Supplement / dietary" | "Injectable / clinical" ... */
+  regulatory: string;
   evidenceSummary: string;
   mechanism: string;
   safety: string;
@@ -55,6 +59,8 @@ function parse(file: string): Molecule {
     grade: (data.grade || "") as Molecule["grade"],
     evidenceStrength: (data.evidenceStrength || "") as Molecule["evidenceStrength"],
     claim: data.claim || "",
+    bottomLine: data.bottomLine || "",
+    regulatory: data.regulatory || "",
     evidenceSummary: data.evidenceSummary || "",
     mechanism: data.mechanism || "",
     safety: data.safety || "",
