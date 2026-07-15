@@ -14,6 +14,7 @@ export interface Row {
   lastReviewed: string;
   status: string;
   structure?: boolean;
+  domain?: "systemic" | "topical";
 }
 
 const GRADE_RANK: Record<string, number> = { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5, "": 9 };
@@ -24,6 +25,7 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
   const [q, setQ] = useState("");
   const [grade, setGrade] = useState("");
   const [klass, setKlass] = useState("");
+  const [domain, setDomain] = useState<"" | "systemic" | "topical">("");
   const [sortKey, setSortKey] = useState<SortKey>("grade");
   const [asc, setAsc] = useState(true);
 
@@ -35,7 +37,8 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
       const mq = !t || r.name.toLowerCase().includes(t) || r.primaryUse.toLowerCase().includes(t) || r.class.toLowerCase().includes(t);
       const mg = !grade || r.grade === grade;
       const mc = !klass || r.class === klass;
-      return mq && mg && mc;
+      const md = !domain || r.domain === domain;
+      return mq && mg && mc && md;
     });
     out.sort((a, b) => {
       let d = 0;
@@ -45,7 +48,7 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
       return asc ? d : -d;
     });
     return out;
-  }, [rows, q, grade, klass, sortKey, asc]);
+  }, [rows, q, grade, klass, domain, sortKey, asc]);
 
   const setSort = (k: SortKey) => {
     if (k === sortKey) setAsc((v) => !v);
@@ -81,6 +84,26 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
             <option value="">{it ? "Tutte" : "All"}</option>
             {classes.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label className="font-mono text-[0.58rem] uppercase tracking-widest text-[var(--accent)]">{it ? "Dentro / Fuori" : "Inside / Outside"}</label>
+          <div className="flex">
+            {([
+              ["", it ? "Tutto" : "All"],
+              ["systemic", it ? "Dentro" : "Inside"],
+              ["topical", it ? "Fuori" : "Outside"],
+            ] as const).map(([val, lab]) => (
+              <button
+                key={val}
+                onClick={() => setDomain(val as "" | "systemic" | "topical")}
+                className={`font-mono text-[0.6rem] uppercase tracking-widest px-2.5 py-2 border -ml-px first:ml-0 transition-colors ${
+                  domain === val ? "border-[var(--accent)] text-[var(--accent)] relative z-10" : "border-[var(--border)] text-[var(--muted)] hover:text-[var(--fg)]"
+                }`}
+              >
+                {lab}
+              </button>
+            ))}
+          </div>
         </div>
         <span className="ml-auto font-mono text-[0.62rem] uppercase tracking-widest text-[var(--muted)] tabular">
           {filtered.length} / {rows.length}

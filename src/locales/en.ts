@@ -32,7 +32,7 @@ const en: Locale = {
     masthead: ["Independent evidence", "Founded 2026", "IT / EN"],
     big_line: "Longevity,",
     big_accent: "graded.",
-    big_sub: "We read the clinical studies so a label can't read you. Every molecule: an A–F grade and its PubMed sources.",
+    big_sub: "Live longer, age better — inside and out. We read the clinical studies so a label can't read you. Every molecule you take or apply: an A–F grade and its PubMed sources.",
     cta_database: "Explore the database",
     marquee_label: ["Graded on evidence —", "not on hype."],
     guide_hook: "Subscribe and get the longevity molecules guide — A–F grades and PubMed sources.",

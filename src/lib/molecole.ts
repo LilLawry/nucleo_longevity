@@ -41,6 +41,9 @@ export interface Molecule {
   structureNote: string;
   /** allow search indexing — only once the page meets the NMN quality bar */
   indexable: boolean;
+  /** longevity lens: "systemic" (taken) vs "topical" (applied). Skin longevity
+   * is still longevity — this is a facet, not a separate section. */
+  domain: "systemic" | "topical";
   body: string;
 }
 
@@ -73,6 +76,7 @@ function parse(file: string): Molecule {
     structure: data.structure !== false,
     structureNote: data.structureNote || "",
     indexable: data.index === true,
+    domain: /topical|skincare/i.test(String(data.class || "")) || data.domain === "topical" ? "topical" : "systemic",
     body: content.trim(),
   };
 }
