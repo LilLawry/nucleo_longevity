@@ -53,9 +53,9 @@ const en: Locale = {
     method_subtitle:
       "We start from the clinical question, search PubMed, and grade the evidence with an adapted GRADE schema. No hidden conflicts.",
     method_cta: "See the full method →",
-    cta_title: "Longevity, one proof at a time.",
+    cta_title: "Get the Report Card, then the evidence.",
     cta_subtitle:
-      "A new analysis every two weeks. No spam, no miracle promises. Only what the studies actually say.",
+      "Subscribe and get the free Longevity Molecule Report Card, plus a new analysis every two weeks. No spam, no miracle promises — only what the studies actually say.",
   },
   metodo: {
     title: "The Method",

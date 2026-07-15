@@ -51,9 +51,9 @@ const it = {
     method_subtitle:
       "Partiamo dalla domanda clinica, cerchiamo su PubMed e gradiamo l'evidenza secondo uno schema GRADE adattato. Nessun conflitto nascosto.",
     method_cta: "Scopri il metodo completo →",
-    cta_title: "La longevità, una prova alla volta.",
+    cta_title: "Prima la Pagella, poi l'evidenza.",
     cta_subtitle:
-      "Una nuova analisi ogni due settimane. Niente spam, niente promesse miracolose. Solo ciò che gli studi dicono davvero.",
+      "Iscriviti e ricevi gratis la Pagella delle Molecole Longevity, più una nuova analisi ogni due settimane. Niente spam, niente promesse miracolose — solo ciò che gli studi dicono davvero.",
   },
   metodo: {
     title: "Il Metodo",
