@@ -31,6 +31,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# private data room (never commit sensitive deal/legal/financial docs)
+/private-data-room/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
