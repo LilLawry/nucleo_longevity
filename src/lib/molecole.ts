@@ -31,6 +31,8 @@ export interface Molecule {
   safety: string;
   dosageContext: string;
   keyStudies: KeyStudy[];
+  /** practical, non-prescriptive examples of how the molecule is typically used */
+  applications: string[];
   fieldNote: string;
   relatedMolecules: string[];
   lastReviewed: string;
@@ -69,6 +71,7 @@ function parse(file: string): Molecule {
     safety: data.safety || "",
     dosageContext: data.dosageContext || "",
     keyStudies: data.keyStudies || [],
+    applications: data.applications || [],
     fieldNote: data.fieldNote || data.notaDalCampo || "",
     relatedMolecules: data.relatedMolecules || [],
     lastReviewed: data.lastReviewed || "",
