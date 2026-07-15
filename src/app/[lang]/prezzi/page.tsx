@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
 import { getAllMolecules } from "@/lib/molecole";
 import { getOffersForMolecule, NKF_DEMO_MODE } from "@/lib/offers";
-import EvidenceBadge from "@/components/EvidenceBadge";
+import PricesHubClient, { type HubRow } from "./PricesHubClient";
 
 export function generateStaticParams() {
   return langs.map((lang) => ({ lang }));
@@ -41,21 +41,29 @@ export default async function PricesHubPage({
   const it = lang === "it";
 
   // Molecules that actually have at least one offer, with their cheapest.
-  const rows = getAllMolecules()
-    .map((m) => {
-      const offers = getOffersForMolecule(m.slug).filter((o) => o.status !== "unavailable");
-      if (offers.length === 0) return null;
-      const active = offers.filter((o) => o.status === "active");
-      const cheapest = (active.length ? active : offers).reduce((best, o) => {
-        const v = o.total ?? o.price;
-        const bv = best.total ?? best.price;
-        return v < bv ? o : best;
-      });
-      return { m, count: offers.length, from: cheapest.total ?? cheapest.price };
-    })
-    .filter(Boolean) as { m: ReturnType<typeof getAllMolecules>[number]; count: number; from: number }[];
-
-  rows.sort((a, b) => b.count - a.count || a.from - b.from);
+  const rows: HubRow[] = (
+    getAllMolecules()
+      .map((m) => {
+        const offers = getOffersForMolecule(m.slug).filter((o) => o.status !== "unavailable");
+        if (offers.length === 0) return null;
+        const active = offers.filter((o) => o.status === "active");
+        const cheapest = (active.length ? active : offers).reduce((best, o) => {
+          const v = o.total ?? o.price;
+          const bv = best.total ?? best.price;
+          return v < bv ? o : best;
+        });
+        return {
+          slug: m.slug,
+          name: m.name,
+          grade: m.grade || "",
+          count: offers.length,
+          from: cheapest.total ?? cheapest.price,
+          perUnitLabel: cheapest.perUnit?.label ?? null,
+          perUnitValue: cheapest.perUnit?.value ?? null,
+        };
+      })
+      .filter(Boolean) as HubRow[]
+  ).sort((a, b) => b.count - a.count || a.from - b.from);
 
   const L = {
     eyebrow: it ? "Confronto prezzi" : "Price comparison",
@@ -67,9 +75,13 @@ export default async function PricesHubPage({
     sellers: it ? "Venditori" : "Sellers",
     from: it ? "Da" : "From",
     grade: it ? "Grado" : "Grade",
-    empty: it ? "Nessuna offerta ancora disponibile." : "No offers available yet.",
+    perDose: it ? "Prezzo/dose" : "Price/dose",
+    empty: it ? "Nessun risultato con questi filtri." : "No results with these filters.",
     method: it ? "Come funziona il confronto" : "How the comparison works",
     view: it ? "Vedi offerte" : "View offers",
+    gradeAll: it ? "Tutti" : "All",
+    maxPrice: it ? "Prezzo max" : "Max price",
+    results: it ? "risultati" : "results",
   };
 
   return (
@@ -91,40 +103,11 @@ export default async function PricesHubPage({
       </Link>
 
       {rows.length === 0 ? (
-        <p className="font-sans text-sm text-[var(--muted)] py-10">{L.empty}</p>
+        <p className="font-sans text-sm text-[var(--muted)] py-10">
+          {it ? "Nessuna offerta ancora disponibile." : "No offers available yet."}
+        </p>
       ) : (
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse text-sm min-w-[560px]">
-            <thead>
-              <tr className="border-b-2 border-[var(--border)] text-left">
-                {[L.molecule, L.grade, L.sellers, L.from, ""].map((h, i) => (
-                  <th key={i} className="py-2.5 pr-4 font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] font-medium">
-                    {h}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(({ m, count, from }) => (
-                <tr key={m.slug} className="border-b border-[var(--border)] hover:bg-[var(--bg-elev)] transition-colors">
-                  <td className="py-3 pr-4">
-                    <Link href={`/${lang}/molecule/${m.slug}#offers`} className="font-sans font-medium text-[var(--fg)] hover:text-[var(--accent)] transition-colors">
-                      {m.name}
-                    </Link>
-                  </td>
-                  <td className="py-3 pr-4">{m.grade ? <EvidenceBadge grade={m.grade} /> : "—"}</td>
-                  <td className="py-3 pr-4 tabular text-[var(--muted)]">{count}</td>
-                  <td className="py-3 pr-4 tabular font-medium text-[var(--fg)]">€{from.toFixed(2)}</td>
-                  <td className="py-3">
-                    <Link href={`/${lang}/molecule/${m.slug}#offers`} className="font-mono text-[0.66rem] text-[var(--accent)] link-underline whitespace-nowrap">
-                      {L.view} →
-                    </Link>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <PricesHubClient rows={rows} lang={lang} L={L} />
       )}
     </div>
   );
