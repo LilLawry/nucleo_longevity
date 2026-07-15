@@ -99,6 +99,7 @@ const en: Locale = {
     contribute: "Contribute",
     disclaimer: "Medical disclaimer",
     terms: "Terms of use",
+    comparator: "How the comparison works",
   },
   privacy: {
     title: "Privacy & Cookie Policy",

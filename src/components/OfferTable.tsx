@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getOffersForMolecule, NKF_DEMO_MODE, type ComputedOffer } from "@/lib/offers";
 
 /**
@@ -73,7 +74,11 @@ export default function OfferTable({ slug, lang }: { slug: string; lang: string 
       {/* Disclosure — honest about the (absence of) commercial relationship */}
       <p className="font-mono text-[0.62rem] text-[var(--muted)] leading-relaxed mt-5 max-w-2xl">
         {NKF_DEMO_MODE ? `${L.demo} ` : ""}
-        {anyAffiliate ? L.disclosureAff : L.disclosureNoAff}
+        {anyAffiliate ? L.disclosureAff : L.disclosureNoAff}{" "}
+        <Link href={`/${lang}/confronto`} className="text-[var(--accent)] link-underline">
+          {L.method}
+        </Link>
+        .
       </p>
     </section>
   );
