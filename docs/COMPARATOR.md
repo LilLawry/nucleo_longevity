@@ -36,14 +36,24 @@ offers.
 - Click log is minimised: offer/molecule/merchant/timestamp only — no IP, no
   query, no PII.
 
-## Going live with real offers
-1. Add real merchants to `SEED_MERCHANTS` (or move to a DB/feed) and their
-   domains to `ALLOWED_DOMAINS`.
-2. Add real offers with a real `sourcedAt`; keep `affiliate: false` until a
-   signed program exists, then set the affiliate URL + `affiliate: true`.
-3. Set `NKF_DEMO_MODE = false` to drop the demo labelling.
-4. (v2) Replace the seed arrays with an authorised CSV/XML/JSON/API feed
-   importer; the components and `/go` redirect stay unchanged.
+## Going live with real offers (no code)
+Data is loaded from two CSV files: `content/comparator/merchants.csv` and
+`content/comparator/offers.csv`. While they're absent, a labelled DEMO dataset
+is shown. Add the files and the demo badge disappears automatically
+(`NKF_DEMO_MODE` is derived from their presence).
+
+1. Join an affiliate network (Awin/Tradedoubler/Webgains), Amazon Associates,
+   or a direct brand deal — no scraping.
+2. Download the merchant **product feed** (CSV/XML): it already contains price,
+   EAN, image (with rights) and your affiliate deep-link.
+3. Map its columns to the schema in `content/comparator/README.md`, save as
+   `offers.csv` / `merchants.csv`, commit. The `ALLOWED_DOMAINS` allowlist is
+   derived automatically from `domain` + `link_domains`.
+4. Set `affiliate: true` on a merchant ONLY where a signed program exists
+   (`AFFILIATE AGREEMENT REQUIRED`); otherwise links stay plain external.
+
+Templates: `sample-data/comparator/`. Full column reference:
+`content/comparator/README.md`.
 
 ## Deliberately NOT in v1
 Cart/checkout/payments, user accounts, price alerts, sponsored placements,

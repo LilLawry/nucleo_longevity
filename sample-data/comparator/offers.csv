@@ -1,0 +1,3 @@
+id,molecule_slug,merchant_id,product_title,price,currency,shipping,url,size_value,size_unit,status,sourced_at
+mymerchant-nmn-1,nmn,mymerchant,NMN 500 mg 60 caps,32.90,EUR,4.90,https://mymerchant.it/nmn-500,60,caps,active,2026-07-15
+mymerchant-crea-1,creatine,mymerchant,Creatine monohydrate 500 g,24.90,EUR,0,https://mymerchant.it/creatine,500,g,active,2026-07-15
