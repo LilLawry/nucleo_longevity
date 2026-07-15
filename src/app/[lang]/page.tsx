@@ -180,6 +180,42 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* ============ REPORT CARD (lead magnet) ============ */}
+      <section className="border-y border-[var(--border)]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
+          <Reveal>
+            <p className="font-mono text-xs tracking-widest uppercase text-[var(--accent)] mb-4">
+              {lang === "en" ? "Free resource" : "Risorsa gratuita"}
+            </p>
+            <h2 className="font-serif font-medium text-3xl sm:text-4xl md:text-5xl tracking-[-0.02em] text-[var(--fg)] mb-4 text-balance">
+              {lang === "en" ? "The Longevity Molecule Report Card" : "La Pagella delle Molecole Longevity"}
+            </h2>
+            <p className="font-sans text-base text-[var(--muted)] leading-relaxed mb-7 max-w-lg text-pretty">
+              {lang === "en"
+                ? "Every molecule we cover, graded A–F on the evidence alone — on one page you can print or save as a PDF. No hype, no sponsors."
+                : "Tutte le molecole che analizziamo, con voto A–F basato solo sull'evidenza — in una pagina che puoi stampare o salvare in PDF. Niente hype, niente sponsor."}
+            </p>
+            <Link href={`/${lang}/report-card`} className="btn-accent font-sans font-medium text-sm px-6 py-3">
+              {lang === "en" ? "Get the report card →" : "Scarica la pagella →"}
+            </Link>
+          </Reveal>
+          <Reveal delay={120} className="hidden lg:flex justify-end">
+            <div className="w-full max-w-[280px] border border-[var(--border)] bg-[var(--bg-elev)] p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <NucleusMark size={18} className="text-[var(--accent)]" />
+                <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--muted)]">Nucleo · Report Card</span>
+              </div>
+              {GRADES.map((g) => (
+                <div key={g} className="flex items-center gap-3 py-1.5 border-b border-[var(--border)] last:border-0">
+                  <EvidenceBadge grade={g} />
+                  <span className="flex-1 h-1 bg-[var(--border)]" style={{ opacity: 1 - GRADES.indexOf(g) * 0.14 }} />
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ============ METHOD PREVIEW ============ */}
       <section className="border-y border-[var(--border)] bg-[var(--bg-elev)] relative overflow-hidden">
         <div className="relative max-w-6xl mx-auto px-5 sm:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
