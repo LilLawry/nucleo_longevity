@@ -9,7 +9,7 @@
     <title>Nucleo Longevity</title>
     <link>https://www.nucleolongevity.com</link>
     <description>Evidence-graded longevity molecules — content export</description>
-    <pubDate>Wed, 15 Jul 2026 17:37:29 GMT</pubDate>
+    <pubDate>Wed, 15 Jul 2026 22:44:01 GMT</pubDate>
     <language>en</language>
     <wp:wxr_version>1.2</wp:wxr_version>
     <wp:base_site_url>https://www.nucleolongevity.com</wp:base_site_url>
@@ -28,11 +28,50 @@
     </wp:category>
 
     <item>
+      <title>AHA (glycolic / lactic acid) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/aha</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1000</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Alpha-hydroxy acids for smoother texture, brighter tone and the look of fine lines.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Well-evidenced cosmetic exfoliants: at sensible strengths they smooth texture and even tone, and lactic acid is the gentler, more hydrating option. Overdoing strength or frequency is where they go wrong.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Exfoliation, texture &amp; tone</li><li><strong>Grade:</strong> B</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>AHAs like glycolic and lactic acid have controlled evidence for improving skin texture, tone and the appearance of fine lines and photoaging through exfoliation and, over time, effects in the dermis. Glycolic (smallest molecule) penetrates most and is the most studied; lactic acid is gentler and also humectant. This describes cosmetic exfoliation, not chemical peels performed as medical procedures. As always the ingredient's evidence isn't a specific product's promise — concentration, pH and formulation drive both benefit and irritation. Grade B.</p>
+<h2>Key studies</h2><ol><li><strong>Alpha-hydroxy acids and photoaging / texture</strong> <em>(RCT)</em><br>Improved texture and tone with regular use. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=alpha+hydroxy+acid+glycolic+photoaging+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Lactic acid on skin (gentler AHA)</strong> <em>(review)</em><br>Gentler, also humectant. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=lactic+acid+skin+exfoliation+hydration+review" rel="noopener">PubMed ↗</a></li><li><strong>AHA mechanisms and dermal effects (review)</strong> <em>(review)</em><br>Surface and deeper effects over time. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=alpha+hydroxy+acid+mechanism+dermis+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Weaken the bonds between surface corneocytes to promote even shedding, smoothing texture and tone; chronic use is associated with increased dermal glycosaminoglycans and collagen in studies.</p>
+<h2>Safety</h2><p>Cause dose-dependent stinging, irritation and increased sun sensitivity — daily SPF is important. Start low and infrequent. High-strength professional peels are a separate, clinical matter and out of scope here.</p>
+<h2>Dosage context</h2><p>Leave-on cosmetic products commonly use ~5–10% at a controlled pH; higher strengths and low pH raise both efficacy and irritation. More is not better if it inflames the skin.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>AHAs work — the mistakes are strength and frequency, not the ingredient. We grade them B, favour gentler lactic acid for sensitive skin, and always pair with sunscreen.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Alpha-hydroxy acids for smoother texture, brighter tone and the look of fine lines.]]></excerpt:encoded>
+      <wp:post_id>1000</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-aha]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[B]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Exfoliation, texture & tone]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Alpha-lipoic acid (ALA) — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/alpha-lipoic-acid</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1000</guid>
+      <guid isPermaLink="false">nucleo-1001</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A mitochondrial antioxidant promoted for nerves, blood sugar and aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Best evidence is for diabetic nerve symptoms and modest glucose effects — not aging. A legitimate metabolic supplement with a specific niche, oversold as an anti-aging antioxidant.</p></blockquote>
@@ -44,7 +83,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~300–600 mg/day (higher, IV, in neuropathy studies). The R-enantiomer is marketed as more active; evidence for superiority in practice is limited.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>ALA earns its place through diabetic-neuropathy data, then gets sold for aging on the strength of a mechanism. We grade it C and keep the niche and the hype separate.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A mitochondrial antioxidant promoted for nerves, blood sugar and aging.]]></excerpt:encoded>
-      <wp:post_id>1000</wp:post_id>
+      <wp:post_id>1001</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -71,7 +110,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/apigenin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1001</guid>
+      <guid isPermaLink="false">nucleo-1002</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A dietary flavonoid promoted to preserve NAD⁺ by inhibiting the enzyme CD38.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A neat theory — block the enzyme that burns through NAD⁺ — supported mainly by lab and animal work. Direct human longevity evidence is essentially absent.</p></blockquote>
@@ -83,7 +122,7 @@
 <h2>Dosage context</h2><p>No established human 'NAD⁺-preserving' dose; supplement products vary and bioavailability is low. Much of the interest is extrapolated from cell and animal studies.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Apigenin is the 'stop burning NAD⁺' counterpart to the 'add more NAD⁺' precursors — clever on paper, almost entirely preclinical in practice. Grade C, and one to watch rather than to bank on.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A dietary flavonoid promoted to preserve NAD⁺ by inhibiting the enzyme CD38.]]></excerpt:encoded>
-      <wp:post_id>1001</wp:post_id>
+      <wp:post_id>1002</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -110,7 +149,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/ashwagandha</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1002</guid>
+      <guid isPermaLink="false">nucleo-1003</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An adaptogenic herb promoted for stress, sleep and testosterone.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Reasonable short-term evidence for reducing stress and improving sleep; it is not a longevity molecule, and rare liver-injury reports mean it isn't consequence-free.</p></blockquote>
@@ -122,7 +161,7 @@
 <h2>Dosage context</h2><p>Trials typically use ~300–600 mg/day of a standardised root extract for 6–12 weeks. Long-term safety beyond a few months is not well characterised.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Ashwagandha is one of the better-evidenced adaptogens for stress — which is not the same as longevity. We grade it C and, unusually for a herb, flag a genuine (if rare) liver-safety signal.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An adaptogenic herb promoted for stress, sleep and testosterone.]]></excerpt:encoded>
-      <wp:post_id>1002</wp:post_id>
+      <wp:post_id>1003</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -149,7 +188,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/astaxanthin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1003</guid>
+      <guid isPermaLink="false">nucleo-1004</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A red-algae carotenoid marketed as a super-antioxidant for skin, eyes and endurance.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A potent antioxidant in the lab with small, promising human trials on skin and eye fatigue — but the 'super-antioxidant longevity' billing runs well ahead of the evidence.</p></blockquote>
@@ -161,7 +200,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~4–12 mg/day. Natural (Haematococcus algae) sources are typically preferred over synthetic in the supplement market.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Astaxanthin has genuinely interesting tissue-distribution and some early skin/eye data — which the marketing inflates into a longevity super-pill. We grade it C and keep the cosmetic niche separate from the aging claim.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A red-algae carotenoid marketed as a super-antioxidant for skin, eyes and endurance.]]></excerpt:encoded>
-      <wp:post_id>1003</wp:post_id>
+      <wp:post_id>1004</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -184,11 +223,50 @@
     </item>
 
     <item>
+      <title>Bakuchiol — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/bakuchiol</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1005</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A plant-derived ingredient marketed as a gentler, 'natural' alternative to retinol.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuinely interesting retinol alternative with a couple of small comparative trials suggesting similar benefits and less irritation — but the evidence is thin and short. Promising for sensitive skin, not yet a proven equal to retinoids.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Gentle retinol alternative</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Bakuchiol became popular as a 'retinol-like' active after small studies — including a head-to-head trial — reported comparable improvements in the appearance of wrinkles and pigmentation with less irritation. The problem is scale: the trials are few, small and short, and it is chemically unrelated to vitamin A despite the 'retinol alternative' framing. It's well tolerated and plausible, but calling it equivalent to retinoids overstates the current data. Grade C reflects real promise on a limited evidence base; the finished product's formulation still governs results.</p>
+<h2>Key studies</h2><ol><li><strong>Bakuchiol vs retinol (comparative trial)</strong> <em>(RCT)</em><br>Similar appearance benefits, less irritation — small study. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=bakuchiol+retinol+comparison+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Bakuchiol and photoaging</strong> <em>(review)</em><br>Mechanistic and early clinical interest. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=bakuchiol+photoaging+antioxidant+review" rel="noopener">PubMed ↗</a></li><li><strong>Bakuchiol overview (review)</strong> <em>(review)</em><br>Positions it as a tolerable but under-studied option. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=bakuchiol+skin+cosmetic+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Proposed to influence some of the same gene-expression pathways as retinoids (collagen-related signalling) and to act as an antioxidant, though it does not bind retinoic-acid receptors the way true retinoids do.</p>
+<h2>Safety</h2><p>Well tolerated with low irritation in the available studies, which is its main selling point; often chosen by people who can't tolerate retinoids or are pregnant (still check with a professional).</p>
+<h2>Dosage context</h2><p>Studied around ~0.5–1% in cosmetic formulations; as with retinol, tolerability and consistency matter more than a high number, and product formulation varies widely.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Bakuchiol is the rare 'natural alternative' with any comparative data — just not enough to crown it retinol's equal. We grade it C: a reasonable choice for retinoid-intolerant skin, sold with more certainty than the evidence supports.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A plant-derived ingredient marketed as a gentler, 'natural' alternative to retinol.]]></excerpt:encoded>
+      <wp:post_id>1005</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-bakuchiol]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Gentle retinol alternative]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Berberine — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/berberine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1004</guid>
+      <guid isPermaLink="false">nucleo-1006</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A plant alkaloid marketed as 'nature's Ozempic' for blood sugar and weight.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Real, measurable effects on blood sugar and lipids — but it is not Ozempic, and it has no longevity outcome data. Useful metabolic tool, oversold as a weight-loss miracle.</p></blockquote>
@@ -200,7 +278,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~900–1500 mg/day split across meals (bioavailability is poor, hence divided dosing). No validated longevity protocol; quality and dose accuracy vary between products.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Sold hard as 'natural Ozempic'. The metabolic effect is real enough that we don't dismiss it — but the comparison is marketing, and the interaction risk with prescriptions is the part the sales pages leave out. Grade C, and talk to a pharmacist if you take other meds.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A plant alkaloid marketed as 'nature's Ozempic' for blood sugar and weight.]]></excerpt:encoded>
-      <wp:post_id>1004</wp:post_id>
+      <wp:post_id>1006</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -227,7 +305,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/calcium-akg</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1005</guid>
+      <guid isPermaLink="false">nucleo-1007</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A Krebs-cycle intermediate promoted to lower 'biological age'.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Strong animal data and one small, widely-cited human study on biological-age markers — but the human evidence is thin, early, and partly industry-linked. Interesting, far from proven.</p></blockquote>
@@ -239,7 +317,7 @@
 <h2>Dosage context</h2><p>The cited human work used ~1 g/day of a Ca-AKG formulation. No independent dose-finding or replication has established an optimal regimen.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Ca-AKG rides on one small biological-age study and strong mouse data. We grade it C and are explicit that a single, partly self-interested human trial is a starting point, not a verdict.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A Krebs-cycle intermediate promoted to lower 'biological age'.]]></excerpt:encoded>
-      <wp:post_id>1005</wp:post_id>
+      <wp:post_id>1007</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -262,11 +340,89 @@
     </item>
 
     <item>
+      <title>Centella asiatica (Cica) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/centella</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1008</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A botanical ('cica') used to calm, soothe and support the skin barrier.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A popular soothing botanical with real active compounds and some supporting studies for comfort and barrier recovery — but the cosmetic evidence is modest and formulation-dependent. Calming, not transformative.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Soothing &amp; barrier support</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Centella asiatica and its isolated actives (madecassoside, asiaticoside) have a body of research — much of it in wound-healing and preclinical contexts — behind the 'cica' soothing trend, plus smaller cosmetic studies suggesting improved comfort, hydration and barrier recovery in sensitised or dry skin. We describe cosmetic soothing and comfort, not treatment of any skin condition; results depend on the specific extract and the whole formula, and independent cosmetic trials are limited. Grade C: a plausible, well-tolerated calming ingredient with a modest cosmetic evidence base.</p>
+<h2>Key studies</h2><ol><li><strong>Centella asiatica actives and skin</strong> <em>(review)</em><br>Antioxidant/soothing and barrier-support signals. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=centella+asiatica+madecassoside+skin+review" rel="noopener">PubMed ↗</a></li><li><strong>Centella in cosmetic / sensitive-skin use</strong> <em>(review)</em><br>Comfort and hydration in small studies. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=centella+asiatica+cosmetic+sensitive+skin+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Triterpenoids and barrier repair (review)</strong> <em>(review)</em><br>Mechanistic background, largely preclinical. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=asiaticoside+centella+wound+healing+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Its triterpenoid actives are associated with antioxidant and anti-inflammatory effects and with supporting collagen and barrier-repair processes, mostly shown in laboratory and wound-healing models.</p>
+<h2>Safety</h2><p>Generally well tolerated and widely used in products aimed at sensitive and reactive skin; allergic reactions are uncommon but possible with botanicals.</p>
+<h2>Dosage context</h2><p>Products use varying extracts and standardisations of the active triterpenes, so 'centella' on a label can mean very different things; the specific standardised actives matter more than the plant name.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Cica is a genuinely soothing botanical that the trend has inflated into a cure-all. We grade it C: nice for comfort and calming, judged on the standardised actives, not the buzzword.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A botanical ('cica') used to calm, soothe and support the skin barrier.]]></excerpt:encoded>
+      <wp:post_id>1008</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-centella]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Soothing & barrier support]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title>Ceramides — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/ceramides</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1009</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Barrier lipids that help restore comfort and reduce water loss in dry, compromised skin.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> One of the most sensible 'comfort and barrier' ingredients: ceramides are part of your skin's own mortar, and replacing them helps dry or barrier-stressed skin. Best evidence is for restoring the barrier, not dramatic anti-aging.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Barrier repair &amp; comfort</li><li><strong>Grade:</strong> B</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Ceramides are a major lipid component of the skin barrier, and their depletion is linked to dryness and barrier dysfunction. Controlled studies of ceramide-containing moisturisers (often with cholesterol and fatty acids in a physiological ratio) show improved hydration, reduced trans-epidermal water loss and better comfort in dry or barrier-compromised skin. This is a cosmetic barrier-support claim, not treatment of any skin disease, and the finished product's ratio and formulation matter as much as the presence of ceramides on the label. Grade B for solid barrier evidence.</p>
+<h2>Key studies</h2><ol><li><strong>Ceramide-containing moisturisers and barrier function</strong> <em>(RCT)</em><br>Improved hydration and barrier measures. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ceramide+moisturizer+barrier+transepidermal+water+loss+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Physiological lipid ratios in barrier repair</strong> <em>(review)</em><br>Balanced lipid ratios matter for repair. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ceramide+cholesterol+fatty+acid+barrier+repair+review" rel="noopener">PubMed ↗</a></li><li><strong>Skin barrier lipids and dryness (review)</strong> <em>(review)</em><br>Why ceramide depletion tracks with dry, uncomfortable skin. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=skin+barrier+ceramide+dryness+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Replenish the intercellular lipid matrix ('bricks and mortar' model) that limits water loss and keeps the barrier intact; work best alongside cholesterol and free fatty acids in balanced proportions.</p>
+<h2>Safety</h2><p>Very well tolerated, including on sensitive and dry skin; among the lowest-irritation actives. Suitable for frequent use.</p>
+<h2>Dosage context</h2><p>Effect depends on the full lipid formulation rather than a single percentage; products combining ceramides with cholesterol and fatty acids in a physiological ratio have the best support.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Ceramides are the 'comfort and barrier' pick that actually makes sense — they're literally part of your skin's mortar. We grade them B and keep the claim honest: restore the barrier, don't promise a facelift.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Barrier lipids that help restore comfort and reduce water loss in dry, compromised skin.]]></excerpt:encoded>
+      <wp:post_id>1009</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-ceramides]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[B]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Barrier repair & comfort]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Coenzyme Q10 — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/coenzyme-q10</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1006</guid>
+      <guid isPermaLink="false">nucleo-1010</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A mitochondrial electron-transport cofactor promoted for heart, energy and aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Best evidence is in specific settings — heart failure and statin-associated muscle symptoms — with mixed results. As a general anti-aging energy booster for healthy people, the case is weak.</p></blockquote>
@@ -278,7 +434,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~100–300 mg/day. Absorption is poor and fat-dependent, so it's best taken with a meal; ubiquinol formulations are marketed as better-absorbed, with variable supporting data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>CoQ10 has real roles and a couple of legitimate clinical niches, which is exactly why it gets sold for everything. We keep it at C: worth considering in heart failure or statin myalgia with a doctor, unproven as a general longevity 'battery'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A mitochondrial electron-transport cofactor promoted for heart, energy and aging.]]></excerpt:encoded>
-      <wp:post_id>1006</wp:post_id>
+      <wp:post_id>1010</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -305,7 +461,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/collagen</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1007</guid>
+      <guid isPermaLink="false">nucleo-1011</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Hydrolysed collagen promoted for skin elasticity, joints, hair and nails.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The best evidence is for modest skin-hydration and elasticity gains; joint and 'anti-aging' claims are weaker. A reasonable cosmetic supplement, not an internal fountain of youth.</p></blockquote>
@@ -317,7 +473,7 @@
 <h2>Dosage context</h2><p>Skin trials typically use ~2.5–10 g/day of hydrolysed collagen peptides for 8–12 weeks. Benefits fade after stopping, so it's an ongoing cost, not a one-off fix.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>One of the few 'beauty from within' supplements with any real trial support — and one of the most industry-funded literatures we read. We keep it at C: fine as a cosmetic aid, not the systemic rejuvenation the ads imply.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Hydrolysed collagen promoted for skin elasticity, joints, hair and nails.]]></excerpt:encoded>
-      <wp:post_id>1007</wp:post_id>
+      <wp:post_id>1011</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -344,7 +500,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/creatine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1008</guid>
+      <guid isPermaLink="false">nucleo-1012</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The most evidence-backed supplement for preserving muscle and strength with age.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Not an 'anti-aging' pill — but one of the very few supplements with genuinely strong human evidence, for muscle, strength and power in older adults, especially paired with resistance training. Lifespan itself is not the endpoint studied.</p></blockquote>
@@ -356,7 +512,7 @@
 <h2>Dosage context</h2><p>Typical protocols use ~3–5 g/day of creatine monohydrate, with or without an initial higher-dose 'loading' week. Monohydrate is the best-evidenced and cheapest form; more exotic forms rarely justify their price.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>In a market full of hype, creatine is almost the opposite problem: cheap, unglamorous, and better evidenced than most 'longevity' molecules. We grade it B for functional aging and stay clear that it isn't a lifespan drug.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The most evidence-backed supplement for preserving muscle and strength with age.]]></excerpt:encoded>
-      <wp:post_id>1008</wp:post_id>
+      <wp:post_id>1012</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -383,7 +539,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/curcumin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1009</guid>
+      <guid isPermaLink="false">nucleo-1013</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The active turmeric polyphenol promoted as a natural anti-inflammatory.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A credible anti-inflammatory with decent trials for osteoarthritis pain — held back by famously poor absorption. Useful for specific symptoms, not a proven longevity molecule.</p></blockquote>
@@ -395,7 +551,7 @@
 <h2>Dosage context</h2><p>Trials range widely (~500–2000 mg/day of curcuminoids), almost always with a bioavailability enhancer. Comparing products is hard because 'curcumin' on a label can mean very different absorbed doses.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Curcumin is the rare herbal with genuine osteoarthritis data — and the poster child for 'the dose on the label isn't the dose in your blood'. We grade it C and pay attention to formulation, not marketing.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The active turmeric polyphenol promoted as a natural anti-inflammatory.]]></excerpt:encoded>
-      <wp:post_id>1009</wp:post_id>
+      <wp:post_id>1013</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -422,7 +578,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/egcg</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1010</guid>
+      <guid isPermaLink="false">nucleo-1014</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The main green-tea catechin promoted for metabolism, fat loss and 'anti-aging'.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Green tea as a drink is a healthy habit; concentrated EGCG extracts have weak weight/longevity evidence and a real, if uncommon, liver-toxicity risk. The pill is not the same as the cup.</p></blockquote>
@@ -434,7 +590,7 @@
 <h2>Dosage context</h2><p>Extract trials vary widely; some safety reviews suggest keeping supplemental EGCG below defined daily limits and taking it with food. Drinking tea avoids the concentrated-extract risk entirely.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>This is the clearest 'the pill isn't the food' case in the database. The tea is great; the high-dose extract trades marginal benefit for a real liver risk. Grade C, with a safety asterisk.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The main green-tea catechin promoted for metabolism, fat loss and 'anti-aging'.]]></excerpt:encoded>
-      <wp:post_id>1010</wp:post_id>
+      <wp:post_id>1014</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -461,7 +617,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/ergothioneine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1011</guid>
+      <guid isPermaLink="false">nucleo-1015</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A mushroom-derived antioxidant proposed as a possible 'longevity vitamin'.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Genuinely interesting: the body has a dedicated transporter for it, and lower blood levels track with worse aging outcomes. But that's association — no trial yet shows that taking it changes anything.</p></blockquote>
@@ -473,7 +629,7 @@
 <h2>Dosage context</h2><p>Dietary intake varies with mushroom consumption; supplement trials are few and doses not standardised. Because the evidence is associational, an 'optimal' dose is undefined.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Ergothioneine is the most interesting molecule here with the least interventional proof: a dedicated transporter and strong associations, but nobody has yet shown that a pill helps. Grade C, and one of the more honest 'watch this space' entries.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A mushroom-derived antioxidant proposed as a possible 'longevity vitamin'.]]></excerpt:encoded>
-      <wp:post_id>1011</wp:post_id>
+      <wp:post_id>1015</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -500,7 +656,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/fisetin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1012</guid>
+      <guid isPermaLink="false">nucleo-1016</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A plant flavonoid studied as a senolytic to clear senescent cells.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> One of the more promising natural senolytics in the lab — but the human evidence is still in progress. Clinical trials are underway; the results aren't in. Treat current claims as preliminary.</p></blockquote>
@@ -512,7 +668,7 @@
 <h2>Dosage context</h2><p>Research uses intermittent high-dose ('hit-and-run') regimens; supplement doses and bioavailability vary widely. No validated human protocol yet exists.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Fisetin is often sold as if the human trials were already positive. They aren't finished. We grade it C and will revisit the day the clinical data actually land.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A plant flavonoid studied as a senolytic to clear senescent cells.]]></excerpt:encoded>
-      <wp:post_id>1012</wp:post_id>
+      <wp:post_id>1016</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -539,7 +695,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/glycine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1013</guid>
+      <guid isPermaLink="false">nucleo-1017</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A simple amino acid studied for sleep quality and, with NAC, for aging biomarkers.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Cheap, safe, with a modest evidence base for sleep quality and a role in the experimental GlyNAC combination. As a stand-alone longevity molecule the human data are thin.</p></blockquote>
@@ -551,7 +707,7 @@
 <h2>Dosage context</h2><p>Sleep studies commonly use ~3 g before bed; GlyNAC protocols use higher, weight-based doses under study conditions. No validated longevity dose exists for glycine alone.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Glycine is the quiet ingredient behind the GlyNAC headlines. On its own it's a reasonable, cheap sleep aid — not the aging reversal the combination studies get spun into.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A simple amino acid studied for sleep quality and, with NAC, for aging biomarkers.]]></excerpt:encoded>
-      <wp:post_id>1013</wp:post_id>
+      <wp:post_id>1017</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -578,7 +734,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/glynac</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1014</guid>
+      <guid isPermaLink="false">nucleo-1018</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A glycine + N-acetylcysteine combination studied to restore glutathione and mitochondrial function with age.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Intriguing early trials from a single research group show broad improvements in older adults — but the studies are small and largely unreplicated. Promising, not yet proven.</p></blockquote>
@@ -590,7 +746,7 @@
 <h2>Dosage context</h2><p>Studied at weight-based doses of both amino acids under trial conditions. There is no standardised over-the-counter GlyNAC dose, and products vary widely.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>GlyNAC produces the most impressive-sounding results of any supplement here — and the thinnest independent replication. We hold it at C until other labs reproduce it, however good the story sounds.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A glycine + N-acetylcysteine combination studied to restore glutathione and mitochondrial function with age.]]></excerpt:encoded>
-      <wp:post_id>1014</wp:post_id>
+      <wp:post_id>1018</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -617,7 +773,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/hyaluronic-acid</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1015</guid>
+      <guid isPermaLink="false">nucleo-1019</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The skin- and joint-hydrating molecule used topically, orally and as a dermal filler.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Well established for what it physically does — holding water — with decent evidence for skin hydration (topical/oral) and injectable use. As an ingested 'anti-aging' cure its systemic claims are more modest than the marketing.</p></blockquote>
@@ -629,7 +785,7 @@
 <h2>Dosage context</h2><p>Oral trials commonly use ~120–240 mg/day over 8–12 weeks. Topical concentration and molecular weight affect performance; injectable use follows clinical protocols.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Hyaluronic acid is a rare supplement where the physical mechanism is undeniable — it's just that 'holds water in skin' is a cosmetic claim, not a longevity one. Grade C, and route matters a lot.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The skin- and joint-hydrating molecule used topically, orally and as a dermal filler.]]></excerpt:encoded>
-      <wp:post_id>1015</wp:post_id>
+      <wp:post_id>1019</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -656,7 +812,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/l-citrulline</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1016</guid>
+      <guid isPermaLink="false">nucleo-1020</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An amino acid that raises nitric oxide, promoted for blood flow, exercise and blood pressure.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Genuinely raises nitric oxide and has decent evidence for exercise performance and modest blood-pressure effects — but that's sports and cardiometabolic, not proven longevity.</p></blockquote>
@@ -668,7 +824,7 @@
 <h2>Dosage context</h2><p>Exercise studies use ~6–8 g citrulline malate pre-workout; blood-pressure studies use ~3–6 g/day of L-citrulline. Doses on many pre-workout labels are too low to matter.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>L-citrulline actually does what it says on the nitric-oxide front — the catch is that the honest claim is 'better pumps and slightly lower blood pressure', not longevity. Grade C, and check the dose on your pre-workout.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An amino acid that raises nitric oxide, promoted for blood flow, exercise and blood pressure.]]></excerpt:encoded>
-      <wp:post_id>1016</wp:post_id>
+      <wp:post_id>1020</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -695,7 +851,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/l-theanine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1017</guid>
+      <guid isPermaLink="false">nucleo-1021</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The green-tea amino acid promoted for calm alertness and better sleep.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A safe, mild relaxant with modest evidence for 'calm focus' — especially paired with caffeine. Not a longevity molecule, but one of the more honest small-benefit supplements.</p></blockquote>
@@ -707,7 +863,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~100–200 mg, often alongside ~100 mg caffeine for the focus effect. A cup of green tea provides much less.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>L-theanine is a rare supplement whose modest, honest claim roughly matches its modest, honest evidence. We grade it C and keep it in the 'nice, low-risk, not magic' bucket.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The green-tea amino acid promoted for calm alertness and better sleep.]]></excerpt:encoded>
-      <wp:post_id>1017</wp:post_id>
+      <wp:post_id>1021</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -734,7 +890,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/lions-mane</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1018</guid>
+      <guid isPermaLink="false">nucleo-1022</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A mushroom promoted for memory, focus and nerve regeneration.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Intriguing nerve-growth mechanism and a couple of small human trials hinting at cognitive benefit — but the human evidence is thin, short, and far from the bold 'brain regeneration' marketing.</p></blockquote>
@@ -746,7 +902,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~1–3 g/day of dried mushroom or extract. Product quality varies widely; 'mycelium on grain' products may contain little active mushroom.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Lion's mane has one of the more exciting mechanisms in the mushroom aisle and one of the thinnest human evidence bases behind the hype. Grade C — worth watching, and worth checking whether your product is actual mushroom.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A mushroom promoted for memory, focus and nerve regeneration.]]></excerpt:encoded>
-      <wp:post_id>1018</wp:post_id>
+      <wp:post_id>1022</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -773,7 +929,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/lithium-low-dose</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1019</guid>
+      <guid isPermaLink="false">nucleo-1023</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Trace/low-dose lithium promoted for mood, brain aging and longevity.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Interesting population signals and a real psychiatric drug at higher doses — but a narrow safety margin and almost no controlled 'microdose' evidence make casual self-supplementation a genuinely bad idea. This is a caution, not a recommendation.</p></blockquote>
@@ -785,7 +941,7 @@
 <h2>Dosage context</h2><p>Clinical psychiatric dosing is individualised and monitored with blood tests. 'Microdose' supplement products (e.g. lithium orotate) provide much smaller amounts, but without trials establishing benefit or a safe long-term dose — so no responsible dose can be stated here.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>This is the entry where our job is to slow you down, not sell you. The population data are genuinely intriguing, but lithium is a real drug with a narrow safety margin and no controlled evidence for the supplement version. Grade D — and please don't microdose lithium on your own.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Trace/low-dose lithium promoted for mood, brain aging and longevity.]]></excerpt:encoded>
-      <wp:post_id>1019</wp:post_id>
+      <wp:post_id>1023</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -812,7 +968,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/magnesium</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1020</guid>
+      <guid isPermaLink="false">nucleo-1024</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An essential mineral widely supplemented for sleep, muscle, mood and heart health.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Correcting a real shortfall is worthwhile and many people under-consume it — but magnesium is not a longevity intervention, and 'more' past sufficiency doesn't help. Fix a deficiency, don't chase a miracle.</p></blockquote>
@@ -824,7 +980,7 @@
 <h2>Dosage context</h2><p>Typical supplemental doses are ~200–400 mg elemental magnesium/day. Glycinate/citrate are better tolerated than oxide; 'threonate' is marketed for the brain on limited human data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Magnesium is a case where the boring advice is the right advice: many people are genuinely low, correcting that helps a bit, and beyond sufficiency there's nothing to chase. C, not a longevity headline.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An essential mineral widely supplemented for sleep, muscle, mood and heart health.]]></excerpt:encoded>
-      <wp:post_id>1020</wp:post_id>
+      <wp:post_id>1024</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -851,7 +1007,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/melatonin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1021</guid>
+      <guid isPermaLink="false">nucleo-1025</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The sleep and circadian hormone, also promoted as an antioxidant for aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Genuinely useful for circadian problems (jet lag, delayed sleep phase) at low doses; the broader 'antioxidant anti-aging' pitch is far more speculative — and most people take far too much.</p></blockquote>
@@ -863,7 +1019,7 @@
 <h2>Dosage context</h2><p>For circadian effects, low doses (~0.5–1 mg) taken at the right time often work better than the large 3–10 mg doses sold; timing matters more than amount.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Melatonin is a timing signal, not a sleeping pill — and definitely not a proven anti-aging antioxidant. Lower doses, right timing. We grade it C and gently note most bottles are wildly overdosed.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The sleep and circadian hormone, also promoted as an antioxidant for aging.]]></excerpt:encoded>
-      <wp:post_id>1021</wp:post_id>
+      <wp:post_id>1025</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -890,7 +1046,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/metformina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1022</guid>
+      <guid isPermaLink="false">nucleo-1026</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A biguanide with metabolic effects and a hypothesised geroprotective action.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Decades of proof in diabetes; the anti-aging promise in healthy people is still an unfinished experiment. The dedicated trial (TAME) hasn't reported, so the geroprotective case in humans is unproven.</p></blockquote>
@@ -902,7 +1058,7 @@
 <h2>Dosage context</h2><p>Standard clinical dosing exists for diabetes (typically titrated to tolerance). There is no validated longevity dose or protocol for people without a metabolic indication; that question is exactly what dedicated trials are meant to answer.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>We keep the grade at B on purpose. Metformin is a genuinely good drug for the right patient, but the longevity story is sold ahead of the evidence. We move the grade when TAME gives us human data, not before.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A biguanide with metabolic effects and a hypothesised geroprotective action.]]></excerpt:encoded>
-      <wp:post_id>1022</wp:post_id>
+      <wp:post_id>1026</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -929,7 +1085,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/nac</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1023</guid>
+      <guid isPermaLink="false">nucleo-1027</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A glutathione precursor with real medical uses, repurposed as an anti-aging antioxidant.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuine drug for specific problems (paracetamol overdose, mucus clearance) — but its longevity and general-wellness claims rest on much thinner evidence. Useful, over-extended.</p></blockquote>
@@ -941,7 +1097,7 @@
 <h2>Dosage context</h2><p>Supplement trials commonly use ~600–1800 mg/day. Medical uses (overdose, lung disease) follow specific clinical protocols that don't translate to casual 'longevity' dosing.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>NAC is a real drug wearing a supplement label. We respect its proven uses and stay sceptical of the anti-aging leap — 'raises glutathione' is not the same as 'extends healthspan'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A glutathione precursor with real medical uses, repurposed as an anti-aging antioxidant.]]></excerpt:encoded>
-      <wp:post_id>1023</wp:post_id>
+      <wp:post_id>1027</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -964,11 +1120,50 @@
     </item>
 
     <item>
+      <title>Niacinamide — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/niacinamide</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1028</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A versatile vitamin-B3 active for barrier support, even tone and oil control.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> One of the better-evidenced, best-tolerated cosmetic actives: modest but real effects on barrier, uneven tone and shine. A dependable 'do a bit of everything' ingredient, not a miracle.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Barrier, tone &amp; oil balance</li><li><strong>Grade:</strong> B</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Topical niacinamide has a reasonable body of controlled studies supporting improvements in skin-barrier function (reduced water loss), evenness of tone, sebum/shine and the look of enlarged pores, plus antioxidant and anti-inflammatory activity. Effects are modest and build over weeks, and — as always — the ingredient's evidence is not a guarantee for a given product, whose result depends on its concentration and full formulation. Grade B for a broadly useful, well-tolerated active with consistent (if unspectacular) data.</p>
+<h2>Key studies</h2><ol><li><strong>Topical niacinamide and skin appearance</strong> <em>(RCT)</em><br>Improved tone, texture and barrier measures in controlled studies. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=topical+niacinamide+skin+tone+barrier+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Niacinamide and skin barrier / ceramides</strong> <em>(review)</em><br>Mechanistic support for barrier benefits. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=niacinamide+ceramide+barrier+skin+review" rel="noopener">PubMed ↗</a></li><li><strong>Niacinamide and pigmentation</strong> <em>(RCT)</em><br>Modest reduction in the look of uneven pigmentation. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=niacinamide+hyperpigmentation+randomized" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>A precursor of NAD(H)/NADP(H) in skin cells; supports ceramide and barrier-lipid synthesis, modulates sebum, reduces transfer of melanin to keratinocytes, and dampens inflammatory signalling.</p>
+<h2>Safety</h2><p>Very well tolerated, including on sensitive skin, and plays nicely with most other actives — part of why it's so widely used. Irritation is uncommon.</p>
+<h2>Dosage context</h2><p>Studied largely around 2–5%. Higher percentages are marketed but can be more irritating without clearly more benefit; formulation and pairing matter more than chasing a big number.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Niacinamide is the quiet workhorse of skincare: not exciting, but consistently decent and hard to react to. We grade it B and value it precisely for being unglamorous and reliable.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A versatile vitamin-B3 active for barrier support, even tone and oil control.]]></excerpt:encoded>
+      <wp:post_id>1028</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-niacinamide]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[B]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Barrier, tone & oil balance]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Nicotinamide Riboside (NR) — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/nicotinamide-riboside</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1024</guid>
+      <guid isPermaLink="false">nucleo-1029</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The other headline NAD⁺ precursor, marketed alongside NMN for cellular energy.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Like NMN, it reliably raises blood NAD⁺ in humans — and, like NMN, that hasn't yet translated into proven clinical benefit. Well tolerated, biologically real, clinically unproven.</p></blockquote>
@@ -980,7 +1175,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~250–1000 mg/day. Head-to-head evidence that NR is meaningfully better or worse than NMN is lacking; the choice is often driven by price and marketing rather than data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>NR and NMN are sold as rivals; in the evidence they're near-twins. We grade both B and make the same point: the NAD⁺ goes up, the proof that it makes you healthier isn't there yet.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The other headline NAD⁺ precursor, marketed alongside NMN for cellular energy.]]></excerpt:encoded>
-      <wp:post_id>1024</wp:post_id>
+      <wp:post_id>1029</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1007,7 +1202,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/nmn</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1025</guid>
+      <guid isPermaLink="false">nucleo-1030</guid>
       <description></description>
       <content:encoded><![CDATA[<p>NAD⁺ precursor: more cellular energy and a possible anti-aging effect.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Reliably raises blood NAD⁺ in humans; a real clinical benefit is biologically plausible but not yet proven — hence grade B.</p></blockquote>
@@ -1019,7 +1214,7 @@
 <h2>Dosage context</h2><p>In studies: 250–900 mg/day for 8–24 weeks. Higher doses did not show proportionally greater benefit.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>We follow NMN trial by trial and we know how it's sold: the NAD⁺ numbers are real, but the leap 'more NAD⁺ = live better' is not yet proven in humans. Hence grade B.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[NAD⁺ precursor: more cellular energy and a possible anti-aging effect.]]></excerpt:encoded>
-      <wp:post_id>1025</wp:post_id>
+      <wp:post_id>1030</wp:post_id>
       <wp:post_date><![CDATA[2026-06-15 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-15 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1046,7 +1241,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/omega-3</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1026</guid>
+      <guid isPermaLink="false">nucleo-1031</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Marine omega-3 fatty acids promoted for heart, brain and 'anti-inflammatory' aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Clearly useful for lowering triglycerides and in specific high-risk cardiac settings — but as a broad longevity or heart-protection pill for healthy people, the large trials are underwhelming.</p></blockquote>
@@ -1058,7 +1253,7 @@
 <h2>Dosage context</h2><p>Dietary guidance favours two oily-fish meals per week. Supplement trials span roughly 1–4 g/day of EPA+DHA; importantly, the cardiovascular-event evidence is specific to high-dose prescription EPA in high-triglyceride patients, not low-dose over-the-counter fish oil taken by everyone.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>A molecule where the big population trials matter more than the mechanism. We keep it at C because 'good for triglycerides and specific patients' is true, while 'everyone should take it for longevity' isn't what the large RCTs show.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Marine omega-3 fatty acids promoted for heart, brain and 'anti-inflammatory' aging.]]></excerpt:encoded>
-      <wp:post_id>1026</wp:post_id>
+      <wp:post_id>1031</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1081,11 +1276,128 @@
     </item>
 
     <item>
+      <title>Panthenol (provitamin B5) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/panthenol</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1032</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A provitamin-B5 humectant used to soothe and support hydration and comfort.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A gentle, well-tolerated soother and humectant with modest supporting evidence, most convincing for comfort and barrier recovery. Not an anti-aging active — a calming supporting player.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Soothing &amp; hydration</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Panthenol (converted in skin to pantothenic acid) is a long-standing humectant and soothing ingredient. Evidence — including for the dexpanthenol form in barrier-recovery contexts — supports improved hydration, reduced roughness and better comfort in dry or temporarily stressed skin, though many studies are small or product-specific. It is a cosmetic soothing/hydration claim, not treatment of any condition, and results depend on the whole formula. Grade C: reliably gentle and helpful for comfort, with a modest evidence base.</p>
+<h2>Key studies</h2><ol><li><strong>Dexpanthenol and skin barrier recovery</strong> <em>(RCT)</em><br>Improved hydration and comfort in barrier-stressed skin. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=dexpanthenol+skin+barrier+hydration+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Panthenol in cosmetic formulations (review)</strong> <em>(review)</em><br>Supports its humectant/soothing role. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=panthenol+cosmetic+moisturization+review" rel="noopener">PubMed ↗</a></li><li><strong>Provitamin B5 and skin (review)</strong> <em>(review)</em><br>Background on the mechanism. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=provitamin+B5+pantothenic+acid+skin+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Acts as a humectant that draws and holds water in the stratum corneum and supports barrier recovery; as a provitamin it feeds into pantothenic-acid (coenzyme A) pathways in skin cells.</p>
+<h2>Safety</h2><p>Very well tolerated with a very low irritation profile; widely used in products for sensitive and compromised skin.</p>
+<h2>Dosage context</h2><p>Commonly used in the low single-digit percentages as a supporting humectant/soother; benefit comes from the overall moisturiser rather than from panthenol alone.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Panthenol is the friendly supporting act: it won't transform your skin, but it's hard to react to and genuinely soothing. Grade C, and a sensible pick when comfort is the goal.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A provitamin-B5 humectant used to soothe and support hydration and comfort.]]></excerpt:encoded>
+      <wp:post_id>1032</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-panthenol]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Soothing & hydration]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title>Peptides (topical) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/peptides-topical</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1033</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Short amino-acid chains marketed to signal firmer, smoother-looking skin.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A promising idea with modest, often manufacturer-linked evidence. Some peptides show small benefits for the look of firmness and lines, but they rarely match retinoids or sunscreen — and delivery is a real question.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Firmness &amp; signalling support</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Cosmetic peptides (signal peptides like palmitoyl pentapeptide/'matrixyl', copper peptides, and others) are proposed to nudge skin toward more collagen or better repair. Small studies — many industry-funded — report modest improvements in the appearance of fine lines, firmness or hydration, but independent, head-to-head evidence is limited and effects are generally smaller than for retinoids or photoprotection. Penetration and stability of peptides in a finished formula are genuine uncertainties. Grade C: plausible, gentle, well-tolerated, with an immature and marketing-heavy evidence base.</p>
+<h2>Key studies</h2><ol><li><strong>Signal peptides and the appearance of aging skin</strong> <em>(RCT)</em><br>Small improvements in small, often funded studies. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=palmitoyl+pentapeptide+peptide+wrinkle+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Copper peptides in skincare</strong> <em>(review)</em><br>Mechanistic interest, limited independent data. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=copper+peptide+skin+collagen+review" rel="noopener">PubMed ↗</a></li><li><strong>Cosmetic peptides overview (review)</strong> <em>(review)</em><br>Delivery and evidence remain open questions. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=cosmetic+peptides+skin+delivery+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Depending on the peptide, proposed to act as signalling fragments that upregulate matrix synthesis, as carriers (e.g. copper delivery), or as enzyme modulators; much is extrapolated from lab models and getting them intact into the dermis is not guaranteed.</p>
+<h2>Safety</h2><p>Generally very well tolerated with a low irritation profile, which is part of their appeal for sensitive skin.</p>
+<h2>Dosage context</h2><p>Concentrations and specific peptides vary enormously between products and are often proprietary, making cross-product comparison hard; the specific peptide and formulation matter more than a generic 'peptides' claim.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Peptides are the category where the marketing runs furthest ahead of independent proof. We grade them C: gentle and plausible, but we don't rank them with the actives that actually have strong data.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Short amino-acid chains marketed to signal firmer, smoother-looking skin.]]></excerpt:encoded>
+      <wp:post_id>1033</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-peptides-topical]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Firmness & signalling support]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title>PHA (lactobionic acid) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/pha-lactobionic</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1034</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Larger 'next-generation' exfoliating acids marketed as gentler alternatives to AHAs.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The gentle cousins of AHAs: bigger molecules that exfoliate more mildly and add hydration and antioxidant character. Good for sensitive skin, but with a thinner evidence base than glycolic or lactic acid.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Gentle exfoliation &amp; hydration</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Polyhydroxy acids (PHAs) such as gluconolactone and lactobionic acid are larger molecules than classic AHAs, so they penetrate more slowly and tend to be less irritating, while also acting as humectants and, for lactobionic acid, offering antioxidant/chelating properties. The evidence is more limited and often industry-linked compared with glycolic/lactic acid, and mostly points to good tolerability with milder exfoliation. This is cosmetic use, not a peel procedure, and product formulation decides the result. Grade C: a sensible gentle option, with modest independent data.</p>
+<h2>Key studies</h2><ol><li><strong>Polyhydroxy acids in cosmetic use</strong> <em>(review)</em><br>Gentler exfoliation with humectant properties. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=polyhydroxy+acid+gluconolactone+lactobionic+skin+review" rel="noopener">PubMed ↗</a></li><li><strong>Lactobionic acid antioxidant / humectant properties</strong> <em>(review)</em><br>Extra hydration and antioxidant character. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=lactobionic+acid+antioxidant+humectant+skin" rel="noopener">PubMed ↗</a></li><li><strong>PHA tolerability vs AHA</strong> <em>(review)</em><br>Milder profile suits sensitive skin. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=polyhydroxy+acid+tolerability+sensitive+skin+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Exfoliate by loosening surface corneocyte bonds like AHAs but more slowly due to larger molecular size; also bind water (humectant) and, for lactobionic acid, chelate metals and scavenge some free radicals.</p>
+<h2>Safety</h2><p>Better tolerated than stronger AHAs, so often chosen for sensitive or reactive skin; still increase the value of daily sun protection. Irritation is less common but possible.</p>
+<h2>Dosage context</h2><p>Used across a range of concentrations in leave-on and rinse-off products; the appeal is tolerability rather than a high, aggressive percentage. Formulation and pairing matter more than the number.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>PHAs are the 'sensitive-skin' answer to acids — gentler and hydrating, but with less independent evidence than glycolic or lactic acid. We grade lactobionic/PHAs C and treat them as tolerability picks, not upgrades.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Larger 'next-generation' exfoliating acids marketed as gentler alternatives to AHAs.]]></excerpt:encoded>
+      <wp:post_id>1034</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-pha-lactobionic]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Gentle exfoliation & hydration]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Polynucleotides (PDRN/PN) — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/polynucleotides</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1027</guid>
+      <guid isPermaLink="false">nucleo-1035</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Skin biostimulation and regeneration: hydration, skin quality, support to healing.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Everywhere in aesthetic clinics, thin in independent evidence. Most studies are small, short and industry-linked with surrogate endpoints — so today it earns an F, and the grade can rise the day solid independent RCTs land.</p></blockquote>
@@ -1097,7 +1409,7 @@
 <h2>Dosage context</h2><p>Injectable protocols vary by concentration and number of sessions; no universally validated standard in independent literature.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>It's one of the most aggressively marketed molecules in aesthetics right now. Knowing how it's sold, the gap between the hype and the independent evidence is wide — that's exactly why it gets an F today, not a pass. The grade can rise the day solid independent RCTs land.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Skin biostimulation and regeneration: hydration, skin quality, support to healing.]]></excerpt:encoded>
-      <wp:post_id>1027</wp:post_id>
+      <wp:post_id>1035</wp:post_id>
       <wp:post_date><![CDATA[2026-06-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1124,7 +1436,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/pqq</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1028</guid>
+      <guid isPermaLink="false">nucleo-1036</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A compound promoted to grow new mitochondria for energy and aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The 'makes new mitochondria' story rests mostly on cell and animal work, plus a handful of small human trials on fatigue and cognition. Interesting, early, and often bundled with CoQ10 on theory.</p></blockquote>
@@ -1136,7 +1448,7 @@
 <h2>Dosage context</h2><p>Human trials commonly use ~10–20 mg/day, often with CoQ10. Optimal dose and any real benefit of the combination are not established.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>PQQ's 'grow new mitochondria' pitch is mostly a mouse-and-dish story with a few small human trials tacked on. We grade it C and treat the CoQ10 bundling as marketing until outcomes say otherwise.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A compound promoted to grow new mitochondria for energy and aging.]]></excerpt:encoded>
-      <wp:post_id>1028</wp:post_id>
+      <wp:post_id>1036</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1163,7 +1475,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/pterostilbene</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1029</guid>
+      <guid isPermaLink="false">nucleo-1037</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A resveratrol relative with better absorption, often paired with NMN or NR.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> More bioavailable than resveratrol on paper, but with far less human data of its own. Frequently bundled with NAD⁺ precursors on theory, not on outcome evidence.</p></blockquote>
@@ -1175,7 +1487,7 @@
 <h2>Dosage context</h2><p>Human trials have used roughly 50–125 mg/day. Optimal dose and any real benefit of NMN/NR co-formulation are not established by outcome data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Pterostilbene is 'resveratrol with better PK' — which fixes the absorption complaint without supplying the missing human outcomes. We grade it C and note the LDL signal the bundled products rarely mention.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A resveratrol relative with better absorption, often paired with NMN or NR.]]></excerpt:encoded>
-      <wp:post_id>1029</wp:post_id>
+      <wp:post_id>1037</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1202,7 +1514,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/quercetina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1030</guid>
+      <guid isPermaLink="false">nucleo-1038</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A flavonoid with senolytic action, often combined with dasatinib.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuinely interesting idea — clearing 'zombie' senescent cells — but the human evidence is early, tiny, and mostly tied to the prescription drug dasatinib, not quercetin alone.</p></blockquote>
@@ -1214,7 +1526,7 @@
 <h2>Dosage context</h2><p>As a supplement, quercetin has low oral bioavailability, and doses/cycles vary widely. In senolytic research it is dosed intermittently ('hit-and-run') alongside dasatinib — a regimen that should not be replicated outside a trial.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>The senolytic field is promising but young, and quercetin is often marketed as if the D+Q trial results were its own. They aren't. We keep it at C and flag that the interesting protocols involve a prescription drug.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A flavonoid with senolytic action, often combined with dasatinib.]]></excerpt:encoded>
-      <wp:post_id>1030</wp:post_id>
+      <wp:post_id>1038</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1241,7 +1553,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/rapamicina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1031</guid>
+      <guid isPermaLink="false">nucleo-1039</guid>
       <description></description>
       <content:encoded><![CDATA[<p>mTOR inhibitor with the strongest evidence of lifespan extension in animal models.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The strongest lifespan data of any molecule here — but in animals. In humans it is a potent immunosuppressant, not a supplement; off-label 'longevity' use is experimental and must be managed by a physician.</p></blockquote>
@@ -1253,7 +1565,7 @@
 <h2>Dosage context</h2><p>Approved dosing exists for licensed indications (e.g. organ-transplant immunosuppression). No longevity dose or schedule is validated; research explores intermittent, lower-dose regimens specifically to preserve benefit while limiting immunosuppression.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Grade A for the strength of the preclinical evidence — not an invitation to use it. This is the molecule most often misrepresented in the longevity market: a real drug with real risks, sold to some as a casual supplement. It isn't one.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[mTOR inhibitor with the strongest evidence of lifespan extension in animal models.]]></excerpt:encoded>
-      <wp:post_id>1031</wp:post_id>
+      <wp:post_id>1039</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1280,7 +1592,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/resveratrolo</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1032</guid>
+      <guid isPermaLink="false">nucleo-1040</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An 'anti-aging' polyphenol claimed to activate sirtuins.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Impressive in a petri dish, inconsistent in people. Poor absorption means most of a dose never reaches tissues intact — the clearest lesson in why cell data don't equal human benefit.</p></blockquote>
@@ -1292,7 +1604,7 @@
 <h2>Dosage context</h2><p>Studies span roughly 150 mg to 1 g/day with no consensus regimen. Formulation matters more than headline dose because of the absorption problem; micronised or co-formulated products are marketed on this basis but without decisive outcome data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>A classic case where preclinical enthusiasm didn't translate to people. We keep resveratrol at C not because it's unsafe, but because the human evidence never matched the marketing.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An 'anti-aging' polyphenol claimed to activate sirtuins.]]></excerpt:encoded>
-      <wp:post_id>1032</wp:post_id>
+      <wp:post_id>1040</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1315,11 +1627,50 @@
     </item>
 
     <item>
+      <title>Retinoids (retinol) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/retinoids</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1041</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Vitamin-A derivatives, the best-evidenced cosmetic actives for the look of aging skin.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> After sunscreen, topical retinoids have the strongest anti-aging evidence in skincare. Cosmetic retinol works but is gentler and slower than prescription retinoids, which are medicines and a separate matter.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Photoaging &amp; skin renewal</li><li><strong>Grade:</strong> B</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Topical retinoids are the most studied 'anti-aging' actives after photoprotection: they improve the appearance of fine lines, texture and tone and increase dermal collagen in controlled studies. The nuance is potency — prescription retinoids (e.g. tretinoin) have the strongest data but are regulated medicines; cosmetic retinol and retinaldehyde are milder and convert to the active form in skin, so effects are real but slower. Grade B reflects solid cosmetic evidence for the over-the-counter forms. The ingredient's evidence is not a promise for any specific product: concentration, stability and formulation decide the result.</p>
+<h2>Key studies</h2><ol><li><strong>Topical retinol and photoaging</strong> <em>(RCT)</em><br>Improved fine lines and skin appearance in controlled studies. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=topical+retinol+photoaging+wrinkles+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Retinoids and dermal collagen</strong> <em>(review)</em><br>Mechanistic and clinical basis for the anti-aging effect. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=retinoic+acid+collagen+dermis+review" rel="noopener">PubMed ↗</a></li><li><strong>Retinol vs prescription retinoids (review)</strong> <em>(review)</em><br>OTC forms are gentler and slower than prescription. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=retinol+tretinoin+comparison+efficacy+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Bind retinoic-acid receptors to modulate keratinocyte turnover and stimulate fibroblast collagen synthesis while reducing collagen-degrading MMPs; retinol/retinaldehyde are converted to retinoic acid in the skin.</p>
+<h2>Safety</h2><p>Commonly cause dryness, redness and peeling ('retinization'), especially early; increase sun sensitivity, so pairing with daily SPF matters. Avoid in pregnancy without medical advice. Introduce slowly. This is cosmetic use — prescription retinoids for medical conditions are a doctor's domain.</p>
+<h2>Dosage context</h2><p>Cosmetic products span roughly 0.1–1% retinol; higher isn't automatically better and often just more irritating. Consistency and tolerance-building matter more than chasing the highest percentage.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Retinoids are the one 'active' worth the hype in cosmetics — with the caveat that the strongest versions are drugs. We grade cosmetic retinol B and keep the medical-strength conversation with the dermatologist.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Vitamin-A derivatives, the best-evidenced cosmetic actives for the look of aging skin.]]></excerpt:encoded>
+      <wp:post_id>1041</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-retinoids]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[B]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Photoaging & skin renewal]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Spermidine — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/spermidina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1033</guid>
+      <guid isPermaLink="false">nucleo-1042</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A polyamine that induces autophagy and may support longevity.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> One of the more credible dietary longevity candidates: it's already in food, animal data are strong, and early human trials on autophagy and memory are encouraging — but the large confirmatory RCTs aren't in yet.</p></blockquote>
@@ -1331,7 +1682,7 @@
 <h2>Dosage context</h2><p>Human studies typically use ~1–6 mg/day, often as a standardised wheat-germ extract. This overlaps with what a spermidine-rich diet already provides, which is part of the appeal — but also means 'more is better' hasn't been demonstrated.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Among the polyamines, spermidine has the most promising human base — which is exactly why we resist overselling it. B means 'worth watching and reasonable to get from diet', not 'proven pill'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A polyamine that induces autophagy and may support longevity.]]></excerpt:encoded>
-      <wp:post_id>1033</wp:post_id>
+      <wp:post_id>1042</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1358,7 +1709,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/sulforaphane</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1034</guid>
+      <guid isPermaLink="false">nucleo-1043</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A broccoli-sprout compound that switches on the body's own antioxidant defences.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuinely interesting Nrf2 activator with small human trials on specific outcomes — but longevity claims are extrapolation, and supplement potency is notoriously inconsistent.</p></blockquote>
@@ -1370,7 +1721,7 @@
 <h2>Dosage context</h2><p>Broccoli-sprout preparations vary widely in actual sulforaphane yield; 'active myrosinase' and standardised sulforaphane content matter more than the headline glucoraphanin number.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Sulforaphane is a smarter kind of antioxidant idea — turning on your own defences rather than dosing a molecule. We grade it C: promising mechanism, small trials, and a supplement market where the label rarely matches the dose.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A broccoli-sprout compound that switches on the body's own antioxidant defences.]]></excerpt:encoded>
-      <wp:post_id>1034</wp:post_id>
+      <wp:post_id>1043</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1393,11 +1744,50 @@
     </item>
 
     <item>
+      <title>Sun protection (SPF) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/sunscreen-spf</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1044</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Daily broad-spectrum sunscreen — the single best-evidenced 'anti-aging' skincare step.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> If one topical earns an A, it's this. Regular broad-spectrum SPF is the most robustly proven way to prevent visible skin aging — because most of it is sun-driven. Everything else is secondary.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Photoaging prevention</li><li><strong>Grade:</strong> A</li><li><strong>Evidence strength:</strong> high</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>This is the rare skincare entry where the evidence is genuinely strong. Randomized and long-term studies show that regular broad-spectrum sunscreen use slows the visible signs of photoaging (wrinkling, pigmentation, loss of elasticity), and UV exposure is the dominant modifiable cause of skin aging. The grade rates the ingredient category's evidence for prevention; the result you get still depends on the finished product's filters, SPF, formulation and — above all — using enough, often. We describe cosmetic photoprotection, not treatment of any skin disease.</p>
+<h2>Key studies</h2><ol><li><strong>Sunscreen and prevention of skin aging (randomized study)</strong> <em>(RCT)</em><br>Regular use slowed visible photoaging vs discretionary use. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=sunscreen+prevention+skin+aging+randomized" rel="noopener">PubMed ↗</a></li><li><strong>UV radiation and photoaging (review)</strong> <em>(review)</em><br>Establishes UV as the dominant driver of skin aging. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ultraviolet+photoaging+skin+mechanism+review" rel="noopener">PubMed ↗</a></li><li><strong>Broad-spectrum photoprotection (review)</strong> <em>(review)</em><br>Why UVA + UVB coverage matters for aging, not just burns. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=broad+spectrum+sunscreen+photoprotection+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>UV filters absorb or reflect UVA/UVB radiation, reducing the DNA damage, oxidative stress, collagen breakdown (MMP activation) and pigment changes that drive photoaging.</p>
+<h2>Safety</h2><p>Broadly safe and recommended for daily use; some filters can cause irritation or, rarely, contact allergy. Formulation and cosmetic elegance matter for adherence — the best sunscreen is the one you'll actually reapply.</p>
+<h2>Dosage context</h2><p>Studied and recommended as daily broad-spectrum use, typically SPF 30+, applied generously and reapplied. Under-application is the main reason real-world protection falls short of the label.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>In a category full of hyped serums, the boring winner is sunscreen. It's the only topical we grade A, and the honest message is: sort SPF first, everything else after.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Daily broad-spectrum sunscreen — the single best-evidenced 'anti-aging' skincare step.]]></excerpt:encoded>
+      <wp:post_id>1044</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-sunscreen-spf]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[A]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Photoaging prevention]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[high]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Taurine — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/taurine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1035</guid>
+      <guid isPermaLink="false">nucleo-1045</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A semi-essential amino acid promoted as an 'anti-aging' molecule after animal studies.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A 2023 animal study put taurine on the longevity map — but the human evidence is associational, not causal. Physiologically important and very safe; as an anti-aging intervention it's unproven in people.</p></blockquote>
@@ -1409,7 +1799,7 @@
 <h2>Dosage context</h2><p>Research and supplement doses vary widely (often ~1–6 g/day). There is no validated human 'longevity' dose, and the high doses used in animals do not translate directly to people.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>One headline animal paper became a marketing wave. We separate the two cleanly: the biology is interesting and taurine is safe, but 'reverses aging' is a mouse result, not a human fact.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A semi-essential amino acid promoted as an 'anti-aging' molecule after animal studies.]]></excerpt:encoded>
-      <wp:post_id>1035</wp:post_id>
+      <wp:post_id>1045</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1436,7 +1826,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/tmg-betaine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1036</guid>
+      <guid isPermaLink="false">nucleo-1046</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A methyl donor used to lower homocysteine and often paired with NMN/NR.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Reliably lowers homocysteine and has some sports-performance data — but whether that translates to longevity, or is even needed alongside NAD boosters, is unproven.</p></blockquote>
@@ -1448,7 +1838,7 @@
 <h2>Dosage context</h2><p>Homocysteine/performance trials use ~1.5–6 g/day; longevity-stack use is often ~500–1000 mg to 'offset' NAD-precursor methylation — a dose based on theory, not outcome data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>TMG is sold as the automatic partner to NMN. The homocysteine effect is real; the 'you must take it with your NAD booster' claim is theory, and the LDL signal is the part that gets left out. Grade C.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A methyl donor used to lower homocysteine and often paired with NMN/NR.]]></excerpt:encoded>
-      <wp:post_id>1036</wp:post_id>
+      <wp:post_id>1046</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1475,7 +1865,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/urolithin-a</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1037</guid>
+      <guid isPermaLink="false">nucleo-1047</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A gut-derived metabolite that stimulates mitophagy, studied for muscle and mitochondrial health.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Unusual among supplements in having actual human RCTs — small ones showing better mitochondrial and muscle-endurance markers. Reasonably evidenced for muscle function; broad longevity claims are still a stretch.</p></blockquote>
@@ -1487,7 +1877,7 @@
 <h2>Dosage context</h2><p>Human trials commonly use ~500–1000 mg/day of a defined form. Eating pomegranate or walnuts does not reliably produce equivalent urolithin A because gut-microbiome conversion varies widely between people.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Urolithin A is a rare case: a supplement that actually ran randomized human trials. We still hold it at C, because 'better muscle-endurance markers in small trials' is not the same as 'lives longer'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A gut-derived metabolite that stimulates mitophagy, studied for muscle and mitochondrial health.]]></excerpt:encoded>
-      <wp:post_id>1037</wp:post_id>
+      <wp:post_id>1047</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1510,11 +1900,50 @@
     </item>
 
     <item>
+      <title>Vitamin C (topical) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/vitamin-c-topical</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1048</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A topical antioxidant used for brightening and daytime photoprotection support.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Better evidence topically than orally for skin: helps even tone and supports your sunscreen against UV-driven damage. The catch is stability — a badly formulated or oxidised vitamin C does little.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Antioxidant &amp; brightening</li><li><strong>Grade:</strong> B</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Applied to skin, vitamin C has controlled evidence for improving the look of uneven tone and dullness and for antioxidant support that complements (never replaces) sunscreen, plus a role in collagen synthesis. Unlike the oral form, the topical route can deliver meaningful concentrations to skin — but only if the product is well formulated: pure L-ascorbic acid is unstable and loses potency when oxidised (it turns yellow/brown). Grade B for a genuinely useful daytime antioxidant, with formulation as the deciding variable, distinct from any single product's claims.</p>
+<h2>Key studies</h2><ol><li><strong>Topical vitamin C and photoaging / tone</strong> <em>(RCT)</em><br>Improved appearance of tone and photoaging in studies. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=topical+vitamin+C+ascorbic+acid+photoaging+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Vitamin C photoprotection (adjunct to sunscreen)</strong> <em>(review)</em><br>Complements, does not replace, sunscreen. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=vitamin+C+topical+photoprotection+antioxidant+review" rel="noopener">PubMed ↗</a></li><li><strong>Stability and formulation of topical vitamin C</strong> <em>(review)</em><br>Stability is the main real-world limitation. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=topical+vitamin+C+stability+formulation+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Neutralises UV-generated free radicals, is a cofactor for collagen-synthesising enzymes, and inhibits steps in melanin production; effect depends on the form (L-ascorbic acid vs more stable derivatives) and pH.</p>
+<h2>Safety</h2><p>Generally well tolerated; low-pH L-ascorbic acid can sting or irritate sensitive skin. Derivatives are gentler but often less potent. Store away from light/air to limit oxidation.</p>
+<h2>Dosage context</h2><p>L-ascorbic acid is commonly used around 10–20% at low pH; higher isn't reliably better and can irritate. Packaging (opaque, air-tight) matters as much as the percentage.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Topical vitamin C is one of the few 'antioxidant' skincare claims with legs — as long as the formula is stable. We grade it B and tell people to watch for the bottle turning brown.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A topical antioxidant used for brightening and daytime photoprotection support.]]></excerpt:encoded>
+      <wp:post_id>1048</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-vitamin-c-topical]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[B]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Antioxidant & brightening]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Vitamin C — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/vitamin-c</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1038</guid>
+      <guid isPermaLink="false">nucleo-1049</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The classic antioxidant vitamin, promoted for immunity, skin and longevity.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Essential, and correcting deficiency matters — but megadoses don't prevent colds in most people or extend life, and the body simply excretes the excess. Useful, not a super-supplement.</p></blockquote>
@@ -1526,7 +1955,7 @@
 <h2>Dosage context</h2><p>Requirements are ~75–120 mg/day, easily met by diet; gram-level 'immune' doses exceed absorption and are largely wasted. Topical formulations are a different, skin-specific use.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Vitamin C is the original 'megadose it for everything' supplement, and the evidence mostly says your kidneys just filter out the excess. Essential in the diet, unremarkable as a longevity pill. Grade C.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The classic antioxidant vitamin, promoted for immunity, skin and longevity.]]></excerpt:encoded>
-      <wp:post_id>1038</wp:post_id>
+      <wp:post_id>1049</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1553,7 +1982,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/vitamin-d</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1039</guid>
+      <guid isPermaLink="false">nucleo-1050</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The 'sunshine vitamin' widely supplemented for bone, immunity and longevity.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Correcting a genuine deficiency clearly matters. Routine high-dose supplementation in people who are already replete has repeatedly failed to prevent disease in big trials — so the honest answer is 'test, don't guess'.</p></blockquote>
@@ -1565,7 +1994,7 @@
 <h2>Dosage context</h2><p>Typical maintenance is ~800–2000 IU/day, higher for correcting documented deficiency under guidance. Mega-dosing without a measured deficiency adds risk, not benefit. Dosing is best guided by a blood level, not by habit.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>The most over-supplemented vitamin in the longevity crowd. Our line is simple and unglamorous: test your level, correct a real deficiency, and don't mega-dose on faith. That's why it's a C, not an A.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The 'sunshine vitamin' widely supplemented for bone, immunity and longevity.]]></excerpt:encoded>
-      <wp:post_id>1039</wp:post_id>
+      <wp:post_id>1050</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1588,11 +2017,50 @@
     </item>
 
     <item>
+      <title>Vitamin E (topical) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/vitamin-e-topical</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1051</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A skin-conditioning antioxidant, often paired with vitamin C.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A useful supporting antioxidant and emollient — and a formulation stabiliser — with modest standalone evidence. Its best-known role is partnering vitamin C, not carrying a routine on its own.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Skincare / topical</li><li><strong>Primary use:</strong> Antioxidant &amp; conditioning</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Cosmetic (topical)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Vitamin E (tocopherol) is a lipid-soluble antioxidant that conditions skin and helps stabilise formulations. Its most cited cosmetic role is synergy with vitamin C, where the pair provides better antioxidant/photoprotective support than either alone. As a standalone anti-aging active the independent evidence is limited, and older claims (e.g. for scars) are not well supported. This is cosmetic antioxidant/conditioning use, formulation-dependent as always. Grade C: a solid supporting player, not a lead active.</p>
+<h2>Key studies</h2><ol><li><strong>Vitamin C + E photoprotection synergy</strong> <em>(review)</em><br>Better antioxidant support together than alone. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=vitamin+C+E+topical+photoprotection+synergy+review" rel="noopener">PubMed ↗</a></li><li><strong>Topical vitamin E and skin</strong> <em>(review)</em><br>Modest standalone cosmetic evidence. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=topical+vitamin+E+tocopherol+skin+review" rel="noopener">PubMed ↗</a></li><li><strong>Antioxidants in photoaging (review)</strong> <em>(review)</em><br>Context for antioxidant claims in skincare. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=topical+antioxidants+photoaging+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Scavenges lipid-phase free radicals in the skin barrier and regenerates alongside vitamin C; also acts as an emollient and helps protect formulations from oxidation.</p>
+<h2>Safety</h2><p>Generally well tolerated; can occasionally cause contact irritation or allergy in sensitive individuals, more so with pure high-strength forms.</p>
+<h2>Dosage context</h2><p>Used in low percentages as an antioxidant/emollient and stabiliser, frequently combined with vitamin C (and sometimes ferulic acid); the pairing matters more than tocopherol alone.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Vitamin E is a good wingman — it makes vitamin C work better and keeps formulas stable — but it's oversold as a hero. Grade C, best judged as part of a pair.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A skin-conditioning antioxidant, often paired with vitamin C.]]></excerpt:encoded>
+      <wp:post_id>1051</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-vitamin-e-topical]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Skincare / topical]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Antioxidant & conditioning]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Cosmetic (topical)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Vitamin K2 (MK-7) — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/vitamin-k2</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1040</guid>
+      <guid isPermaLink="false">nucleo-1052</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A vitamin promoted for directing calcium to bones and away from arteries.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A plausible role in bone and vascular calcium handling, with mostly surrogate-marker evidence. Interesting and safe, but hard clinical-outcome data are limited.</p></blockquote>
@@ -1604,7 +2072,7 @@
 <h2>Dosage context</h2><p>Supplements commonly provide ~90–200 µg/day of MK-7. The MK-7 form has a longer half-life than MK-4; optimal dose and long-term benefit are not settled.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>K2 has one of the more elegant mechanisms in the supplement aisle — and one of the gaps between mechanism and outcomes. We grade it C and flag the warfarin interaction, which the marketing tends to skip.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A vitamin promoted for directing calcium to bones and away from arteries.]]></excerpt:encoded>
-      <wp:post_id>1040</wp:post_id>
+      <wp:post_id>1052</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1631,7 +2099,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/zinc</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1041</guid>
+      <guid isPermaLink="false">nucleo-1053</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An essential mineral for immunity, promoted for colds and healthy aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Correcting deficiency clearly supports immune function, and zinc lozenges can modestly shorten colds — but chronic high-dose supplementation backfires by causing copper deficiency. Fix a shortfall, don't overdose.</p></blockquote>
@@ -1643,7 +2111,7 @@
 <h2>Dosage context</h2><p>Typical supplemental doses are ~8–15 mg/day; short-term cold lozenges use more for a few days only. Ongoing high-dose (e.g. 50 mg/day) use is where copper depletion becomes a real risk.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Zinc is a two-edged mineral: fix a real deficiency and it helps; megadose it 'for immunity' and you can quietly cause copper deficiency. Grade C, with the overdose warning the cold-remedy marketing skips.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An essential mineral for immunity, promoted for colds and healthy aging.]]></excerpt:encoded>
-      <wp:post_id>1041</wp:post_id>
+      <wp:post_id>1053</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1670,7 +2138,7 @@
       <link>https://www.nucleolongevity.com/it/analisi/nmn-evidenza-clinica-2024</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1042</guid>
+      <guid isPermaLink="false">nucleo-1054</guid>
       <description></description>
       <content:encoded><![CDATA[<blockquote class="nucleo-verdict"><p><strong>Verdetto —</strong> Promettente ma non conclusivo. Sicuro a breve termine, efficacia clinica a lungo termine da confermare in RCT più ampi.</p></blockquote>
 <h2>Perché il NAD⁺ conta nell&#39;invecchiamento</h2>
@@ -1746,7 +2214,7 @@ Non ci sono interazioni documentate in letteratura clinica. Precauzione teorica 
 </ul>
 ]]></content:encoded>
       <excerpt:encoded><![CDATA[Una revisione critica degli studi umani su NMN: cosa è provato, cosa è ancora ipotetico, e perché il grado B è giustificato.]]></excerpt:encoded>
-      <wp:post_id>1042</wp:post_id>
+      <wp:post_id>1054</wp:post_id>
       <wp:post_date><![CDATA[2026-06-15 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-15 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1770,7 +2238,7 @@ Non ci sono interazioni documentate in letteratura clinica. Precauzione teorica 
       <link>https://www.nucleolongevity.com/en/analisi/nmn-evidenza-clinica-2024</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1043</guid>
+      <guid isPermaLink="false">nucleo-1055</guid>
       <description></description>
       <content:encoded><![CDATA[<blockquote class="nucleo-verdict"><p><strong>Verdict —</strong> Promising but not conclusive. Safe short-term; long-term clinical efficacy to be confirmed in larger RCTs.</p></blockquote>
 <h2>Why NAD⁺ matters in aging</h2>
@@ -1846,7 +2314,7 @@ No interactions are documented in the clinical literature. A theoretical caution
 </ul>
 ]]></content:encoded>
       <excerpt:encoded><![CDATA[A critical review of human NMN studies: what is proven, what is still hypothetical, and why grade B is justified.]]></excerpt:encoded>
-      <wp:post_id>1043</wp:post_id>
+      <wp:post_id>1055</wp:post_id>
       <wp:post_date><![CDATA[2026-06-15 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-15 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
