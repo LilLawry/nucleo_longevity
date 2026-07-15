@@ -49,6 +49,7 @@ export default async function DatabasePage({
     lastReviewed: m.lastReviewed,
     status: m.status,
     structure: m.structure,
+    domain: m.domain,
   }));
 
   return (
@@ -58,8 +59,8 @@ export default async function DatabasePage({
         title={it ? "Indice delle molecole" : "Molecule index"}
         subtitle={
           it
-            ? "Ogni molecola con classe, grado di evidenza (A–F) e ultima revisione. Filtra, cerca e ordina come in un reference clinico."
-            : "Every molecule with class, evidence grade (A–F) and last review. Filter, search and sort like a clinical reference."
+            ? "Longevity dentro e fuori: le molecole che prendi e quelle che applichi, con grado di evidenza (A–F) e ultima revisione. Filtra, cerca e ordina come in un reference clinico."
+            : "Longevity inside and out: the molecules you take and the ones you apply, with evidence grade (A–F) and last review. Filter, search and sort like a clinical reference."
         }
       />
       <DatabaseClient rows={rows} lang={lang} />
