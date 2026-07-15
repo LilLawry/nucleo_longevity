@@ -1,6 +1,7 @@
 const it = {
   nav: {
     database: "Database",
+    prezzi: "Confronta prezzi",
     molecole: "Molecole",
     analisi: "Analisi",
     metodo: "Metodo",
