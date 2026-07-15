@@ -9,7 +9,7 @@
     <title>Nucleo Longevity</title>
     <link>https://www.nucleolongevity.com</link>
     <description>Evidence-graded longevity molecules — content export</description>
-    <pubDate>Wed, 15 Jul 2026 08:12:35 GMT</pubDate>
+    <pubDate>Wed, 15 Jul 2026 17:37:29 GMT</pubDate>
     <language>en</language>
     <wp:wxr_version>1.2</wp:wxr_version>
     <wp:base_site_url>https://www.nucleolongevity.com</wp:base_site_url>
@@ -145,11 +145,50 @@
     </item>
 
     <item>
+      <title>Astaxanthin — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/astaxanthin</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1003</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A red-algae carotenoid marketed as a super-antioxidant for skin, eyes and endurance.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A potent antioxidant in the lab with small, promising human trials on skin and eye fatigue — but the 'super-antioxidant longevity' billing runs well ahead of the evidence.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Carotenoid</li><li><strong>Primary use:</strong> Antioxidant, skin &amp; eye support</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Astaxanthin is a carotenoid (giving salmon and shrimp their colour) that is a strong antioxidant in vitro and, unusually, distributes into skin and eye tissue. Small human trials suggest benefits for skin elasticity/hydration, eye fatigue, and possibly exercise-related oxidative markers. The studies are small, short and sometimes industry-linked, with no longevity outcomes. Grade C: a plausible cosmetic/ocular antioxidant with early human support, oversold as a systemic anti-aging agent.</p>
+<h2>Key studies</h2><ol><li><strong>Astaxanthin and skin condition</strong> <em>(RCT)</em><br>Small improvements in skin measures. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=astaxanthin+skin+elasticity+wrinkle+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Astaxanthin and eye fatigue</strong> <em>(RCT)</em><br>Reduced subjective eye strain in small trials. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=astaxanthin+eye+fatigue+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Astaxanthin antioxidant activity (review)</strong> <em>(review)</em><br>Basis for the antioxidant claims. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=astaxanthin+antioxidant+mechanism+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>A lipid-soluble antioxidant that quenches singlet oxygen and free radicals and spans cell membranes; may modulate inflammatory signalling.</p>
+<h2>Safety</h2><p>Well tolerated; harmless colour changes are the main note. Generally regarded as safe at supplemental doses; long-term high-dose data are limited.</p>
+<h2>Dosage context</h2><p>Trials commonly use ~4–12 mg/day. Natural (Haematococcus algae) sources are typically preferred over synthetic in the supplement market.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Astaxanthin has genuinely interesting tissue-distribution and some early skin/eye data — which the marketing inflates into a longevity super-pill. We grade it C and keep the cosmetic niche separate from the aging claim.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A red-algae carotenoid marketed as a super-antioxidant for skin, eyes and endurance.]]></excerpt:encoded>
+      <wp:post_id>1003</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-astaxanthin]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Carotenoid]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Antioxidant, skin & eye support]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Berberine — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/berberine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1003</guid>
+      <guid isPermaLink="false">nucleo-1004</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A plant alkaloid marketed as 'nature's Ozempic' for blood sugar and weight.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Real, measurable effects on blood sugar and lipids — but it is not Ozempic, and it has no longevity outcome data. Useful metabolic tool, oversold as a weight-loss miracle.</p></blockquote>
@@ -161,7 +200,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~900–1500 mg/day split across meals (bioavailability is poor, hence divided dosing). No validated longevity protocol; quality and dose accuracy vary between products.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Sold hard as 'natural Ozempic'. The metabolic effect is real enough that we don't dismiss it — but the comparison is marketing, and the interaction risk with prescriptions is the part the sales pages leave out. Grade C, and talk to a pharmacist if you take other meds.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A plant alkaloid marketed as 'nature's Ozempic' for blood sugar and weight.]]></excerpt:encoded>
-      <wp:post_id>1003</wp:post_id>
+      <wp:post_id>1004</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -188,7 +227,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/calcium-akg</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1004</guid>
+      <guid isPermaLink="false">nucleo-1005</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A Krebs-cycle intermediate promoted to lower 'biological age'.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Strong animal data and one small, widely-cited human study on biological-age markers — but the human evidence is thin, early, and partly industry-linked. Interesting, far from proven.</p></blockquote>
@@ -200,7 +239,7 @@
 <h2>Dosage context</h2><p>The cited human work used ~1 g/day of a Ca-AKG formulation. No independent dose-finding or replication has established an optimal regimen.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Ca-AKG rides on one small biological-age study and strong mouse data. We grade it C and are explicit that a single, partly self-interested human trial is a starting point, not a verdict.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A Krebs-cycle intermediate promoted to lower 'biological age'.]]></excerpt:encoded>
-      <wp:post_id>1004</wp:post_id>
+      <wp:post_id>1005</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -227,7 +266,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/coenzyme-q10</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1005</guid>
+      <guid isPermaLink="false">nucleo-1006</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A mitochondrial electron-transport cofactor promoted for heart, energy and aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Best evidence is in specific settings — heart failure and statin-associated muscle symptoms — with mixed results. As a general anti-aging energy booster for healthy people, the case is weak.</p></blockquote>
@@ -239,7 +278,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~100–300 mg/day. Absorption is poor and fat-dependent, so it's best taken with a meal; ubiquinol formulations are marketed as better-absorbed, with variable supporting data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>CoQ10 has real roles and a couple of legitimate clinical niches, which is exactly why it gets sold for everything. We keep it at C: worth considering in heart failure or statin myalgia with a doctor, unproven as a general longevity 'battery'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A mitochondrial electron-transport cofactor promoted for heart, energy and aging.]]></excerpt:encoded>
-      <wp:post_id>1005</wp:post_id>
+      <wp:post_id>1006</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -266,7 +305,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/collagen</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1006</guid>
+      <guid isPermaLink="false">nucleo-1007</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Hydrolysed collagen promoted for skin elasticity, joints, hair and nails.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The best evidence is for modest skin-hydration and elasticity gains; joint and 'anti-aging' claims are weaker. A reasonable cosmetic supplement, not an internal fountain of youth.</p></blockquote>
@@ -278,7 +317,7 @@
 <h2>Dosage context</h2><p>Skin trials typically use ~2.5–10 g/day of hydrolysed collagen peptides for 8–12 weeks. Benefits fade after stopping, so it's an ongoing cost, not a one-off fix.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>One of the few 'beauty from within' supplements with any real trial support — and one of the most industry-funded literatures we read. We keep it at C: fine as a cosmetic aid, not the systemic rejuvenation the ads imply.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Hydrolysed collagen promoted for skin elasticity, joints, hair and nails.]]></excerpt:encoded>
-      <wp:post_id>1006</wp:post_id>
+      <wp:post_id>1007</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -305,7 +344,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/creatine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1007</guid>
+      <guid isPermaLink="false">nucleo-1008</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The most evidence-backed supplement for preserving muscle and strength with age.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Not an 'anti-aging' pill — but one of the very few supplements with genuinely strong human evidence, for muscle, strength and power in older adults, especially paired with resistance training. Lifespan itself is not the endpoint studied.</p></blockquote>
@@ -317,7 +356,7 @@
 <h2>Dosage context</h2><p>Typical protocols use ~3–5 g/day of creatine monohydrate, with or without an initial higher-dose 'loading' week. Monohydrate is the best-evidenced and cheapest form; more exotic forms rarely justify their price.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>In a market full of hype, creatine is almost the opposite problem: cheap, unglamorous, and better evidenced than most 'longevity' molecules. We grade it B for functional aging and stay clear that it isn't a lifespan drug.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The most evidence-backed supplement for preserving muscle and strength with age.]]></excerpt:encoded>
-      <wp:post_id>1007</wp:post_id>
+      <wp:post_id>1008</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -344,7 +383,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/curcumin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1008</guid>
+      <guid isPermaLink="false">nucleo-1009</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The active turmeric polyphenol promoted as a natural anti-inflammatory.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A credible anti-inflammatory with decent trials for osteoarthritis pain — held back by famously poor absorption. Useful for specific symptoms, not a proven longevity molecule.</p></blockquote>
@@ -356,7 +395,7 @@
 <h2>Dosage context</h2><p>Trials range widely (~500–2000 mg/day of curcuminoids), almost always with a bioavailability enhancer. Comparing products is hard because 'curcumin' on a label can mean very different absorbed doses.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Curcumin is the rare herbal with genuine osteoarthritis data — and the poster child for 'the dose on the label isn't the dose in your blood'. We grade it C and pay attention to formulation, not marketing.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The active turmeric polyphenol promoted as a natural anti-inflammatory.]]></excerpt:encoded>
-      <wp:post_id>1008</wp:post_id>
+      <wp:post_id>1009</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -383,7 +422,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/egcg</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1009</guid>
+      <guid isPermaLink="false">nucleo-1010</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The main green-tea catechin promoted for metabolism, fat loss and 'anti-aging'.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Green tea as a drink is a healthy habit; concentrated EGCG extracts have weak weight/longevity evidence and a real, if uncommon, liver-toxicity risk. The pill is not the same as the cup.</p></blockquote>
@@ -395,7 +434,7 @@
 <h2>Dosage context</h2><p>Extract trials vary widely; some safety reviews suggest keeping supplemental EGCG below defined daily limits and taking it with food. Drinking tea avoids the concentrated-extract risk entirely.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>This is the clearest 'the pill isn't the food' case in the database. The tea is great; the high-dose extract trades marginal benefit for a real liver risk. Grade C, with a safety asterisk.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The main green-tea catechin promoted for metabolism, fat loss and 'anti-aging'.]]></excerpt:encoded>
-      <wp:post_id>1009</wp:post_id>
+      <wp:post_id>1010</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -418,11 +457,50 @@
     </item>
 
     <item>
+      <title>Ergothioneine — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/ergothioneine</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1011</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A mushroom-derived antioxidant proposed as a possible 'longevity vitamin'.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Genuinely interesting: the body has a dedicated transporter for it, and lower blood levels track with worse aging outcomes. But that's association — no trial yet shows that taking it changes anything.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Amino acid antioxidant</li><li><strong>Primary use:</strong> Cellular antioxidant / "longevity vitamin"</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Ergothioneine is unusual because human cells express a specific transporter (OCTN1) that concentrates it in tissues under oxidative stress — a strong hint the body values it, which is why some researchers call it a candidate 'longevity vitamin'. Observational studies link lower blood ergothioneine to higher cardiovascular and mortality risk and cognitive decline. What's missing is interventional proof: no randomized trial has shown that supplementing it improves outcomes. Grade C: compelling biology and epidemiology, zero outcome trials.</p>
+<h2>Key studies</h2><ol><li><strong>Ergothioneine blood levels and mortality/cardiometabolic risk</strong> <em>(observational)</em><br>Lower levels associated with worse outcomes — not causal. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ergothioneine+mortality+cardiovascular+cohort" rel="noopener">PubMed ↗</a></li><li><strong>Ergothioneine as a longevity vitamin (review)</strong> <em>(review)</em><br>Argues the case from transporter biology and epidemiology. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ergothioneine+longevity+vitamin+review" rel="noopener">PubMed ↗</a></li><li><strong>Ergothioneine and cognitive aging</strong> <em>(observational)</em><br>Associations with cognition; interventional data absent. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=ergothioneine+cognitive+decline+dementia" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>A potent, stable antioxidant selectively accumulated by cells via the OCTN1 transporter, concentrating in mitochondria and tissues exposed to oxidative stress; dietary sources are chiefly mushrooms.</p>
+<h2>Safety</h2><p>Appears very safe in the limited human data, with high tolerability; long-term supplementation safety is not yet well characterised.</p>
+<h2>Dosage context</h2><p>Dietary intake varies with mushroom consumption; supplement trials are few and doses not standardised. Because the evidence is associational, an 'optimal' dose is undefined.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Ergothioneine is the most interesting molecule here with the least interventional proof: a dedicated transporter and strong associations, but nobody has yet shown that a pill helps. Grade C, and one of the more honest 'watch this space' entries.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A mushroom-derived antioxidant proposed as a possible 'longevity vitamin'.]]></excerpt:encoded>
+      <wp:post_id>1011</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-ergothioneine]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Amino acid antioxidant]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Cellular antioxidant / "longevity vitamin"]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Fisetin — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/fisetin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1010</guid>
+      <guid isPermaLink="false">nucleo-1012</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A plant flavonoid studied as a senolytic to clear senescent cells.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> One of the more promising natural senolytics in the lab — but the human evidence is still in progress. Clinical trials are underway; the results aren't in. Treat current claims as preliminary.</p></blockquote>
@@ -434,7 +512,7 @@
 <h2>Dosage context</h2><p>Research uses intermittent high-dose ('hit-and-run') regimens; supplement doses and bioavailability vary widely. No validated human protocol yet exists.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Fisetin is often sold as if the human trials were already positive. They aren't finished. We grade it C and will revisit the day the clinical data actually land.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A plant flavonoid studied as a senolytic to clear senescent cells.]]></excerpt:encoded>
-      <wp:post_id>1010</wp:post_id>
+      <wp:post_id>1012</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -461,7 +539,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/glycine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1011</guid>
+      <guid isPermaLink="false">nucleo-1013</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A simple amino acid studied for sleep quality and, with NAC, for aging biomarkers.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Cheap, safe, with a modest evidence base for sleep quality and a role in the experimental GlyNAC combination. As a stand-alone longevity molecule the human data are thin.</p></blockquote>
@@ -473,7 +551,7 @@
 <h2>Dosage context</h2><p>Sleep studies commonly use ~3 g before bed; GlyNAC protocols use higher, weight-based doses under study conditions. No validated longevity dose exists for glycine alone.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Glycine is the quiet ingredient behind the GlyNAC headlines. On its own it's a reasonable, cheap sleep aid — not the aging reversal the combination studies get spun into.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A simple amino acid studied for sleep quality and, with NAC, for aging biomarkers.]]></excerpt:encoded>
-      <wp:post_id>1011</wp:post_id>
+      <wp:post_id>1013</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -500,7 +578,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/glynac</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1012</guid>
+      <guid isPermaLink="false">nucleo-1014</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A glycine + N-acetylcysteine combination studied to restore glutathione and mitochondrial function with age.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Intriguing early trials from a single research group show broad improvements in older adults — but the studies are small and largely unreplicated. Promising, not yet proven.</p></blockquote>
@@ -512,7 +590,7 @@
 <h2>Dosage context</h2><p>Studied at weight-based doses of both amino acids under trial conditions. There is no standardised over-the-counter GlyNAC dose, and products vary widely.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>GlyNAC produces the most impressive-sounding results of any supplement here — and the thinnest independent replication. We hold it at C until other labs reproduce it, however good the story sounds.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A glycine + N-acetylcysteine combination studied to restore glutathione and mitochondrial function with age.]]></excerpt:encoded>
-      <wp:post_id>1012</wp:post_id>
+      <wp:post_id>1014</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -539,7 +617,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/hyaluronic-acid</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1013</guid>
+      <guid isPermaLink="false">nucleo-1015</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The skin- and joint-hydrating molecule used topically, orally and as a dermal filler.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Well established for what it physically does — holding water — with decent evidence for skin hydration (topical/oral) and injectable use. As an ingested 'anti-aging' cure its systemic claims are more modest than the marketing.</p></blockquote>
@@ -551,7 +629,7 @@
 <h2>Dosage context</h2><p>Oral trials commonly use ~120–240 mg/day over 8–12 weeks. Topical concentration and molecular weight affect performance; injectable use follows clinical protocols.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Hyaluronic acid is a rare supplement where the physical mechanism is undeniable — it's just that 'holds water in skin' is a cosmetic claim, not a longevity one. Grade C, and route matters a lot.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The skin- and joint-hydrating molecule used topically, orally and as a dermal filler.]]></excerpt:encoded>
-      <wp:post_id>1013</wp:post_id>
+      <wp:post_id>1015</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -574,11 +652,167 @@
     </item>
 
     <item>
+      <title>L-Citrulline — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/l-citrulline</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1016</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>An amino acid that raises nitric oxide, promoted for blood flow, exercise and blood pressure.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Genuinely raises nitric oxide and has decent evidence for exercise performance and modest blood-pressure effects — but that's sports and cardiometabolic, not proven longevity.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Amino acid</li><li><strong>Primary use:</strong> Nitric oxide &amp; blood flow</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>L-citrulline is converted to arginine and boosts nitric-oxide production more effectively than arginine itself. Human trials support small improvements in exercise performance, muscle blood flow and recovery, and modest reductions in blood pressure. These are real, mechanistically coherent effects on cardiovascular and exercise outcomes — not longevity endpoints. Grade C: solid for its niche, not a healthspan claim, and often over-marketed in pre-workout products.</p>
+<h2>Key studies</h2><ol><li><strong>L-citrulline and exercise performance (meta-analysis)</strong> <em>(meta-analysis)</em><br>Small but real performance/recovery benefits. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=citrulline+malate+exercise+performance+meta-analysis" rel="noopener">PubMed ↗</a></li><li><strong>L-citrulline and blood pressure</strong> <em>(RCT)</em><br>Modest reductions, larger in hypertensive subjects. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=L-citrulline+blood+pressure+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Citrulline, arginine and nitric oxide (review)</strong> <em>(review)</em><br>Why citrulline beats arginine for raising NO. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=citrulline+arginine+nitric+oxide+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Bypasses intestinal breakdown that limits oral arginine, raising plasma arginine and nitric-oxide synthesis, which promotes vasodilation and blood flow.</p>
+<h2>Safety</h2><p>Well tolerated with few side effects even at higher doses. Caution if combined with blood-pressure or erectile-dysfunction medication (additive vasodilation).</p>
+<h2>Dosage context</h2><p>Exercise studies use ~6–8 g citrulline malate pre-workout; blood-pressure studies use ~3–6 g/day of L-citrulline. Doses on many pre-workout labels are too low to matter.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>L-citrulline actually does what it says on the nitric-oxide front — the catch is that the honest claim is 'better pumps and slightly lower blood pressure', not longevity. Grade C, and check the dose on your pre-workout.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[An amino acid that raises nitric oxide, promoted for blood flow, exercise and blood pressure.]]></excerpt:encoded>
+      <wp:post_id>1016</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-l-citrulline]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Amino acid]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Nitric oxide & blood flow]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title>L-Theanine — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/l-theanine</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1017</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>The green-tea amino acid promoted for calm alertness and better sleep.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A safe, mild relaxant with modest evidence for 'calm focus' — especially paired with caffeine. Not a longevity molecule, but one of the more honest small-benefit supplements.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Amino acid</li><li><strong>Primary use:</strong> Calm focus &amp; sleep</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>L-theanine has small human trials suggesting it reduces subjective stress and, combined with caffeine, improves attention while smoothing caffeine's jitteriness. Some evidence points to better sleep quality (via relaxation rather than sedation). The effects are modest and short-term, and there is no aging or longevity outcome data. Grade C: a legitimate, low-risk 'calm without drowsiness' aid, not a healthspan intervention.</p>
+<h2>Key studies</h2><ol><li><strong>L-theanine and caffeine on attention</strong> <em>(RCT)</em><br>Improved attention and reduced caffeine jitter in combination. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=L-theanine+caffeine+attention+randomized" rel="noopener">PubMed ↗</a></li><li><strong>L-theanine, stress and sleep</strong> <em>(review)</em><br>Modest reductions in stress; sleep-quality signals. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=L-theanine+stress+sleep+randomized+review" rel="noopener">PubMed ↗</a></li><li><strong>L-theanine pharmacology (review)</strong> <em>(review)</em><br>Explains the 'calm alertness' mechanism. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=L-theanine+mechanism+neurotransmitter+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Crosses the blood-brain barrier and modulates neurotransmitters (increasing GABA, serotonin, dopamine and alpha brain-wave activity), producing relaxation without sedation.</p>
+<h2>Safety</h2><p>Very well tolerated; no significant safety concerns at studied doses. Naturally present in tea. May mildly lower blood pressure.</p>
+<h2>Dosage context</h2><p>Trials commonly use ~100–200 mg, often alongside ~100 mg caffeine for the focus effect. A cup of green tea provides much less.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>L-theanine is a rare supplement whose modest, honest claim roughly matches its modest, honest evidence. We grade it C and keep it in the 'nice, low-risk, not magic' bucket.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[The green-tea amino acid promoted for calm alertness and better sleep.]]></excerpt:encoded>
+      <wp:post_id>1017</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-l-theanine]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Amino acid]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Calm focus & sleep]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title>Lion's Mane — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/lions-mane</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1018</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A mushroom promoted for memory, focus and nerve regeneration.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Intriguing nerve-growth mechanism and a couple of small human trials hinting at cognitive benefit — but the human evidence is thin, short, and far from the bold 'brain regeneration' marketing.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Medicinal mushroom</li><li><strong>Primary use:</strong> Cognition &amp; nerve support</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Lion's mane contains compounds (hericenones, erinacines) that stimulate nerve growth factor in laboratory models, which is the basis for the cognitive and neuroprotective claims. Human evidence is limited to a few small trials — for example modest, temporary cognitive improvement in older adults with mild impairment, and some mood/sleep signals — often small and short. There are no aging or neurodegenerative-disease outcome trials. Grade C: a genuinely interesting mechanism with an immature human evidence base.</p>
+<h2>Key studies</h2><ol><li><strong>Lion's mane and cognition in older adults</strong> <em>(RCT)</em><br>Modest, often temporary cognitive signals in small trials. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Hericium+erinaceus+lion's+mane+cognition+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Lion's mane, mood and sleep</strong> <em>(RCT)</em><br>Small mood/sleep effects in limited studies. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Hericium+erinaceus+mood+sleep+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Hericium erinaceus neurotrophic effects (review)</strong> <em>(review)</em><br>Mechanistic basis, largely preclinical. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Hericium+erinaceus+nerve+growth+factor+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Bioactive compounds may stimulate nerve growth factor (NGF) and brain-derived neurotrophic factor (BDNF) signalling, supporting neuronal maintenance and plasticity — mostly shown in vitro and in animals.</p>
+<h2>Safety</h2><p>Generally well tolerated; occasional GI upset and rare allergic/skin reactions reported. Long-term safety is not well characterised, and product identity/potency varies (fruiting body vs mycelium).</p>
+<h2>Dosage context</h2><p>Trials commonly use ~1–3 g/day of dried mushroom or extract. Product quality varies widely; 'mycelium on grain' products may contain little active mushroom.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Lion's mane has one of the more exciting mechanisms in the mushroom aisle and one of the thinnest human evidence bases behind the hype. Grade C — worth watching, and worth checking whether your product is actual mushroom.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A mushroom promoted for memory, focus and nerve regeneration.]]></excerpt:encoded>
+      <wp:post_id>1018</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-lions-mane]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Medicinal mushroom]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Cognition & nerve support]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+      <title>Lithium (low-dose) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/lithium-low-dose</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1019</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>Trace/low-dose lithium promoted for mood, brain aging and longevity.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Interesting population signals and a real psychiatric drug at higher doses — but a narrow safety margin and almost no controlled 'microdose' evidence make casual self-supplementation a genuinely bad idea. This is a caution, not a recommendation.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Trace element / drug</li><li><strong>Primary use:</strong> Mood &amp; putative neuroprotection</li><li><strong>Grade:</strong> D</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Prescription drug (at clinical doses)</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>The longevity interest comes from ecological studies suggesting regions with more lithium in drinking water have lower suicide and, in some analyses, dementia rates, plus lithium's established (high-dose) use in bipolar disorder and preclinical neuroprotection signals. But the leap to 'microdose lithium orotate supplements extend healthspan' is not supported by controlled human trials, supplement products are unregulated in dose and purity, and lithium has a famously narrow therapeutic window — the gap between a therapeutic and a toxic level is small. Grade D reflects weak human evidence for the supplement claim combined with real toxicity potential. We include it mainly to warn, not to endorse.</p>
+<h2>Key studies</h2><ol><li><strong>Lithium in drinking water and suicide/dementia (ecological studies)</strong> <em>(observational)</em><br>Population associations only — cannot establish a supplement benefit. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=lithium+drinking+water+suicide+dementia+population" rel="noopener">PubMed ↗</a></li><li><strong>Low-dose lithium and cognition/neuroprotection</strong> <em>(review)</em><br>Hypothesis-generating; controlled human evidence is thin. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=low+dose+lithium+neuroprotection+cognition+review" rel="noopener">PubMed ↗</a></li><li><strong>Lithium toxicity and monitoring</strong> <em>(review)</em><br>Narrow safety window; requires medical monitoring. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=lithium+toxicity+therapeutic+monitoring+thyroid+kidney" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Proposed inhibition of GSK-3β and effects on autophagy and neurotrophic signalling underlie the neuroprotection hypothesis; at clinical doses it is a mood stabiliser by incompletely understood mechanisms.</p>
+<h2>Safety</h2><p>This is the key point. Lithium has a narrow therapeutic index; even outside clearly toxic ranges it can affect the thyroid and kidneys with chronic use, and it interacts with common drugs (NSAIDs, diuretics, ACE inhibitors) that can raise blood levels dangerously. 'Low-dose' supplements are not quality-controlled. Do not self-experiment: any lithium use belongs under medical supervision with blood monitoring.</p>
+<h2>Dosage context</h2><p>Clinical psychiatric dosing is individualised and monitored with blood tests. 'Microdose' supplement products (e.g. lithium orotate) provide much smaller amounts, but without trials establishing benefit or a safe long-term dose — so no responsible dose can be stated here.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>This is the entry where our job is to slow you down, not sell you. The population data are genuinely intriguing, but lithium is a real drug with a narrow safety margin and no controlled evidence for the supplement version. Grade D — and please don't microdose lithium on your own.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[Trace/low-dose lithium promoted for mood, brain aging and longevity.]]></excerpt:encoded>
+      <wp:post_id>1019</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-lithium-low-dose]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[D]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Trace element / drug]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Mood & putative neuroprotection]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Prescription drug (at clinical doses)]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Magnesium — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/magnesium</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1014</guid>
+      <guid isPermaLink="false">nucleo-1020</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An essential mineral widely supplemented for sleep, muscle, mood and heart health.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Correcting a real shortfall is worthwhile and many people under-consume it — but magnesium is not a longevity intervention, and 'more' past sufficiency doesn't help. Fix a deficiency, don't chase a miracle.</p></blockquote>
@@ -590,7 +824,7 @@
 <h2>Dosage context</h2><p>Typical supplemental doses are ~200–400 mg elemental magnesium/day. Glycinate/citrate are better tolerated than oxide; 'threonate' is marketed for the brain on limited human data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Magnesium is a case where the boring advice is the right advice: many people are genuinely low, correcting that helps a bit, and beyond sufficiency there's nothing to chase. C, not a longevity headline.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An essential mineral widely supplemented for sleep, muscle, mood and heart health.]]></excerpt:encoded>
-      <wp:post_id>1014</wp:post_id>
+      <wp:post_id>1020</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -617,7 +851,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/melatonin</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1015</guid>
+      <guid isPermaLink="false">nucleo-1021</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The sleep and circadian hormone, also promoted as an antioxidant for aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Genuinely useful for circadian problems (jet lag, delayed sleep phase) at low doses; the broader 'antioxidant anti-aging' pitch is far more speculative — and most people take far too much.</p></blockquote>
@@ -629,7 +863,7 @@
 <h2>Dosage context</h2><p>For circadian effects, low doses (~0.5–1 mg) taken at the right time often work better than the large 3–10 mg doses sold; timing matters more than amount.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Melatonin is a timing signal, not a sleeping pill — and definitely not a proven anti-aging antioxidant. Lower doses, right timing. We grade it C and gently note most bottles are wildly overdosed.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The sleep and circadian hormone, also promoted as an antioxidant for aging.]]></excerpt:encoded>
-      <wp:post_id>1015</wp:post_id>
+      <wp:post_id>1021</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -656,7 +890,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/metformina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1016</guid>
+      <guid isPermaLink="false">nucleo-1022</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A biguanide with metabolic effects and a hypothesised geroprotective action.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Decades of proof in diabetes; the anti-aging promise in healthy people is still an unfinished experiment. The dedicated trial (TAME) hasn't reported, so the geroprotective case in humans is unproven.</p></blockquote>
@@ -668,7 +902,7 @@
 <h2>Dosage context</h2><p>Standard clinical dosing exists for diabetes (typically titrated to tolerance). There is no validated longevity dose or protocol for people without a metabolic indication; that question is exactly what dedicated trials are meant to answer.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>We keep the grade at B on purpose. Metformin is a genuinely good drug for the right patient, but the longevity story is sold ahead of the evidence. We move the grade when TAME gives us human data, not before.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A biguanide with metabolic effects and a hypothesised geroprotective action.]]></excerpt:encoded>
-      <wp:post_id>1016</wp:post_id>
+      <wp:post_id>1022</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -695,7 +929,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/nac</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1017</guid>
+      <guid isPermaLink="false">nucleo-1023</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A glutathione precursor with real medical uses, repurposed as an anti-aging antioxidant.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuine drug for specific problems (paracetamol overdose, mucus clearance) — but its longevity and general-wellness claims rest on much thinner evidence. Useful, over-extended.</p></blockquote>
@@ -707,7 +941,7 @@
 <h2>Dosage context</h2><p>Supplement trials commonly use ~600–1800 mg/day. Medical uses (overdose, lung disease) follow specific clinical protocols that don't translate to casual 'longevity' dosing.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>NAC is a real drug wearing a supplement label. We respect its proven uses and stay sceptical of the anti-aging leap — 'raises glutathione' is not the same as 'extends healthspan'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A glutathione precursor with real medical uses, repurposed as an anti-aging antioxidant.]]></excerpt:encoded>
-      <wp:post_id>1017</wp:post_id>
+      <wp:post_id>1023</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -734,7 +968,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/nicotinamide-riboside</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1018</guid>
+      <guid isPermaLink="false">nucleo-1024</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The other headline NAD⁺ precursor, marketed alongside NMN for cellular energy.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Like NMN, it reliably raises blood NAD⁺ in humans — and, like NMN, that hasn't yet translated into proven clinical benefit. Well tolerated, biologically real, clinically unproven.</p></blockquote>
@@ -746,7 +980,7 @@
 <h2>Dosage context</h2><p>Trials commonly use ~250–1000 mg/day. Head-to-head evidence that NR is meaningfully better or worse than NMN is lacking; the choice is often driven by price and marketing rather than data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>NR and NMN are sold as rivals; in the evidence they're near-twins. We grade both B and make the same point: the NAD⁺ goes up, the proof that it makes you healthier isn't there yet.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The other headline NAD⁺ precursor, marketed alongside NMN for cellular energy.]]></excerpt:encoded>
-      <wp:post_id>1018</wp:post_id>
+      <wp:post_id>1024</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -773,7 +1007,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/nmn</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1019</guid>
+      <guid isPermaLink="false">nucleo-1025</guid>
       <description></description>
       <content:encoded><![CDATA[<p>NAD⁺ precursor: more cellular energy and a possible anti-aging effect.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Reliably raises blood NAD⁺ in humans; a real clinical benefit is biologically plausible but not yet proven — hence grade B.</p></blockquote>
@@ -785,7 +1019,7 @@
 <h2>Dosage context</h2><p>In studies: 250–900 mg/day for 8–24 weeks. Higher doses did not show proportionally greater benefit.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>We follow NMN trial by trial and we know how it's sold: the NAD⁺ numbers are real, but the leap 'more NAD⁺ = live better' is not yet proven in humans. Hence grade B.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[NAD⁺ precursor: more cellular energy and a possible anti-aging effect.]]></excerpt:encoded>
-      <wp:post_id>1019</wp:post_id>
+      <wp:post_id>1025</wp:post_id>
       <wp:post_date><![CDATA[2026-06-15 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-15 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -812,7 +1046,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/omega-3</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1020</guid>
+      <guid isPermaLink="false">nucleo-1026</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Marine omega-3 fatty acids promoted for heart, brain and 'anti-inflammatory' aging.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Clearly useful for lowering triglycerides and in specific high-risk cardiac settings — but as a broad longevity or heart-protection pill for healthy people, the large trials are underwhelming.</p></blockquote>
@@ -824,7 +1058,7 @@
 <h2>Dosage context</h2><p>Dietary guidance favours two oily-fish meals per week. Supplement trials span roughly 1–4 g/day of EPA+DHA; importantly, the cardiovascular-event evidence is specific to high-dose prescription EPA in high-triglyceride patients, not low-dose over-the-counter fish oil taken by everyone.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>A molecule where the big population trials matter more than the mechanism. We keep it at C because 'good for triglycerides and specific patients' is true, while 'everyone should take it for longevity' isn't what the large RCTs show.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Marine omega-3 fatty acids promoted for heart, brain and 'anti-inflammatory' aging.]]></excerpt:encoded>
-      <wp:post_id>1020</wp:post_id>
+      <wp:post_id>1026</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -851,7 +1085,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/polynucleotides</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1021</guid>
+      <guid isPermaLink="false">nucleo-1027</guid>
       <description></description>
       <content:encoded><![CDATA[<p>Skin biostimulation and regeneration: hydration, skin quality, support to healing.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Everywhere in aesthetic clinics, thin in independent evidence. Most studies are small, short and industry-linked with surrogate endpoints — so today it earns an F, and the grade can rise the day solid independent RCTs land.</p></blockquote>
@@ -863,7 +1097,7 @@
 <h2>Dosage context</h2><p>Injectable protocols vary by concentration and number of sessions; no universally validated standard in independent literature.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>It's one of the most aggressively marketed molecules in aesthetics right now. Knowing how it's sold, the gap between the hype and the independent evidence is wide — that's exactly why it gets an F today, not a pass. The grade can rise the day solid independent RCTs land.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[Skin biostimulation and regeneration: hydration, skin quality, support to healing.]]></excerpt:encoded>
-      <wp:post_id>1021</wp:post_id>
+      <wp:post_id>1027</wp:post_id>
       <wp:post_date><![CDATA[2026-06-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -886,11 +1120,50 @@
     </item>
 
     <item>
+      <title>PQQ (Pyrroloquinoline quinone) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/pqq</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1028</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A compound promoted to grow new mitochondria for energy and aging.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The 'makes new mitochondria' story rests mostly on cell and animal work, plus a handful of small human trials on fatigue and cognition. Interesting, early, and often bundled with CoQ10 on theory.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Mitochondrial cofactor</li><li><strong>Primary use:</strong> Mitochondrial biogenesis</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> low</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>PQQ is proposed to stimulate mitochondrial biogenesis — the creation of new mitochondria — which underlies its energy and anti-aging marketing. Most of this evidence is preclinical; human data are limited to small trials reporting effects on fatigue, sleep or some inflammatory/metabolic markers, with inconsistent quality. It is frequently sold combined with CoQ10 on the assumption of synergy that outcome trials haven't confirmed. Grade C: a plausible mitochondrial mechanism with sparse, early human evidence.</p>
+<h2>Key studies</h2><ol><li><strong>PQQ and fatigue / cognitive markers (small trials)</strong> <em>(RCT)</em><br>Small, inconsistent human signals. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=pyrroloquinoline+quinone+PQQ+fatigue+cognition+randomized" rel="noopener">PubMed ↗</a></li><li><strong>PQQ and mitochondrial biogenesis (preclinical)</strong> <em>(preclinical)</em><br>Mechanistic basis, mostly cell/animal. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=pyrroloquinoline+quinone+mitochondrial+biogenesis" rel="noopener">PubMed ↗</a></li><li><strong>PQQ review</strong> <em>(review)</em><br>Summarises the (early) evidence base. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=pyrroloquinoline+quinone+PQQ+review" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Proposed to activate signalling (e.g. PGC-1α pathways) that promotes mitochondrial biogenesis, alongside redox/antioxidant activity.</p>
+<h2>Safety</h2><p>Well tolerated in the small trials to date; long-term safety is not well characterised given limited human exposure data.</p>
+<h2>Dosage context</h2><p>Human trials commonly use ~10–20 mg/day, often with CoQ10. Optimal dose and any real benefit of the combination are not established.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>PQQ's 'grow new mitochondria' pitch is mostly a mouse-and-dish story with a few small human trials tacked on. We grade it C and treat the CoQ10 bundling as marketing until outcomes say otherwise.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A compound promoted to grow new mitochondria for energy and aging.]]></excerpt:encoded>
+      <wp:post_id>1028</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-pqq]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Mitochondrial cofactor]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Mitochondrial biogenesis]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[low]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Pterostilbene — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/pterostilbene</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1022</guid>
+      <guid isPermaLink="false">nucleo-1029</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A resveratrol relative with better absorption, often paired with NMN or NR.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> More bioavailable than resveratrol on paper, but with far less human data of its own. Frequently bundled with NAD⁺ precursors on theory, not on outcome evidence.</p></blockquote>
@@ -902,7 +1175,7 @@
 <h2>Dosage context</h2><p>Human trials have used roughly 50–125 mg/day. Optimal dose and any real benefit of NMN/NR co-formulation are not established by outcome data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Pterostilbene is 'resveratrol with better PK' — which fixes the absorption complaint without supplying the missing human outcomes. We grade it C and note the LDL signal the bundled products rarely mention.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A resveratrol relative with better absorption, often paired with NMN or NR.]]></excerpt:encoded>
-      <wp:post_id>1022</wp:post_id>
+      <wp:post_id>1029</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -929,7 +1202,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/quercetina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1023</guid>
+      <guid isPermaLink="false">nucleo-1030</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A flavonoid with senolytic action, often combined with dasatinib.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuinely interesting idea — clearing 'zombie' senescent cells — but the human evidence is early, tiny, and mostly tied to the prescription drug dasatinib, not quercetin alone.</p></blockquote>
@@ -941,7 +1214,7 @@
 <h2>Dosage context</h2><p>As a supplement, quercetin has low oral bioavailability, and doses/cycles vary widely. In senolytic research it is dosed intermittently ('hit-and-run') alongside dasatinib — a regimen that should not be replicated outside a trial.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>The senolytic field is promising but young, and quercetin is often marketed as if the D+Q trial results were its own. They aren't. We keep it at C and flag that the interesting protocols involve a prescription drug.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A flavonoid with senolytic action, often combined with dasatinib.]]></excerpt:encoded>
-      <wp:post_id>1023</wp:post_id>
+      <wp:post_id>1030</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -968,7 +1241,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/rapamicina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1024</guid>
+      <guid isPermaLink="false">nucleo-1031</guid>
       <description></description>
       <content:encoded><![CDATA[<p>mTOR inhibitor with the strongest evidence of lifespan extension in animal models.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> The strongest lifespan data of any molecule here — but in animals. In humans it is a potent immunosuppressant, not a supplement; off-label 'longevity' use is experimental and must be managed by a physician.</p></blockquote>
@@ -980,7 +1253,7 @@
 <h2>Dosage context</h2><p>Approved dosing exists for licensed indications (e.g. organ-transplant immunosuppression). No longevity dose or schedule is validated; research explores intermittent, lower-dose regimens specifically to preserve benefit while limiting immunosuppression.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Grade A for the strength of the preclinical evidence — not an invitation to use it. This is the molecule most often misrepresented in the longevity market: a real drug with real risks, sold to some as a casual supplement. It isn't one.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[mTOR inhibitor with the strongest evidence of lifespan extension in animal models.]]></excerpt:encoded>
-      <wp:post_id>1024</wp:post_id>
+      <wp:post_id>1031</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1007,7 +1280,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/resveratrolo</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1025</guid>
+      <guid isPermaLink="false">nucleo-1032</guid>
       <description></description>
       <content:encoded><![CDATA[<p>An 'anti-aging' polyphenol claimed to activate sirtuins.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Impressive in a petri dish, inconsistent in people. Poor absorption means most of a dose never reaches tissues intact — the clearest lesson in why cell data don't equal human benefit.</p></blockquote>
@@ -1019,7 +1292,7 @@
 <h2>Dosage context</h2><p>Studies span roughly 150 mg to 1 g/day with no consensus regimen. Formulation matters more than headline dose because of the absorption problem; micronised or co-formulated products are marketed on this basis but without decisive outcome data.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>A classic case where preclinical enthusiasm didn't translate to people. We keep resveratrol at C not because it's unsafe, but because the human evidence never matched the marketing.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[An 'anti-aging' polyphenol claimed to activate sirtuins.]]></excerpt:encoded>
-      <wp:post_id>1025</wp:post_id>
+      <wp:post_id>1032</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1046,7 +1319,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/spermidina</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1026</guid>
+      <guid isPermaLink="false">nucleo-1033</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A polyamine that induces autophagy and may support longevity.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> One of the more credible dietary longevity candidates: it's already in food, animal data are strong, and early human trials on autophagy and memory are encouraging — but the large confirmatory RCTs aren't in yet.</p></blockquote>
@@ -1058,7 +1331,7 @@
 <h2>Dosage context</h2><p>Human studies typically use ~1–6 mg/day, often as a standardised wheat-germ extract. This overlaps with what a spermidine-rich diet already provides, which is part of the appeal — but also means 'more is better' hasn't been demonstrated.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Among the polyamines, spermidine has the most promising human base — which is exactly why we resist overselling it. B means 'worth watching and reasonable to get from diet', not 'proven pill'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A polyamine that induces autophagy and may support longevity.]]></excerpt:encoded>
-      <wp:post_id>1026</wp:post_id>
+      <wp:post_id>1033</wp:post_id>
       <wp:post_date><![CDATA[2025-09-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2025-09-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1085,7 +1358,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/sulforaphane</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1027</guid>
+      <guid isPermaLink="false">nucleo-1034</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A broccoli-sprout compound that switches on the body's own antioxidant defences.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A genuinely interesting Nrf2 activator with small human trials on specific outcomes — but longevity claims are extrapolation, and supplement potency is notoriously inconsistent.</p></blockquote>
@@ -1097,7 +1370,7 @@
 <h2>Dosage context</h2><p>Broccoli-sprout preparations vary widely in actual sulforaphane yield; 'active myrosinase' and standardised sulforaphane content matter more than the headline glucoraphanin number.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Sulforaphane is a smarter kind of antioxidant idea — turning on your own defences rather than dosing a molecule. We grade it C: promising mechanism, small trials, and a supplement market where the label rarely matches the dose.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A broccoli-sprout compound that switches on the body's own antioxidant defences.]]></excerpt:encoded>
-      <wp:post_id>1027</wp:post_id>
+      <wp:post_id>1034</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1124,7 +1397,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/taurine</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1028</guid>
+      <guid isPermaLink="false">nucleo-1035</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A semi-essential amino acid promoted as an 'anti-aging' molecule after animal studies.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A 2023 animal study put taurine on the longevity map — but the human evidence is associational, not causal. Physiologically important and very safe; as an anti-aging intervention it's unproven in people.</p></blockquote>
@@ -1136,7 +1409,7 @@
 <h2>Dosage context</h2><p>Research and supplement doses vary widely (often ~1–6 g/day). There is no validated human 'longevity' dose, and the high doses used in animals do not translate directly to people.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>One headline animal paper became a marketing wave. We separate the two cleanly: the biology is interesting and taurine is safe, but 'reverses aging' is a mouse result, not a human fact.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A semi-essential amino acid promoted as an 'anti-aging' molecule after animal studies.]]></excerpt:encoded>
-      <wp:post_id>1028</wp:post_id>
+      <wp:post_id>1035</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1159,11 +1432,50 @@
     </item>
 
     <item>
+      <title>TMG (Betaine) — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/tmg-betaine</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1036</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>A methyl donor used to lower homocysteine and often paired with NMN/NR.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Reliably lowers homocysteine and has some sports-performance data — but whether that translates to longevity, or is even needed alongside NAD boosters, is unproven.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Methyl donor</li><li><strong>Primary use:</strong> Methylation &amp; homocysteine support</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Betaine (trimethylglycine) is a well-established methyl donor: it dependably lowers blood homocysteine, and there is reasonable evidence for small strength/power benefits in athletes. Its popularity in longevity stacks comes from a theory that NAD⁺ precursors like NMN consume methyl groups, so TMG 'replaces' them — a plausible idea that hasn't actually been shown to matter for outcomes in humans. High-dose betaine can also raise LDL/total cholesterol. Grade C: proven biochemical effect (homocysteine), unproven longevity payoff, with a lipid caveat.</p>
+<h2>Key studies</h2><ol><li><strong>Betaine and homocysteine</strong> <em>(meta-analysis)</em><br>Reliable homocysteine lowering. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=betaine+homocysteine+randomized+meta-analysis" rel="noopener">PubMed ↗</a></li><li><strong>Betaine and exercise performance</strong> <em>(review)</em><br>Small strength/power signals. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=betaine+supplementation+strength+power+randomized" rel="noopener">PubMed ↗</a></li><li><strong>Betaine and blood lipids</strong> <em>(RCT)</em><br>High doses may raise LDL/total cholesterol. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=betaine+supplementation+cholesterol+LDL+randomized" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>Donates methyl groups to convert homocysteine back to methionine (an alternative to the folate/B12 pathway), supporting methylation reactions throughout the body.</p>
+<h2>Safety</h2><p>Generally well tolerated; GI upset at higher doses. Notably, high-dose betaine has raised total and LDL cholesterol in some trials — relevant given the cardiovascular framing. Not a purely 'free' addition.</p>
+<h2>Dosage context</h2><p>Homocysteine/performance trials use ~1.5–6 g/day; longevity-stack use is often ~500–1000 mg to 'offset' NAD-precursor methylation — a dose based on theory, not outcome data.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>TMG is sold as the automatic partner to NMN. The homocysteine effect is real; the 'you must take it with your NAD booster' claim is theory, and the LDL signal is the part that gets left out. Grade C.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[A methyl donor used to lower homocysteine and often paired with NMN/NR.]]></excerpt:encoded>
+      <wp:post_id>1036</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-tmg-betaine]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Methyl donor]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Methylation & homocysteine support]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Urolithin A — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/urolithin-a</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1029</guid>
+      <guid isPermaLink="false">nucleo-1037</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A gut-derived metabolite that stimulates mitophagy, studied for muscle and mitochondrial health.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Unusual among supplements in having actual human RCTs — small ones showing better mitochondrial and muscle-endurance markers. Reasonably evidenced for muscle function; broad longevity claims are still a stretch.</p></blockquote>
@@ -1175,7 +1487,7 @@
 <h2>Dosage context</h2><p>Human trials commonly use ~500–1000 mg/day of a defined form. Eating pomegranate or walnuts does not reliably produce equivalent urolithin A because gut-microbiome conversion varies widely between people.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Urolithin A is a rare case: a supplement that actually ran randomized human trials. We still hold it at C, because 'better muscle-endurance markers in small trials' is not the same as 'lives longer'.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A gut-derived metabolite that stimulates mitophagy, studied for muscle and mitochondrial health.]]></excerpt:encoded>
-      <wp:post_id>1029</wp:post_id>
+      <wp:post_id>1037</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1198,11 +1510,50 @@
     </item>
 
     <item>
+      <title>Vitamin C — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/vitamin-c</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1038</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>The classic antioxidant vitamin, promoted for immunity, skin and longevity.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Essential, and correcting deficiency matters — but megadoses don't prevent colds in most people or extend life, and the body simply excretes the excess. Useful, not a super-supplement.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Water-soluble vitamin</li><li><strong>Primary use:</strong> Antioxidant, immune &amp; deficiency correction</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Vitamin C is essential (humans can't synthesise it) and true deficiency (scurvy) is serious, so adequacy clearly matters. Beyond that, the evidence deflates the hype: routine supplementation doesn't prevent colds in the general population (it may slightly shorten them, and helps in extreme physical stress), large antioxidant-supplement trials haven't shown longevity benefit, and the body tightly regulates blood levels — excess is largely excreted. Topical vitamin C has a separate, better cosmetic rationale for skin. Grade C: essential nutrient, unremarkable as a megadose longevity pill.</p>
+<h2>Key studies</h2><ol><li><strong>Vitamin C for preventing and treating the common cold</strong> <em>(meta-analysis)</em><br>No prevention in general population; minor duration effect. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=vitamin+C+common+cold+prevention+meta-analysis" rel="noopener">PubMed ↗</a></li><li><strong>Antioxidant supplements and mortality</strong> <em>(review)</em><br>No longevity benefit from antioxidant megadosing. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=antioxidant+supplements+vitamin+C+mortality+review" rel="noopener">PubMed ↗</a></li><li><strong>Vitamin C pharmacokinetics</strong> <em>(review)</em><br>Blood levels saturate; excess is excreted. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=vitamin+C+pharmacokinetics+plasma+saturation" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>A cofactor for collagen synthesis and several enzymes and a water-soluble antioxidant; blood levels are homeostatically capped, limiting the effect of very high oral doses.</p>
+<h2>Safety</h2><p>Very safe; high oral doses mainly cause GI upset/diarrhoea and, in predisposed people, raise kidney-stone risk. Excess is excreted rather than stored.</p>
+<h2>Dosage context</h2><p>Requirements are ~75–120 mg/day, easily met by diet; gram-level 'immune' doses exceed absorption and are largely wasted. Topical formulations are a different, skin-specific use.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Vitamin C is the original 'megadose it for everything' supplement, and the evidence mostly says your kidneys just filter out the excess. Essential in the diet, unremarkable as a longevity pill. Grade C.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[The classic antioxidant vitamin, promoted for immunity, skin and longevity.]]></excerpt:encoded>
+      <wp:post_id>1038</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-vitamin-c]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Water-soluble vitamin]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Antioxidant, immune & deficiency correction]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>Vitamin D — evidence, safety, grade</title>
       <link>https://www.nucleolongevity.com/en/molecule/vitamin-d</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1030</guid>
+      <guid isPermaLink="false">nucleo-1039</guid>
       <description></description>
       <content:encoded><![CDATA[<p>The 'sunshine vitamin' widely supplemented for bone, immunity and longevity.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Correcting a genuine deficiency clearly matters. Routine high-dose supplementation in people who are already replete has repeatedly failed to prevent disease in big trials — so the honest answer is 'test, don't guess'.</p></blockquote>
@@ -1214,7 +1565,7 @@
 <h2>Dosage context</h2><p>Typical maintenance is ~800–2000 IU/day, higher for correcting documented deficiency under guidance. Mega-dosing without a measured deficiency adds risk, not benefit. Dosing is best guided by a blood level, not by habit.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>The most over-supplemented vitamin in the longevity crowd. Our line is simple and unglamorous: test your level, correct a real deficiency, and don't mega-dose on faith. That's why it's a C, not an A.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[The 'sunshine vitamin' widely supplemented for bone, immunity and longevity.]]></excerpt:encoded>
-      <wp:post_id>1030</wp:post_id>
+      <wp:post_id>1039</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1241,7 +1592,7 @@
       <link>https://www.nucleolongevity.com/en/molecule/vitamin-k2</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1031</guid>
+      <guid isPermaLink="false">nucleo-1040</guid>
       <description></description>
       <content:encoded><![CDATA[<p>A vitamin promoted for directing calcium to bones and away from arteries.</p>
 <blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> A plausible role in bone and vascular calcium handling, with mostly surrogate-marker evidence. Interesting and safe, but hard clinical-outcome data are limited.</p></blockquote>
@@ -1253,7 +1604,7 @@
 <h2>Dosage context</h2><p>Supplements commonly provide ~90–200 µg/day of MK-7. The MK-7 form has a longer half-life than MK-4; optimal dose and long-term benefit are not settled.</p>
 <blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>K2 has one of the more elegant mechanisms in the supplement aisle — and one of the gaps between mechanism and outcomes. We grade it C and flag the warfarin interaction, which the marketing tends to skip.</p></blockquote>]]></content:encoded>
       <excerpt:encoded><![CDATA[A vitamin promoted for directing calcium to bones and away from arteries.]]></excerpt:encoded>
-      <wp:post_id>1031</wp:post_id>
+      <wp:post_id>1040</wp:post_id>
       <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1276,11 +1627,50 @@
     </item>
 
     <item>
+      <title>Zinc — evidence, safety, grade</title>
+      <link>https://www.nucleolongevity.com/en/molecule/zinc</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
+      <guid isPermaLink="false">nucleo-1041</guid>
+      <description></description>
+      <content:encoded><![CDATA[<p>An essential mineral for immunity, promoted for colds and healthy aging.</p>
+<blockquote class="nucleo-bottom-line"><p><strong>Bottom line —</strong> Correcting deficiency clearly supports immune function, and zinc lozenges can modestly shorten colds — but chronic high-dose supplementation backfires by causing copper deficiency. Fix a shortfall, don't overdose.</p></blockquote>
+<ul class="nucleo-meta"><li><strong>Class:</strong> Essential mineral</li><li><strong>Primary use:</strong> Immune function &amp; deficiency correction</li><li><strong>Grade:</strong> C</li><li><strong>Evidence strength:</strong> medium</li><li><strong>Type:</strong> Supplement / dietary</li><li><strong>Last reviewed:</strong> 2026-07-01</li></ul>
+<h2>What the evidence says</h2><p>Zinc is essential for immune function, wound healing and hundreds of enzymes, and deficiency (more common in older adults and some diets) genuinely impairs immunity. Zinc lozenges started early can modestly shorten the common cold. Beyond correcting a deficiency, however, more is not better: sustained high-dose zinc induces copper deficiency, which causes its own anaemia and neurological problems. There are no zinc 'longevity' outcome trials. Grade C: valuable for deficiency and short-term cold use, genuinely harmful if chronically overdosed.</p>
+<h2>Key studies</h2><ol><li><strong>Zinc for the common cold</strong> <em>(meta-analysis)</em><br>Modest reduction in cold duration when started early. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=zinc+lozenge+common+cold+duration+meta-analysis" rel="noopener">PubMed ↗</a></li><li><strong>Zinc, immunity and aging</strong> <em>(review)</em><br>Deficiency impairs immunity, common in older adults. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=zinc+immune+function+aging+review" rel="noopener">PubMed ↗</a></li><li><strong>Zinc-induced copper deficiency</strong> <em>(review)</em><br>The concrete harm of chronic overdosing. — <a href="https://pubmed.ncbi.nlm.nih.gov/?term=zinc+induced+copper+deficiency" rel="noopener">PubMed ↗</a></li></ol>
+<h2>Mechanism</h2><p>A cofactor for hundreds of enzymes and transcription factors; central to immune-cell development and function, antioxidant defence and protein synthesis.</p>
+<h2>Safety</h2><p>Safe at recommended intakes. The key risk is chronic excess: high-dose zinc blocks copper absorption, causing copper-deficiency anaemia and neurological damage. Long-term supplementation above the upper limit needs copper balance in mind.</p>
+<h2>Dosage context</h2><p>Typical supplemental doses are ~8–15 mg/day; short-term cold lozenges use more for a few days only. Ongoing high-dose (e.g. 50 mg/day) use is where copper depletion becomes a real risk.</p>
+<blockquote class="nucleo-field-note"><p><strong>FROM THE FIELD</strong></p><p>Zinc is a two-edged mineral: fix a real deficiency and it helps; megadose it 'for immunity' and you can quietly cause copper deficiency. Grade C, with the overdose warning the cold-remedy marketing skips.</p></blockquote>]]></content:encoded>
+      <excerpt:encoded><![CDATA[An essential mineral for immunity, promoted for colds and healthy aging.]]></excerpt:encoded>
+      <wp:post_id>1041</wp:post_id>
+      <wp:post_date><![CDATA[2026-07-01 00:00:00]]></wp:post_date>
+      <wp:post_date_gmt><![CDATA[2026-07-01 00:00:00]]></wp:post_date_gmt>
+      <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+      <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+      <wp:post_name><![CDATA[molecule-zinc]]></wp:post_name>
+      <wp:status><![CDATA[publish]]></wp:status>
+      <wp:post_parent>0</wp:post_parent>
+      <wp:menu_order>0</wp:menu_order>
+      <wp:post_type><![CDATA[post]]></wp:post_type>
+      <wp:post_password><![CDATA[]]></wp:post_password>
+      <wp:is_sticky>0</wp:is_sticky>
+      <category domain="category" nicename="molecules"><![CDATA[Molecules]]></category>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_grade]]></wp:meta_key><wp:meta_value><![CDATA[C]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_class]]></wp:meta_key><wp:meta_value><![CDATA[Essential mineral]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_primary_use]]></wp:meta_key><wp:meta_value><![CDATA[Immune function & deficiency correction]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_evidence_strength]]></wp:meta_key><wp:meta_value><![CDATA[medium]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_regulatory]]></wp:meta_key><wp:meta_value><![CDATA[Supplement / dietary]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_last_reviewed]]></wp:meta_key><wp:meta_value><![CDATA[2026-07-01]]></wp:meta_value></wp:postmeta>
+      <wp:postmeta><wp:meta_key><![CDATA[nucleo_source_lang]]></wp:meta_key><wp:meta_value><![CDATA[en]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
       <title>NMN: cosa dicono davvero gli studi clinici nel 2024</title>
       <link>https://www.nucleolongevity.com/it/analisi/nmn-evidenza-clinica-2024</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1032</guid>
+      <guid isPermaLink="false">nucleo-1042</guid>
       <description></description>
       <content:encoded><![CDATA[<blockquote class="nucleo-verdict"><p><strong>Verdetto —</strong> Promettente ma non conclusivo. Sicuro a breve termine, efficacia clinica a lungo termine da confermare in RCT più ampi.</p></blockquote>
 <h2>Perché il NAD⁺ conta nell&#39;invecchiamento</h2>
@@ -1356,7 +1746,7 @@ Non ci sono interazioni documentate in letteratura clinica. Precauzione teorica 
 </ul>
 ]]></content:encoded>
       <excerpt:encoded><![CDATA[Una revisione critica degli studi umani su NMN: cosa è provato, cosa è ancora ipotetico, e perché il grado B è giustificato.]]></excerpt:encoded>
-      <wp:post_id>1032</wp:post_id>
+      <wp:post_id>1042</wp:post_id>
       <wp:post_date><![CDATA[2026-06-15 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-15 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
@@ -1380,7 +1770,7 @@ Non ci sono interazioni documentate in letteratura clinica. Precauzione teorica 
       <link>https://www.nucleolongevity.com/en/analisi/nmn-evidenza-clinica-2024</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator><![CDATA[Redazione Nucleo]]></dc:creator>
-      <guid isPermaLink="false">nucleo-1033</guid>
+      <guid isPermaLink="false">nucleo-1043</guid>
       <description></description>
       <content:encoded><![CDATA[<blockquote class="nucleo-verdict"><p><strong>Verdict —</strong> Promising but not conclusive. Safe short-term; long-term clinical efficacy to be confirmed in larger RCTs.</p></blockquote>
 <h2>Why NAD⁺ matters in aging</h2>
@@ -1456,7 +1846,7 @@ No interactions are documented in the clinical literature. A theoretical caution
 </ul>
 ]]></content:encoded>
       <excerpt:encoded><![CDATA[A critical review of human NMN studies: what is proven, what is still hypothetical, and why grade B is justified.]]></excerpt:encoded>
-      <wp:post_id>1033</wp:post_id>
+      <wp:post_id>1043</wp:post_id>
       <wp:post_date><![CDATA[2026-06-15 00:00:00]]></wp:post_date>
       <wp:post_date_gmt><![CDATA[2026-06-15 00:00:00]]></wp:post_date_gmt>
       <wp:comment_status><![CDATA[closed]]></wp:comment_status>
