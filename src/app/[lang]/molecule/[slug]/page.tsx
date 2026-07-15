@@ -6,6 +6,7 @@ import { isValidLang, getLocale, langs } from "@/lib/i18n";
 import { getAllMolecules, getMoleculeBySlug } from "@/lib/molecole";
 import EvidenceBadge from "@/components/EvidenceBadge";
 import JsonLd from "@/components/JsonLd";
+import OfferTable from "@/components/OfferTable";
 
 const SITE = "https://www.nucleolongevity.com";
 
@@ -281,6 +282,9 @@ export default async function MoleculePage({
           </blockquote>
         </section>
       )}
+
+      {/* Where to buy — price comparator */}
+      <OfferTable slug={slug} lang={lang} />
 
       {/* Related */}
       {related.length > 0 && (
