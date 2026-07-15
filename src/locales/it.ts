@@ -97,6 +97,7 @@ const it = {
     contribute: "Contribuisci",
     disclaimer: "Disclaimer medico",
     terms: "Termini d'uso",
+    comparator: "Come funziona il confronto",
   },
   privacy: {
     title: "Privacy & Cookie Policy",
