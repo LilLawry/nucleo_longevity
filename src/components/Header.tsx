@@ -23,6 +23,7 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
   const otherLang: Lang = lang === "it" ? "en" : "it";
   const navLinks = [
     { href: `/${lang}/database`, label: t.nav.database },
+    { href: `/${lang}/prezzi`, label: t.nav.prezzi },
     { href: `/${lang}/analisi`, label: t.nav.analisi },
     { href: `/${lang}/method`, label: t.nav.metodo },
   ];

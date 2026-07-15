@@ -3,6 +3,7 @@ import type { Locale } from "./it";
 const en: Locale = {
   nav: {
     database: "Database",
+    prezzi: "Compare prices",
     molecole: "Molecules",
     analisi: "Analysis",
     metodo: "Method",

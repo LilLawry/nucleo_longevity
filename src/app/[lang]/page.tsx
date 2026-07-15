@@ -63,6 +63,28 @@ export default async function HomePage({
       </section>
 
 
+      {/* ============ COMPARE PRICES (entry point) ============ */}
+      <section className="border-b border-[var(--border)]">
+        <div className="max-w-6xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-baseline gap-3 flex-wrap">
+            <p className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)]">
+              {lang === "en" ? "Compare prices" : "Confronta prezzi"}
+            </p>
+            <p className="font-sans text-base text-[var(--fg)] text-pretty">
+              {lang === "en"
+                ? "See price and availability across sellers operating in Italy — ranked by price, never by commission."
+                : "Prezzo e disponibilità presso venditori che operano in Italia — ordinati per prezzo, mai per commissione."}
+            </p>
+          </div>
+          <Link
+            href={`/${lang}/prezzi`}
+            className="shrink-0 font-sans font-medium text-sm px-5 py-2.5 border border-[var(--border)] text-[var(--fg)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+          >
+            {lang === "en" ? "Compare prices →" : "Confronta prezzi →"}
+          </Link>
+        </div>
+      </section>
+
       {/* ============ EVIDENCE LEGEND ============ */}
       <section className="max-w-6xl mx-auto px-5 sm:px-8 py-20">
         <Reveal className="max-w-2xl mb-10">
