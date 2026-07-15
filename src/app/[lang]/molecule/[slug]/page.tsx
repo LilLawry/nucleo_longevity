@@ -59,6 +59,8 @@ export default async function MoleculePage({
     claimT: it ? "Cosa promette" : "The claim",
     evidenceT: it ? "Cosa dice l'evidenza" : "What the evidence says",
     studiesT: it ? "Studi chiave" : "Key studies",
+    applicationsT: it ? "Esempi di applicazione" : "Examples of application",
+    moreStudies: it ? "Vedi tutti gli studi su PubMed" : "See all studies on PubMed",
     mechanismT: it ? "Meccanismo" : "Mechanism",
     safetyT: it ? "Sicurezza" : "Safety",
     dosageT: it ? "Contesto dosaggio" : "Dosage context",
@@ -85,6 +87,8 @@ export default async function MoleculePage({
   };
   const meterFill = STRENGTH_FILL[m.evidenceStrength] ?? 0;
   const isDrug = /drug|prescription|farmaco/i.test(m.regulatory);
+  const searchTerm = (m.aliases[0] || m.name).replace(/\(.*?\)/g, "").trim();
+  const allStudiesUrl = `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(searchTerm)}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -241,10 +245,10 @@ export default async function MoleculePage({
 
       <Section title={L.evidenceT}>{m.evidenceSummary}</Section>
 
-      {/* Key studies — footnote style */}
-      {m.keyStudies.length > 0 && (
-        <section className="py-8 border-t border-[var(--border)]">
-          <h2 className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-4">{L.studiesT}</h2>
+      {/* Key studies — footnote style, each linking to the source */}
+      <section className="py-8 border-t border-[var(--border)]">
+        <h2 className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-4">{L.studiesT}</h2>
+        {m.keyStudies.length > 0 && (
           <ol className="flex flex-col gap-4 max-w-2xl">
             {m.keyStudies.map((s, i) => {
               const href = s.pmid ? PUBMED(s.pmid) : s.url;
@@ -252,14 +256,20 @@ export default async function MoleculePage({
                 <li key={i} className="flex gap-3">
                   <span className="font-mono text-[0.7rem] text-[var(--muted)] tabular pt-0.5">[{i + 1}]</span>
                   <div>
-                    <p className="font-sans text-sm text-[var(--fg)] leading-snug">
-                      {s.title}
+                    <p className="font-sans text-sm leading-snug">
+                      {href ? (
+                        <a href={href} target="_blank" rel="noopener noreferrer" className="text-[var(--fg)] hover:text-[var(--accent)] underline decoration-[var(--border)] underline-offset-2 transition-colors">
+                          {s.title}
+                        </a>
+                      ) : (
+                        <span className="text-[var(--fg)]">{s.title}</span>
+                      )}
                       {s.type ? <span className="font-mono text-[0.62rem] uppercase tracking-wide text-[var(--muted)]"> · {s.type}</span> : null}
                     </p>
                     {s.takeaway && <p className="font-sans text-sm text-[var(--muted)] leading-relaxed mt-0.5">{s.takeaway}</p>}
                     {href && (
                       <a href={href} target="_blank" rel="noopener noreferrer" className="font-mono text-[0.66rem] text-[var(--accent)] link-underline">
-                        {s.pmid ? `PMID ${s.pmid}` : "PubMed"} ↗
+                        {s.pmid ? `PMID ${s.pmid} — ${it ? "leggi l'articolo" : "read the article"}` : (it ? "Apri su PubMed" : "Open on PubMed")} ↗
                       </a>
                     )}
                   </div>
@@ -267,12 +277,35 @@ export default async function MoleculePage({
               );
             })}
           </ol>
-        </section>
-      )}
+        )}
+        <a
+          href={allStudiesUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-5 font-mono text-[0.68rem] uppercase tracking-widest text-[var(--accent)] link-underline"
+        >
+          {L.moreStudies} ↗
+        </a>
+      </section>
 
       <Section title={L.mechanismT}>{m.mechanism}</Section>
       <Section title={L.safetyT}>{m.safety}</Section>
       <Section title={L.dosageT}>{m.dosageContext}</Section>
+
+      {/* Examples of application — practical, non-prescriptive */}
+      {m.applications.length > 0 && (
+        <section className="py-8 border-t border-[var(--border)]">
+          <h2 className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--accent)] mb-3">{L.applicationsT}</h2>
+          <ul className="flex flex-col gap-2.5 max-w-2xl">
+            {m.applications.map((a, i) => (
+              <li key={i} className="flex gap-3 font-sans text-[0.95rem] text-[var(--fg)] leading-relaxed">
+                <span className="text-[var(--accent)] shrink-0" aria-hidden>—</span>
+                <span>{a}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {m.fieldNote && (
         <section className="py-8 border-t border-[var(--border)]">
