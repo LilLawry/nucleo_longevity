@@ -58,7 +58,7 @@ export const CompanyProfile = z.object({
 export type CompanyProfile = z.infer<typeof CompanyProfile>;
 
 // ── DEMO seed (fictional; names clearly placeholder) ────────────────────────
-const RAW: CompanyProfile[] = [
+const RAW: z.input<typeof CompanyProfile>[] = [
   {
     slug: "demo-nord-actives", locale: "en", name: "Nord Actives (demo)", demo: true,
     organisationType: ["ingredientSupplier", "manufacturer"], country: "IT", cities: ["Milano"],
@@ -134,3 +134,130 @@ export const ORG_TYPE_LABEL: Record<OrganisationType, string> = {
 export const VERIFICATION_LABEL: Record<VerificationStatus, string> = {
   unverified: "Unverified", selfDeclared: "Self-declared", sourceChecked: "Source-checked", verifiedPartner: "Verified partner",
 };
+
+// ── Professionals (individual profiles; same guardrails as companies) ────────
+export const ProfessionalRole = z.enum([
+  "formulator", "regulatoryConsultant", "salesAgent", "distributorContact",
+  "researcher", "clinician", "qualityLead", "other",
+]);
+export type ProfessionalRole = z.infer<typeof ProfessionalRole>;
+
+export const ProfessionalProfile = z.object({
+  slug: z.string().min(1),
+  name: z.string().min(1),
+  demo: z.boolean().default(true),
+  role: ProfessionalRole,
+  headline: z.string().min(1),
+  country: z.string().min(2),
+  expertise: z.array(z.string()).default([]),
+  markets: z.array(z.string()).default([]),
+  languages: z.array(z.string()).optional(),
+  verificationStatus: VerificationStatus.default("unverified"),
+  commercialStatus: CommercialStatus.default("organic"),
+  contactMode: z.enum(["external", "mediatedForm"]).default("mediatedForm"),
+  status: EditorialStatus.default("draft"),
+});
+export type ProfessionalProfile = z.infer<typeof ProfessionalProfile>;
+
+const RAW_PROS: z.input<typeof ProfessionalProfile>[] = [
+  {
+    slug: "demo-formulator-ele", name: "E. Ricci (demo)", demo: true, role: "formulator",
+    headline: "Cosmetic formulator — barrier & photoprotection systems. Fictional demo profile.",
+    country: "IT", expertise: ["barrier repair", "SPF systems", "sensitive skin"], markets: ["EU", "IT"],
+    languages: ["it", "en"], verificationStatus: "selfDeclared", status: "reviewRequired",
+  },
+  {
+    slug: "demo-regulatory-marc", name: "M. Conti (demo)", demo: true, role: "regulatoryConsultant",
+    headline: "EU cosmetics & supplements regulatory consultant. Fictional demo profile.",
+    country: "IT", expertise: ["CPNP", "claims substantiation", "novel food"], markets: ["EU"],
+    languages: ["it", "en"], verificationStatus: "unverified", status: "reviewRequired",
+  },
+  {
+    slug: "demo-agent-sof", name: "S. Bianchi (demo)", demo: true, role: "salesAgent",
+    headline: "Sales agent — pharmacy & derma channel, Northern Italy. Fictional demo profile.",
+    country: "IT", expertise: ["pharmacy channel", "key accounts"], markets: ["IT"],
+    languages: ["it"], verificationStatus: "sourceChecked", commercialStatus: "sponsored", status: "reviewRequired",
+  },
+];
+const PROFESSIONALS: ProfessionalProfile[] = RAW_PROS.map((p) => ProfessionalProfile.parse(p));
+
+export function getProfessionals(): ProfessionalProfile[] { return PROFESSIONALS.slice(); }
+export function getProfessionalBySlug(slug: string): ProfessionalProfile | undefined {
+  return PROFESSIONALS.find((p) => p.slug === slug);
+}
+export const ROLE_LABEL: Record<ProfessionalRole, string> = {
+  formulator: "Formulator", regulatoryConsultant: "Regulatory consultant", salesAgent: "Sales agent",
+  distributorContact: "Distributor contact", researcher: "Researcher", clinician: "Clinician",
+  qualityLead: "Quality lead", other: "Other",
+};
+
+// ── Opportunities (curated briefs; mediated only, never transactional) ───────
+export const Opportunity = z.object({
+  slug: z.string().min(1),
+  demo: z.boolean().default(true),
+  kind: z.enum(["seeking", "offering"]),
+  title: z.string().min(1),
+  summary: z.string().min(1),
+  country: z.string().min(2),
+  categories: z.array(z.string()).default([]),
+  postedAt: z.string().optional(),
+  status: EditorialStatus.default("draft"),
+});
+export type Opportunity = z.infer<typeof Opportunity>;
+
+const RAW_OPPS: z.input<typeof Opportunity>[] = [
+  {
+    slug: "demo-opp-distributor-spf", demo: true, kind: "seeking",
+    title: "Distributor seeks evidence-graded SPF line (IT pharmacy channel)",
+    summary: "A demo distributor is looking for a photoprotection line with documented human testing to place in Italian pharmacies. Fictional brief for illustration.",
+    country: "IT", categories: ["spf", "photoprotection", "distribution"], postedAt: "2026-07-05",
+    status: "reviewRequired",
+  },
+  {
+    slug: "demo-opp-cdmo-capacity", demo: true, kind: "offering",
+    title: "CDMO offering free capacity for barrier-repair formulations",
+    summary: "A demo contract manufacturer has open capacity for barrier/ceramide formulations, EU GMP declared. Fictional brief for illustration.",
+    country: "IT", categories: ["cdmo", "barrier", "manufacturing"], postedAt: "2026-07-02",
+    status: "reviewRequired",
+  },
+  {
+    slug: "demo-opp-testing-partner", demo: true, kind: "offering",
+    title: "Testing provider offering TEWL / SPF study slots",
+    summary: "A demo testing lab is offering in-vivo barrier and SPF study slots for Q4. Fictional brief for illustration.",
+    country: "FR", categories: ["testing", "barrier", "photoprotection"], postedAt: "2026-06-28",
+    status: "reviewRequired",
+  },
+];
+const OPPORTUNITIES: Opportunity[] = RAW_OPPS.map((o) => Opportunity.parse(o));
+
+export function getOpportunities(): Opportunity[] { return OPPORTUNITIES.slice(); }
+
+// ── Expo (digital fair): curated, time-boxed themed showcases ────────────────
+export interface ExpoShowcase {
+  slug: string;
+  title: string;
+  theme: string;
+  blurb: string;
+  companySlugs: string[];
+}
+const SHOWCASES: ExpoShowcase[] = [
+  {
+    slug: "photoprotection", title: "Photoprotection", theme: "Outside",
+    blurb: "Ingredient suppliers, formulators and testing labs working on evidence-based sun protection.",
+    companySlugs: ["demo-sunlab", "demo-derma-testing", "demo-nord-actives"],
+  },
+  {
+    slug: "barrier-repair", title: "Barrier repair", theme: "Outside",
+    blurb: "Ceramides, barrier lipids and the labs that test them.",
+    companySlugs: ["demo-nord-actives", "demo-derma-testing", "demo-pack-clean"],
+  },
+  {
+    slug: "distribution", title: "Distribution & channel", theme: "Inside & Outside",
+    blurb: "Distributors and channel partners for evidence-graded molecules.",
+    companySlugs: ["demo-longevis-distribution"],
+  },
+];
+export function getShowcases(): ExpoShowcase[] { return SHOWCASES.slice(); }
+export function getShowcaseBySlug(slug: string): ExpoShowcase | undefined {
+  return SHOWCASES.find((s) => s.slug === slug);
+}

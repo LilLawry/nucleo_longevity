@@ -92,6 +92,22 @@ export default async function ConnectPage({ params }: { params: Promise<{ lang: 
         </Link>
       </div>
 
+      {/* Digital fair surfaces */}
+      <div className="grid sm:grid-cols-3 gap-4 mb-4">
+        <Link href={`/${lang}/connect/expo`} className="border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-5">
+          <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{lang === "en" ? "Digital fair" : "Fiera digitale"}</p>
+          <p className="font-sans font-medium text-[var(--fg)]">{lang === "en" ? "Themed showcases →" : "Showcase tematici →"}</p>
+        </Link>
+        <Link href={`/${lang}/connect/professionals`} className="border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-5">
+          <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{lang === "en" ? "Professionals" : "Professionisti"}</p>
+          <p className="font-sans font-medium text-[var(--fg)]">{lang === "en" ? "Formulators, consultants, agents →" : "Formulatori, consulenti, agenti →"}</p>
+        </Link>
+        <Link href={`/${lang}/connect/opportunities`} className="border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-5">
+          <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{lang === "en" ? "Opportunities" : "Opportunità"}</p>
+          <p className="font-sans font-medium text-[var(--fg)]">{lang === "en" ? "Who's seeking and offering →" : "Chi cerca e chi offre →"}</p>
+        </Link>
+      </div>
+
       <div className="flex flex-col sm:flex-row gap-4 mb-14">
         <Link href={`/${lang}/connect/brands`} className="flex-1 border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-6">
           <p className="font-sans font-medium text-lg text-[var(--fg)]">{c.brands}</p>
