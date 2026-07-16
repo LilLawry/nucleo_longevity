@@ -17,8 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const molecules = getAllMolecules();
   const staticPages = [
-    "", "/database", "/prezzi", "/report-card", "/confronto", "/molecole", "/analisi", "/method", "/chi-siamo",
-    "/connect", "/connect/brands", "/connect/reps",
+    "", "/database", "/prezzi", "/evidence", "/report-card", "/confronto", "/molecole", "/analisi", "/method", "/chi-siamo",
+    "/connect", "/connect/directory", "/connect/join", "/connect/brands", "/connect/reps",
     "/contatti", "/contribuisci", "/disclaimer", "/termini", "/privacy",
   ];
 

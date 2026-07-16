@@ -22,12 +22,13 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
           </p>
           {[
             { href: `/${lang}/database`, label: t.nav.database },
-            { href: `/${lang}/molecole`, label: t.nav.molecole },
+            { href: `/${lang}/prezzi`, label: t.nav.prezzi },
+            { href: `/${lang}/evidence`, label: t.nav.evidence },
             { href: `/${lang}/analisi`, label: t.nav.analisi },
             { href: `/${lang}/method`, label: t.nav.metodo },
+            { href: `/${lang}/connect/directory`, label: t.nav.connect },
             { href: `/${lang}/chi-siamo`, label: t.footer.about },
             { href: `/${lang}/contribuisci`, label: t.footer.contribute },
-            { href: `/${lang}/connect`, label: t.nav.connect },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors w-fit">
               {l.label}
