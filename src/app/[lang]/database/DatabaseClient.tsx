@@ -15,7 +15,15 @@ export interface Row {
   status: string;
   structure?: boolean;
   domain?: "systemic" | "topical";
+  entryType?: string;
+  reviewStatus?: string;
 }
+
+const TYPE_LABEL: Record<string, string> = {
+  molecule: "Molecule", substance: "Substance", drug: "Drug", supplement: "Supplement",
+  nutrient: "Nutrient", topicalIngredient: "Topical", ingredientFamily: "Ingredient family",
+  intervention: "Intervention", behaviour: "Behaviour", technology: "Technology", protocol: "Protocol",
+};
 
 const GRADE_RANK: Record<string, number> = { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5, "": 9 };
 type SortKey = "grade" | "lastReviewed" | "name";
@@ -25,11 +33,13 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
   const [q, setQ] = useState("");
   const [grade, setGrade] = useState("");
   const [klass, setKlass] = useState("");
+  const [etype, setEtype] = useState("");
   const [domain, setDomain] = useState<"" | "systemic" | "topical">("");
   const [sortKey, setSortKey] = useState<SortKey>("grade");
   const [asc, setAsc] = useState(true);
 
   const classes = useMemo(() => Array.from(new Set(rows.map((r) => r.class))).sort(), [rows]);
+  const types = useMemo(() => Array.from(new Set(rows.map((r) => r.entryType).filter(Boolean) as string[])).sort(), [rows]);
 
   const filtered = useMemo(() => {
     const t = q.trim().toLowerCase();
@@ -37,8 +47,9 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
       const mq = !t || r.name.toLowerCase().includes(t) || r.primaryUse.toLowerCase().includes(t) || r.class.toLowerCase().includes(t);
       const mg = !grade || r.grade === grade;
       const mc = !klass || r.class === klass;
+      const mt = !etype || r.entryType === etype;
       const md = !domain || r.domain === domain;
-      return mq && mg && mc && md;
+      return mq && mg && mc && mt && md;
     });
     out.sort((a, b) => {
       let d = 0;
@@ -48,7 +59,7 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
       return asc ? d : -d;
     });
     return out;
-  }, [rows, q, grade, klass, domain, sortKey, asc]);
+  }, [rows, q, grade, klass, etype, domain, sortKey, asc]);
 
   const setSort = (k: SortKey) => {
     if (k === sortKey) setAsc((v) => !v);
@@ -83,6 +94,13 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
           <select value={klass} onChange={(e) => setKlass(e.target.value)} className={sel}>
             <option value="">{it ? "Tutte" : "All"}</option>
             {classes.map((c) => <option key={c} value={c}>{c}</option>)}
+          </select>
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label className="font-mono text-[0.58rem] uppercase tracking-widest text-[var(--accent)]">{it ? "Tipo" : "Type"}</label>
+          <select value={etype} onChange={(e) => setEtype(e.target.value)} className={sel}>
+            <option value="">{it ? "Tutti" : "All"}</option>
+            {types.map((tp) => <option key={tp} value={tp}>{TYPE_LABEL[tp] || tp}</option>)}
           </select>
         </div>
         <div className="flex flex-col gap-1.5">
@@ -135,8 +153,18 @@ export default function DatabaseClient({ rows, lang }: { rows: Row[]; lang: stri
                     ) : (
                       <span className="shrink-0 w-8 h-8 border border-[var(--border)]" aria-hidden />
                     )}
-                    <span className="font-sans font-medium text-[var(--fg)] group-hover/r:text-[var(--accent)] transition-colors">
-                      {r.name}
+                    <span className="min-w-0">
+                      <span className="font-sans font-medium text-[var(--fg)] group-hover/r:text-[var(--accent)] transition-colors flex items-center gap-1.5">
+                        {r.name}
+                        {r.reviewStatus === "verified" && (
+                          <span title="Verified" className="text-[var(--accent)] text-[0.7rem]" aria-label="verified">✓</span>
+                        )}
+                      </span>
+                      {r.entryType && (
+                        <span className="block font-mono text-[0.55rem] uppercase tracking-widest text-[var(--muted)] mt-0.5">
+                          {TYPE_LABEL[r.entryType] || r.entryType}
+                        </span>
+                      )}
                     </span>
                   </Link>
                 </td>

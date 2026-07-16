@@ -40,17 +40,20 @@ Working branch: `claude/retention-ui-improvements-8mtfdr`. Docs land on the bran
 | CARVE-OUT-MAP.md | ⏳ pending |
 | RISK-REGISTER.md (incl. TRADEMARK REVIEW REQUIRED) | ⏳ pending |
 
-## Phase 1 — Foundations refactor (code; needs approval, brand-affecting)
-Only after audit sign-off. Highest-leverage, ordered:
-1. **Taxonomy**: `EntryType` + `deliveryContext`, rename data model away from
-   "molecule"-only; keep brand + concept.
-2. **Editorial status**: `draft|reviewed|verified|update_required`; `indexable`
-   requires `verified`; noindex + sitemap-exclude the rest (YMYL protection).
-3. **Grade = a question**: `gradedQuestion` + separate safety flag + "not a
-   recommendation" microcopy.
-4. **Zod schemas + repository/adapter pattern** for each domain (future-proof to
-   Postgres/API without rewrites).
-5. **Domain exports** (JSON/CSV) per vertical → carve-out ready.
+## Phase 1 — Foundations refactor (code; branch only, NOT deployed)
+1. **Taxonomy**: `EntryType` + `deliveryContext` added; database renamed
+   "Longevity Database"; Type filter + per-entry type label. ✅ done (branch)
+2. **Editorial status**: `reviewStatus` (draft|reviewed|verified|update_required);
+   `indexable` now requires `verified`; only NMN verified → only NMN indexed +
+   in sitemap; the rest noindex. ✅ done (branch)
+3. **Grade = a question**: `gradedQuestion` rendered above the chip + `safetyFlag`
+   (drug supervision) + "not a recommendation" microcopy. ✅ done (branch)
+4. **Zod schemas + repository/adapter pattern** per domain. ⏳ pending
+5. **Domain exports** (JSON/CSV) per vertical → carve-out ready. ⏳ pending
+
+> Staged on `claude/retention-ui-improvements-8mtfdr`. NOT merged to main —
+> production still shows the pre-refactor state until the founder approves the
+> de-indexing move (only-verified-indexed) and the rename.
 
 ## Phase 2 — Evidence integrity
 Verified-PMID pass on 12–15 pillars (stable PubMed + human sign-off); the rest

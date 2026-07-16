@@ -50,13 +50,15 @@ export default async function DatabasePage({
     status: m.status,
     structure: m.structure,
     domain: m.domain,
+    entryType: m.entryType,
+    reviewStatus: m.reviewStatus,
   }));
 
   return (
     <div className="max-w-6xl mx-auto px-5 sm:px-8 py-16 md:py-24">
       <PageHeader
         eyebrow={it ? "Database" : "Database"}
-        title={it ? "Indice delle molecole" : "Molecule index"}
+        title={it ? "Longevity Database" : "Longevity Database"}
         subtitle={
           it
             ? "Longevity dentro e fuori: le molecole che prendi e quelle che applichi, con grado di evidenza (A–F) e ultima revisione. Filtra, cerca e ordina come in un reference clinico."
