@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { z } from "zod";
 
 export type Grade = "A" | "B" | "C" | "D" | "E" | "F";
 export type EvidenceStrength = "alta" | "media" | "bassa";
@@ -78,6 +79,55 @@ export interface Molecule {
 
 const REVIEW_STATUSES: ReviewStatus[] = ["draft", "reviewed", "verified", "update_required"];
 
+/**
+ * Zod schema for molecule frontmatter — a DATA-QUALITY gate, not a hard parser.
+ * We validate with safeParse and only warn at build time so a single malformed
+ * file can never break the 50+ live pages. The hand-written `parse()` below
+ * stays the source of truth for defaults; this catches typos (wrong grade
+ * letter, non-array keyStudies, unknown reviewStatus) early instead of shipping
+ * them silently. Unknown keys are allowed (passthrough) so frontmatter can grow.
+ */
+const KeyStudySchema = z
+  .object({
+    title: z.string().optional(),
+    type: z.string().optional(),
+    takeaway: z.string().optional(),
+    url: z.string().optional(),
+    pmid: z.union([z.string(), z.number()]).optional(),
+  })
+  .passthrough();
+
+export const MoleculeFrontmatterSchema = z
+  .object({
+    slug: z.string().optional(),
+    name: z.string().optional(),
+    aliases: z.array(z.string()).optional(),
+    class: z.string().optional(),
+    primaryUse: z.string().optional(),
+    grade: z.enum(["A", "B", "C", "D", "E", "F", ""]).optional(),
+    // Data currently carries English values (high/medium/low); Italian variants
+    // are accepted too so the gate flags genuine typos, not the whole corpus.
+    evidenceStrength: z.enum(["high", "medium", "low", "alta", "media", "bassa", ""]).optional(),
+    keyStudies: z.array(KeyStudySchema).optional(),
+    applications: z.array(z.string()).optional(),
+    relatedMolecules: z.array(z.string()).optional(),
+    reviewStatus: z.enum(["draft", "reviewed", "verified", "update_required"]).optional(),
+    status: z.enum(["published", "draft"]).optional(),
+    index: z.boolean().optional(),
+    domain: z.enum(["systemic", "topical"]).optional(),
+    deliveryContext: z.enum(["oral", "topical", "injectable", "clinical", "lifestyle", "—"]).optional(),
+  })
+  .passthrough();
+
+/** Validate frontmatter and warn (never throw) on data-quality problems. */
+function validateFrontmatter(file: string, data: Record<string, unknown>): void {
+  const res = MoleculeFrontmatterSchema.safeParse(data);
+  if (!res.success && process.env.NODE_ENV !== "production") {
+    const issues = res.error.issues.map((i) => `${i.path.join(".") || "(root)"}: ${i.message}`).join("; ");
+    console.warn(`[molecole] frontmatter warning in ${file}: ${issues}`);
+  }
+}
+
 function deriveEntryType(data: Record<string, unknown>): EntryType {
   if (typeof data.entryType === "string") return data.entryType as EntryType;
   const cls = String(data.class || "");
@@ -95,6 +145,7 @@ function parse(file: string): Molecule {
   const slug = file.replace(/\.mdx?$/, "");
   const raw = fs.readFileSync(path.join(DIR, file), "utf8");
   const { data, content } = matter(raw);
+  validateFrontmatter(file, data);
   // Default to "draft": nothing is treated as verified until a human review
   // sets `reviewStatus: verified` in frontmatter.
   const reviewStatus: ReviewStatus = REVIEW_STATUSES.includes(data.reviewStatus)
