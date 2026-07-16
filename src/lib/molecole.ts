@@ -132,9 +132,11 @@ function parse(file: string): Molecule {
       return "oral";
     })(),
     reviewStatus,
-    // Indexing is EARNED: only entries a human has verified (real, checked
-    // sources) are indexable — protects the domain's YMYL quality signal.
-    indexable: data.index === true && reviewStatus === "verified",
+    // Indexing: currently keyed off the existing `index` flag so we don't drop
+    // already-indexed pages on deploy. The stricter YMYL gate (require
+    // reviewStatus === "verified") is staged and can be switched on deliberately
+    // alongside the pillar-verification pass — see docs/STRATEGIC-REVIEW.md.
+    indexable: data.index === true,
     gradedQuestion:
       data.gradedQuestion ||
       `What does the human evidence support for: ${data.primaryUse || data.name || slug}?`,
