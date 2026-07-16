@@ -70,6 +70,28 @@ export default async function ConnectPage({ params }: { params: Promise<{ lang: 
         ))}
       </div>
 
+      {/* Directory + digital fair */}
+      <div className="flex flex-col sm:flex-row gap-4 mb-4">
+        <Link href={`/${lang}/connect/directory`} className="flex-1 border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-6">
+          <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{lang === "en" ? "Directory & digital fair" : "Directory & fiera digitale"}</p>
+          <p className="font-sans font-medium text-lg text-[var(--fg)]">
+            {lang === "en" ? "Browse the longevity ecosystem →" : "Esplora l'ecosistema longevity →"}
+          </p>
+          <p className="font-sans text-sm text-[var(--muted)] mt-1">
+            {lang === "en" ? "Manufacturers, labs, ingredient suppliers, distributors, services." : "Produttori, laboratori, fornitori di ingredienti, distributori, servizi."}
+          </p>
+        </Link>
+        <Link href={`/${lang}/connect/join`} className="flex-1 border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-6">
+          <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{lang === "en" ? "Join" : "Candidati"}</p>
+          <p className="font-sans font-medium text-lg text-[var(--fg)]">
+            {lang === "en" ? "Add your company or profile →" : "Aggiungi la tua azienda o profilo →"}
+          </p>
+          <p className="font-sans text-sm text-[var(--muted)] mt-1">
+            {lang === "en" ? "Curated, mediated contact. No accounts, no payments." : "Contatto curato e mediato. Nessun account, nessun pagamento."}
+          </p>
+        </Link>
+      </div>
+
       <div className="flex flex-col sm:flex-row gap-4 mb-14">
         <Link href={`/${lang}/connect/brands`} className="flex-1 border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-6">
           <p className="font-sans font-medium text-lg text-[var(--fg)]">{c.brands}</p>
