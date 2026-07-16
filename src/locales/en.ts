@@ -6,6 +6,7 @@ const en: Locale = {
     prezzi: "Compare prices",
     molecole: "Molecules",
     analisi: "Analysis",
+    evidence: "Evidence",
     metodo: "Method",
     connect: "Connect",
   },

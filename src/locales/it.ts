@@ -4,6 +4,7 @@ const it = {
     prezzi: "Confronta prezzi",
     molecole: "Molecole",
     analisi: "Analisi",
+    evidence: "Evidenza",
     metodo: "Metodo",
     connect: "Connect",
   },

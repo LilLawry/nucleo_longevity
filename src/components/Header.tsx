@@ -24,6 +24,7 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
   const navLinks = [
     { href: `/${lang}/database`, label: t.nav.database },
     { href: `/${lang}/prezzi`, label: t.nav.prezzi },
+    { href: `/${lang}/evidence`, label: t.nav.evidence },
     { href: `/${lang}/analisi`, label: t.nav.analisi },
     { href: `/${lang}/method`, label: t.nav.metodo },
   ];
