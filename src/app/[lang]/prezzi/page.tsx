@@ -66,7 +66,7 @@ export default async function PricesHubPage({
   ).sort((a, b) => b.count - a.count || a.from - b.from);
 
   const L = {
-    eyebrow: it ? "Confronto prezzi" : "Price comparison",
+    eyebrow: it ? "Finder · Confronto prezzi" : "Finder · Price comparison",
     title: it ? "Confronta prezzi e disponibilità" : "Compare prices & availability",
     intro: it
       ? "Prezzo e reperibilità delle molecole presso venditori che operano in Italia. Il prezzo è indicativo: verifica sempre sul sito del venditore. La commissione non influenza l'ordine."
