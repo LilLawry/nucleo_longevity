@@ -72,6 +72,10 @@ export default async function MoleculePage({
     useL: it ? "Uso principale" : "Primary use",
     bottomLineT: it ? "In sintesi" : "Bottom line",
     typeL: it ? "Tipo" : "Type",
+    questionL: it ? "Il voto risponde a" : "The grade answers",
+    notRec: it
+      ? "Il voto misura la qualità dell'evidenza, non è un consiglio ad assumere o acquistare."
+      : "The grade rates evidence quality — it is not advice to take or buy.",
     draftNote: it
       ? "Revisione in corso: il grado verrà assegnato a chiusura dell'analisi delle fonti."
       : "Review in progress: the grade will be assigned once the source analysis is complete.",
@@ -176,6 +180,17 @@ export default async function MoleculePage({
               </span>
             </div>
           )}
+          {m.safetyFlag && (
+            <p className="mt-3 font-mono text-[0.66rem] text-[#C45C5C] leading-relaxed max-w-md">
+              ⚠ {m.safetyFlag}
+            </p>
+          )}
+          {m.gradedQuestion && (
+            <p className="mt-4 font-mono text-[0.62rem] text-[var(--muted)] leading-relaxed max-w-lg">
+              <span className="uppercase tracking-widest text-[var(--accent)]">{L.questionL}: </span>
+              {m.gradedQuestion}
+            </p>
+          )}
         </div>
         {/* Structure + grade */}
         <div className="flex flex-row md:flex-col gap-4 shrink-0">
@@ -201,6 +216,7 @@ export default async function MoleculePage({
               <div className="font-mono text-xs text-[var(--muted)] mb-2">{L.underReview}</div>
             )}
             {m.grade && <p className="font-mono text-[0.6rem] uppercase tracking-wide text-[var(--muted)]">{t.grades[m.grade as keyof typeof t.grades]}</p>}
+            <p className="mt-3 font-mono text-[0.5rem] leading-relaxed text-[var(--muted)]">{L.notRec}</p>
           </div>
         </div>
       </header>
