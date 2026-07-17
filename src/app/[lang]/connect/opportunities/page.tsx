@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
-import { getOpportunities, NKF_CONNECT_DEMO } from "@/lib/connect";
+import { getOpportunities, pick, NKF_CONNECT_DEMO } from "@/lib/connect";
 
 export function generateStaticParams() {
   return langs.map((lang) => ({ lang }));
@@ -58,8 +58,8 @@ export default async function OpportunitiesPage({ params }: { params: Promise<{ 
               <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--muted)]">{o.country}</span>
               {o.postedAt && <span className="font-mono text-[0.6rem] text-[var(--muted)] tabular ml-auto">{o.postedAt}</span>}
             </div>
-            <h2 className="font-sans font-medium text-lg text-[var(--fg)] mb-1.5">{o.title}</h2>
-            <p className="font-sans text-sm text-[var(--muted)] leading-relaxed mb-3">{o.summary}</p>
+            <h2 className="font-sans font-medium text-lg text-[var(--fg)] mb-1.5">{pick(lang, o.title, o.titleIt)}</h2>
+            <p className="font-sans text-sm text-[var(--muted)] leading-relaxed mb-3">{pick(lang, o.summary, o.summaryIt)}</p>
             {o.categories.length > 0 && (
               <p className="font-mono text-[0.6rem] text-[var(--muted)] mb-3">{o.categories.join(" · ")}</p>
             )}

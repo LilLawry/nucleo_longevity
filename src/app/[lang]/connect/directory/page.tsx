@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
-import { getCompanies, getCompanyCountries, getCompanyTypes, ORG_TYPE_LABEL, VERIFICATION_LABEL, NKF_CONNECT_DEMO } from "@/lib/connect";
+import { getCompanies, getCompanyCountries, getCompanyTypes, orgTypeLabel, verificationLabel, NKF_CONNECT_DEMO } from "@/lib/connect";
 import DirectoryClient, { type DirRow } from "./DirectoryClient";
 
 export function generateStaticParams() {
@@ -29,8 +29,8 @@ export default async function DirectoryPage({ params }: { params: Promise<{ lang
 
   const rows: DirRow[] = getCompanies().map((c) => ({
     slug: c.slug, name: c.name, country: c.country,
-    types: c.organisationType, typeLabels: c.organisationType.map((t) => ORG_TYPE_LABEL[t]),
-    categories: c.categories, verification: c.verificationStatus, verificationLabel: VERIFICATION_LABEL[c.verificationStatus],
+    types: c.organisationType, typeLabels: c.organisationType.map((t) => orgTypeLabel(t, lang)),
+    categories: c.categories, verification: c.verificationStatus, verificationLabel: verificationLabel(c.verificationStatus, lang),
     commercial: c.commercialStatus, demo: c.demo,
   }));
 
@@ -66,7 +66,7 @@ export default async function DirectoryPage({ params }: { params: Promise<{ lang
 
       <DirectoryClient
         rows={rows} lang={lang} L={L}
-        typeOptions={getCompanyTypes().map((t) => [t, ORG_TYPE_LABEL[t]] as [string, string])}
+        typeOptions={getCompanyTypes().map((t) => [t, orgTypeLabel(t, lang)] as [string, string])}
         countryOptions={getCompanyCountries()}
       />
 

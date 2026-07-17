@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/locales/it";
@@ -21,6 +22,20 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
   }, []);
 
   const otherLang: Lang = lang === "it" ? "en" : "it";
+  const pathname = usePathname();
+  // Switch language while staying on the SAME page: swap only the /[lang] segment
+  // (works for dynamic routes too). Falls back to the other-lang home at the root.
+  const switchHref = (() => {
+    if (!pathname) return `/${otherLang}`;
+    const parts = pathname.split("/");
+    if (parts[1] === "en" || parts[1] === "it") {
+      parts[1] = otherLang;
+      const joined = parts.join("/");
+      return joined || `/${otherLang}`;
+    }
+    return `/${otherLang}${pathname}`;
+  })();
+  const langNames: Record<Lang, string> = { it: "Italiano", en: "English" };
   const navLinks = [
     { href: `/${lang}/database`, label: t.nav.database },
     { href: `/${lang}/prezzi`, label: t.nav.prezzi },
@@ -70,10 +85,16 @@ export default function Header({ lang, t }: { lang: string; t: Locale }) {
         {/* Controls */}
         <div className="flex items-center gap-3">
           <Link
-            href={`/${otherLang}`}
-            className="font-mono text-xs tracking-widest uppercase text-[var(--muted)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors border border-[var(--border)] rounded px-2.5 py-1"
+            href={switchHref}
+            hrefLang={otherLang}
+            aria-label={lang === "it" ? `Passa a ${langNames[otherLang]}` : `Switch to ${langNames[otherLang]}`}
+            title={langNames[otherLang]}
+            className="group flex items-center gap-1.5 font-mono text-xs tracking-widest uppercase text-[var(--muted)] hover:text-[var(--accent)] hover:border-[var(--accent)] focus-visible:border-[var(--accent)] focus-visible:text-[var(--accent)] transition-colors border border-[var(--border)] rounded px-2.5 py-1"
           >
-            {otherLang}
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden className="opacity-70">
+              <circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15.3 15.3 0 0 1 0 20a15.3 15.3 0 0 1 0-20" />
+            </svg>
+            <span><span className="text-[var(--fg)] group-hover:text-[var(--accent)]">{otherLang.toUpperCase()}</span></span>
           </Link>
 
           {mounted && (

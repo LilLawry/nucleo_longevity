@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
-import { getCompanies, getCompanyBySlug, ORG_TYPE_LABEL, VERIFICATION_LABEL } from "@/lib/connect";
+import { getCompanies, getCompanyBySlug, orgTypeLabel, verificationLabel, pick } from "@/lib/connect";
 import { getMoleculeBySlug } from "@/lib/molecole";
 
 export function generateStaticParams() {
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   if (!c) return {};
   return {
     title: `${c.name} — Nucleo Connect`,
-    description: c.description,
+    description: pick(lang === "it" ? "it" : "en", c.description, c.descriptionIt),
     // Demo/unverified profiles are noindex until real, verified data exists.
     robots: { index: !c.demo && c.status === "verified", follow: true },
     alternates: { canonical: `/${lang}/connect/companies/${slug}` },
@@ -50,16 +50,16 @@ export default async function CompanyPage({ params }: { params: Promise<{ lang: 
       </nav>
 
       <div className="flex flex-wrap items-center gap-2 mb-4">
-        <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[var(--border)] px-2 py-0.5 text-[var(--muted)]">{VERIFICATION_LABEL[c.verificationStatus]}</span>
+        <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[var(--border)] px-2 py-0.5 text-[var(--muted)]">{verificationLabel(c.verificationStatus, lang)}</span>
         {isSponsored && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-2 py-0.5">Sponsored profile</span>}
         {c.demo && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-2 py-0.5">demo</span>}
       </div>
 
       <h1 className="font-sans font-medium text-4xl sm:text-5xl tracking-[-0.03em] text-[var(--fg)] mb-3">{c.name}</h1>
       <p className="font-mono text-[0.7rem] uppercase tracking-wide text-[var(--muted)] mb-5">
-        {c.organisationType.map((t) => ORG_TYPE_LABEL[t]).join(" · ")} · {c.country}
+        {c.organisationType.map((t) => orgTypeLabel(t, lang)).join(" · ")} · {c.country}
       </p>
-      <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-xl mb-8 text-pretty">{c.description}</p>
+      <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-xl mb-8 text-pretty">{pick(lang, c.description, c.descriptionIt)}</p>
 
       <dl className="border-b border-[var(--border)]">
         <Row k={it ? "Fondata" : "Founded"} v={c.foundedYear} />

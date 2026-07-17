@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
-import { getShowcases, getCompanyBySlug, ORG_TYPE_LABEL, NKF_CONNECT_DEMO } from "@/lib/connect";
+import { getShowcases, getCompanyBySlug, orgTypeLabel, pick, NKF_CONNECT_DEMO } from "@/lib/connect";
 
 export function generateStaticParams() {
   return langs.map((lang) => ({ lang }));
@@ -54,16 +54,16 @@ export default async function ExpoPage({ params }: { params: Promise<{ lang: str
           return (
             <section key={s.slug}>
               <div className="flex items-baseline gap-3 mb-1">
-                <h2 className="font-serif font-medium text-2xl text-[var(--fg)]">{s.title}</h2>
-                <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)]">{s.theme}</span>
+                <h2 className="font-serif font-medium text-2xl text-[var(--fg)]">{pick(lang, s.title, s.titleIt)}</h2>
+                <span className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)]">{pick(lang, s.theme, s.themeIt)}</span>
               </div>
-              <p className="font-sans text-sm text-[var(--muted)] leading-relaxed max-w-2xl mb-4">{s.blurb}</p>
+              <p className="font-sans text-sm text-[var(--muted)] leading-relaxed max-w-2xl mb-4">{pick(lang, s.blurb, s.blurbIt)}</p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {companies.map((c) => (
                   <Link key={c!.slug} href={`/${lang}/connect/companies/${c!.slug}`}
                     className="group card-surface p-4 flex flex-col gap-1.5 hover:border-[var(--accent)] transition-colors">
                     <span className="font-sans font-medium text-sm text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">{c!.name}</span>
-                    <span className="font-mono text-[0.58rem] uppercase tracking-wide text-[var(--muted)]">{c!.organisationType.map((t) => ORG_TYPE_LABEL[t]).join(" · ")}</span>
+                    <span className="font-mono text-[0.58rem] uppercase tracking-wide text-[var(--muted)]">{c!.organisationType.map((t) => orgTypeLabel(t, lang)).join(" · ")}</span>
                   </Link>
                 ))}
               </div>
