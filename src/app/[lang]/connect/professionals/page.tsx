@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
-import { getProfessionals, ROLE_LABEL, VERIFICATION_LABEL, NKF_CONNECT_DEMO } from "@/lib/connect";
+import { getProfessionals, roleLabel, verificationLabel, pick, NKF_CONNECT_DEMO } from "@/lib/connect";
 
 export function generateStaticParams() {
   return langs.map((lang) => ({ lang }));
@@ -60,13 +60,13 @@ export default async function ProfessionalsPage({ params }: { params: Promise<{ 
               <span className="font-sans font-medium text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">{p.name}</span>
               <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--muted)] shrink-0">{p.country}</span>
             </div>
-            <p className="font-mono text-[0.6rem] uppercase tracking-wide text-[var(--accent)]">{ROLE_LABEL[p.role]}</p>
-            <p className="font-sans text-sm text-[var(--muted)] leading-relaxed">{p.headline}</p>
+            <p className="font-mono text-[0.6rem] uppercase tracking-wide text-[var(--accent)]">{roleLabel(p.role, lang)}</p>
+            <p className="font-sans text-sm text-[var(--muted)] leading-relaxed">{pick(lang, p.headline, p.headlineIt)}</p>
             {p.expertise.length > 0 && (
               <p className="font-mono text-[0.6rem] text-[var(--muted)]">{p.expertise.join(" · ")}</p>
             )}
             <div className="flex items-center gap-2 mt-1">
-              <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[var(--border)] px-1.5 py-0.5 text-[var(--muted)]">{VERIFICATION_LABEL[p.verificationStatus]}</span>
+              <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[var(--border)] px-1.5 py-0.5 text-[var(--muted)]">{verificationLabel(p.verificationStatus, lang)}</span>
               {p.commercialStatus === "sponsored" && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-1.5 py-0.5">Sponsored</span>}
               {p.demo && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-1.5 py-0.5">demo</span>}
             </div>

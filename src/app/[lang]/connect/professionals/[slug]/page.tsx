@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isValidLang, langs } from "@/lib/i18n";
-import { getProfessionals, getProfessionalBySlug, ROLE_LABEL, VERIFICATION_LABEL } from "@/lib/connect";
+import { getProfessionals, getProfessionalBySlug, roleLabel, verificationLabel, pick } from "@/lib/connect";
 
 export function generateStaticParams() {
   return langs.flatMap((lang) => getProfessionals().map((p) => ({ lang, slug: p.slug })));
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   if (!p) return {};
   return {
     title: `${p.name} — Nucleo Connect`,
-    description: p.headline,
+    description: pick(lang === "it" ? "it" : "en", p.headline, p.headlineIt),
     // Fictional demo individuals stay noindex until real, consented profiles exist.
     robots: { index: !p.demo && p.status === "verified", follow: true },
     alternates: { canonical: `/${lang}/connect/professionals/${slug}` },
@@ -47,14 +47,14 @@ export default async function ProfessionalPage({ params }: { params: Promise<{ l
       </nav>
 
       <div className="flex flex-wrap items-center gap-2 mb-4">
-        <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[var(--border)] px-2 py-0.5 text-[var(--muted)]">{VERIFICATION_LABEL[p.verificationStatus]}</span>
+        <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[var(--border)] px-2 py-0.5 text-[var(--muted)]">{verificationLabel(p.verificationStatus, lang)}</span>
         {isSponsored && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-2 py-0.5">Sponsored profile</span>}
         {p.demo && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-2 py-0.5">demo</span>}
       </div>
 
       <h1 className="font-sans font-medium text-4xl sm:text-5xl tracking-[-0.03em] text-[var(--fg)] mb-3">{p.name}</h1>
-      <p className="font-mono text-[0.7rem] uppercase tracking-wide text-[var(--muted)] mb-5">{ROLE_LABEL[p.role]} · {p.country}</p>
-      <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-xl mb-8 text-pretty">{p.headline}</p>
+      <p className="font-mono text-[0.7rem] uppercase tracking-wide text-[var(--muted)] mb-5">{roleLabel(p.role, lang)} · {p.country}</p>
+      <p className="font-sans text-lg text-[var(--muted)] leading-relaxed max-w-xl mb-8 text-pretty">{pick(lang, p.headline, p.headlineIt)}</p>
 
       <dl className="border-b border-[var(--border)]">
         <Row k={it ? "Competenze" : "Expertise"} v={p.expertise.join(", ")} />
