@@ -26,6 +26,18 @@ export type DeliveryContext = "oral" | "topical" | "injectable" | "clinical" | "
 /** Editorial review status. Indexing is reserved to `verified` (YMYL). */
 export type ReviewStatus = "draft" | "reviewed" | "verified" | "update_required";
 
+/** Safety posture — decoupled from the grade. A high grade never lowers this. */
+export type SafetyContext =
+  | "generallyConsumerAppropriate"
+  | "professionalGuidanceSuggested"
+  | "medicalSupervisionRequired"
+  | "prescriptionOnly"
+  | "insufficientSafetyData"
+  | "notApplicable";
+
+/** Whether the entry carries an actual A–F grade, or is not (yet) gradeable. */
+export type GradeStatus = "graded" | "insufficient" | "notEvaluated" | "underReview";
+
 export interface KeyStudy {
   pmid?: string;
   title: string;
@@ -70,11 +82,40 @@ export interface Molecule {
   entryType: EntryType;
   deliveryContext: DeliveryContext;
   reviewStatus: ReviewStatus;
+  /** safety posture, independent of the grade */
+  safetyContext: SafetyContext;
+  /** whether a real A–F grade exists, or the entry is not (yet) gradeable */
+  gradeStatus: GradeStatus;
   /** the specific question the A–F grade answers (not a blanket verdict) */
   gradedQuestion: string;
   /** short safety flag surfaced next to the grade (e.g. drug supervision) */
   safetyFlag: string;
   body: string;
+}
+
+const SAFETY_CONTEXTS: SafetyContext[] = [
+  "generallyConsumerAppropriate", "professionalGuidanceSuggested", "medicalSupervisionRequired",
+  "prescriptionOnly", "insufficientSafetyData", "notApplicable",
+];
+
+/** Derive a safety posture from frontmatter, honouring an explicit override. */
+function deriveSafetyContext(data: Record<string, unknown>): SafetyContext {
+  if (typeof data.safetyContext === "string" && SAFETY_CONTEXTS.includes(data.safetyContext as SafetyContext)) {
+    return data.safetyContext as SafetyContext;
+  }
+  const reg = String(data.regulatory || "");
+  if (/prescription/i.test(reg)) return "prescriptionOnly";
+  if (/drug|farmaco|injectable|procedure|aesthetic/i.test(reg)) return "medicalSupervisionRequired";
+  return "generallyConsumerAppropriate";
+}
+
+/** Derive grade status from the grade letter, honouring an explicit override. */
+function deriveGradeStatus(data: Record<string, unknown>): GradeStatus {
+  const explicit = data.gradeStatus;
+  if (explicit === "graded" || explicit === "insufficient" || explicit === "notEvaluated" || explicit === "underReview") {
+    return explicit;
+  }
+  return data.grade ? "graded" : "underReview";
 }
 
 const REVIEW_STATUSES: ReviewStatus[] = ["draft", "reviewed", "verified", "update_required"];
@@ -112,6 +153,8 @@ export const MoleculeFrontmatterSchema = z
     applications: z.array(z.string()).optional(),
     relatedMolecules: z.array(z.string()).optional(),
     reviewStatus: z.enum(["draft", "reviewed", "verified", "update_required"]).optional(),
+    safetyContext: z.enum(["generallyConsumerAppropriate", "professionalGuidanceSuggested", "medicalSupervisionRequired", "prescriptionOnly", "insufficientSafetyData", "notApplicable"]).optional(),
+    gradeStatus: z.enum(["graded", "insufficient", "notEvaluated", "underReview"]).optional(),
     status: z.enum(["published", "draft"]).optional(),
     index: z.boolean().optional(),
     domain: z.enum(["systemic", "topical"]).optional(),
@@ -183,6 +226,8 @@ function parse(file: string): Molecule {
       return "oral";
     })(),
     reviewStatus,
+    safetyContext: deriveSafetyContext(data),
+    gradeStatus: deriveGradeStatus(data),
     // Indexing: currently keyed off the existing `index` flag so we don't drop
     // already-indexed pages on deploy. The stricter YMYL gate (require
     // reviewStatus === "verified") is staged and can be switched on deliberately
