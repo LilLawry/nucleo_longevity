@@ -44,6 +44,7 @@ export default function Footer({ lang, t }: { lang: string; t: Locale }) {
           {[
             { href: `/${lang}/contatti`, label: t.footer.contact },
             { href: `/${lang}/confronto`, label: t.footer.comparator },
+            { href: `/${lang}/funding-and-affiliations`, label: lang === "it" ? "Finanziamento e affiliazioni" : "Funding & affiliations" },
             { href: `/${lang}/disclaimer`, label: t.footer.disclaimer },
             { href: `/${lang}/privacy`, label: t.footer.privacy },
             { href: `/${lang}/termini`, label: t.footer.terms },

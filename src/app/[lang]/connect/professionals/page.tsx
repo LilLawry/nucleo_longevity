@@ -54,9 +54,10 @@ export default async function ProfessionalsPage({ params }: { params: Promise<{ 
 
       <div className="grid sm:grid-cols-2 gap-3">
         {pros.map((p) => (
-          <div key={p.slug} className="card-surface p-5 flex flex-col gap-2">
+          <Link key={p.slug} href={`/${lang}/connect/professionals/${p.slug}`}
+            className="group card-surface p-5 flex flex-col gap-2 hover:border-[var(--accent)] transition-colors">
             <div className="flex items-center justify-between gap-3">
-              <span className="font-sans font-medium text-[var(--fg)]">{p.name}</span>
+              <span className="font-sans font-medium text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">{p.name}</span>
               <span className="font-mono text-[0.6rem] uppercase tracking-widest text-[var(--muted)] shrink-0">{p.country}</span>
             </div>
             <p className="font-mono text-[0.6rem] uppercase tracking-wide text-[var(--accent)]">{ROLE_LABEL[p.role]}</p>
@@ -69,10 +70,10 @@ export default async function ProfessionalsPage({ params }: { params: Promise<{ 
               {p.commercialStatus === "sponsored" && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-1.5 py-0.5">Sponsored</span>}
               {p.demo && <span className="font-mono text-[0.55rem] uppercase tracking-widest border border-[#B5975D] text-[#B5975D] px-1.5 py-0.5">demo</span>}
             </div>
-            <Link href={`/${lang}/connect/join`} className="font-sans text-sm text-[var(--accent)] link-underline mt-2 w-fit">
-              {it ? "Richiedi un'introduzione →" : "Request an introduction →"}
-            </Link>
-          </div>
+            <span className="font-sans text-sm text-[var(--accent)] link-underline mt-2 w-fit">
+              {it ? "Apri profilo →" : "Open profile →"}
+            </span>
+          </Link>
         ))}
       </div>
 
