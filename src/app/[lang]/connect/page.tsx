@@ -70,6 +70,17 @@ export default async function ConnectPage({ params }: { params: Promise<{ lang: 
         ))}
       </div>
 
+      {/* Founding Partners — early cohort offer */}
+      <Link href={`/${lang}/connect/founding`} className="block border border-[var(--accent)] hover:bg-[var(--bg-elev)] transition-colors p-6 mb-4">
+        <p className="font-mono text-[0.55rem] uppercase tracking-widest text-[var(--accent)] mb-1">{lang === "en" ? "Founding Partners · limited" : "Founding Partners · posti limitati"}</p>
+        <p className="font-sans font-medium text-lg text-[var(--fg)]">
+          {lang === "en" ? "Free showcase now, preferential terms later →" : "Vetrina gratis ora, condizioni di favore dopo →"}
+        </p>
+        <p className="font-sans text-sm text-[var(--muted)] mt-1">
+          {lang === "en" ? "Be one of the first companies or professionals in the directory." : "Sii tra le prime aziende o professionisti nella directory."}
+        </p>
+      </Link>
+
       {/* Directory + digital fair */}
       <div className="flex flex-col sm:flex-row gap-4 mb-4">
         <Link href={`/${lang}/connect/directory`} className="flex-1 border border-[var(--border)] hover:border-[var(--accent)] transition-colors p-6">
