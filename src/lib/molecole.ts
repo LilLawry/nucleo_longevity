@@ -91,6 +91,35 @@ export interface Molecule {
   /** short safety flag surfaced next to the grade (e.g. drug supervision) */
   safetyFlag: string;
   body: string;
+  /** Italian overrides for prose fields (from `*_it` frontmatter). Applied by
+   * localizeMolecule(); missing keys fall back to the English value. */
+  it?: Partial<Pick<Molecule,
+    | "name" | "class" | "primaryUse" | "claim" | "bottomLine" | "evidenceSummary"
+    | "mechanism" | "safety" | "dosageContext" | "fieldNote" | "applications"
+    | "gradedQuestion" | "safetyFlag">>;
+}
+
+/** Translatable prose fields that support an Italian `*_it` frontmatter variant. */
+const IT_FIELDS = [
+  "name", "class", "primaryUse", "claim", "bottomLine", "evidenceSummary",
+  "mechanism", "safety", "dosageContext", "fieldNote", "applications",
+  "gradedQuestion", "safetyFlag",
+] as const;
+
+function collectIt(data: Record<string, unknown>): Molecule["it"] {
+  const out: Record<string, unknown> = {};
+  for (const f of IT_FIELDS) {
+    const v = data[`${f}_it`];
+    if (v !== undefined && v !== null && v !== "") out[f] = v;
+  }
+  return Object.keys(out).length ? (out as Molecule["it"]) : undefined;
+}
+
+/** Overlay Italian overrides onto a molecule when lang is "it". Non-mutating;
+ * any field without an IT value keeps the English text (never blank). */
+export function localizeMolecule(m: Molecule, lang: string): Molecule {
+  if (lang !== "it" || !m.it) return m;
+  return { ...m, ...m.it };
 }
 
 const SAFETY_CONTEXTS: SafetyContext[] = [
@@ -242,21 +271,24 @@ function parse(file: string): Molecule {
         ? "Prescription drug — use only under medical supervision"
         : ""),
     body: content.trim(),
+    it: collectIt(data),
   };
 }
 
-export function getAllMolecules(): Molecule[] {
+export function getAllMolecules(lang?: string): Molecule[] {
   if (!fs.existsSync(DIR)) return [];
-  return fs
+  const all = fs
     .readdirSync(DIR)
     .filter((f) => f.endsWith(".mdx") || f.endsWith(".md"))
     .map(parse)
     .sort((a, b) => a.name.localeCompare(b.name));
+  return lang ? all.map((m) => localizeMolecule(m, lang)) : all;
 }
 
-export function getMoleculeBySlug(slug: string): Molecule | null {
+export function getMoleculeBySlug(slug: string, lang?: string): Molecule | null {
   const all = getAllMolecules();
-  return all.find((m) => m.slug === slug) || null;
+  const found = all.find((m) => m.slug === slug) || null;
+  return found && lang ? localizeMolecule(found, lang) : found;
 }
 
 export const GRADE_RANK: Record<string, number> = { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5, "": 9 };

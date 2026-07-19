@@ -47,7 +47,7 @@ export default async function EvidencePage({ params }: { params: Promise<{ lang:
   if (!isValidLang(lang)) notFound();
   const it = lang === "it";
 
-  const mols = getAllMolecules();
+  const mols = getAllMolecules(lang);
   const grades: Grade[] = ["A", "B", "C", "D", "E", "F"];
   const byGrade = grades.map((g) => ({
     grade: g,
