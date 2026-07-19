@@ -42,7 +42,7 @@ export default async function PricesHubPage({
 
   // Molecules that actually have at least one offer, with their cheapest.
   const rows: HubRow[] = (
-    getAllMolecules()
+    getAllMolecules(lang)
       .map((m) => {
         const offers = getOffersForMolecule(m.slug).filter((o) => o.status !== "unavailable");
         if (offers.length === 0) return null;

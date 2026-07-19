@@ -39,7 +39,7 @@ export default async function DatabasePage({
   if (!isValidLang(lang)) notFound();
   const it = lang === "it";
 
-  const rows: Row[] = getAllMolecules().map((m) => ({
+  const rows: Row[] = getAllMolecules(lang).map((m) => ({
     slug: m.slug,
     name: m.name,
     class: m.class,

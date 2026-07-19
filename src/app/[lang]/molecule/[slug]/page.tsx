@@ -20,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
   const { lang, slug } = await params;
-  const m = getMoleculeBySlug(slug);
+  const m = getMoleculeBySlug(slug, lang);
   if (!m) return {};
   const title = `${m.name} — evidenza, sicurezza, grado`;
   return {
@@ -47,7 +47,7 @@ export default async function MoleculePage({
 }) {
   const { lang, slug } = await params;
   if (!isValidLang(lang)) notFound();
-  const m = getMoleculeBySlug(slug);
+  const m = getMoleculeBySlug(slug, lang);
   if (!m) notFound();
   const t = getLocale(lang);
   const it = lang === "it";
@@ -82,7 +82,7 @@ export default async function MoleculePage({
   };
 
   const related = m.relatedMolecules
-    .map((s) => getMoleculeBySlug(s))
+    .map((s) => getMoleculeBySlug(s, lang))
     .filter(Boolean) as NonNullable<ReturnType<typeof getMoleculeBySlug>>[];
 
   // Visual evidence-strength meter: map the qualitative strength to filled cells.
